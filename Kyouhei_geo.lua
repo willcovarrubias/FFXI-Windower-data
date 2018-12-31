@@ -32,18 +32,18 @@ function user_setup()
     state.IdleMode:options('Normal', 'Refresh', 'PDT')
 
 	-- 	Buffs ALT
-	send_command('bind !F1 input /ma "Drain" <t>')
-	send_command('bind !F2 input /ma "Aspir" <t>')
+	send_command('bind !F1 input /item "Mana mist" <me>')
+	send_command('bind !F2 input /item "Mana Powder" <me>')
 	send_command('bind !F3 input /ma "Aspir II" <t>')
-	send_command('bind !F4 input /ma "Aspir III" <t>')
+	send_command('bind !F4 input /ma "Break" <t>')
 	send_command('bind !F5 input /ma "Bind" <t>')
 	send_command('bind !F6 input /ma "Gravity" <t>')
 	send_command('bind !F7 input /ma "Stun" <t>')
 	send_command('bind !F8 input /ma "Sleep" <t>')
 	send_command('bind !F9 input /ma "Sleep II" <t>')
-	send_command('bind !F10 input /item "echo drops" <me>')
-	send_command('bind !F11 input /item "holy water" <me>')
-	send_command('bind !F12 input /item "remedy" <me>')
+	send_command('bind !F10 input /ja "Manifestation" <me>; /echo --AOE Dark--')
+	send_command('bind !F11 gs c cycle CastingMode')
+	send_command('bind !F12 gs c cycle OffenseMode')
 	
 -- 	Buffs CTRL
 	send_command('bind ^F1 input /ma "Blink" <me>')
@@ -52,66 +52,40 @@ function user_setup()
 	send_command('bind ^F4 input /ma "Aquaveil" <me>')
 	send_command('bind ^F5 input /ma "Klimaform" <me>')
 	send_command('bind ^F6 input /ma "Dispel" <t>')
-	send_command('bind ^F7 input /ma "indi-frailty" <me>')
-	send_command('bind ^F8 input /ma "Geo-torpor" <bt>')
-	send_command('bind ^F9 input /ma "indi-refresh" <t>')
-	send_command('bind ^F10 input /ma "indi-torpor" <me>')
-	send_command('bind ^F11 input /ma "geo-frailty" <bt>')
-	send_command('bind ^F12 input /ma "indi-vex" <me>')
-
-	send_command('bind @F1 input /ma "poisona" <t>')
-	send_command('bind @F2 input /ma "blindna" <t>')
-	send_command('bind @F3 input /ma "silena" <t>')
-	send_command('bind @F4 input /ma "stona" <t>')
-	send_command('bind @F5 input /ma "viruna" <t>')
-	send_command('bind @F6 input /ma "cursna" <t>')
-	send_command('bind @F7 input /ma "Cure" <t>')
-	send_command('bind @F8 input /ma "Cure II" <t>')
-	send_command('bind @F9 input /ma "Cure IV" <t>')
-	send_command('bind @F10 input /item "Echo Drops" <me>')
-	send_command('bind @F11 input /ma "sneak" <t>')
-	send_command('bind @F12 input /ma "invisible" <t>')
+	send_command('bind ^F7 input /ma "Frazzle" <t>')
+	send_command('bind ^F8 input /ma "Distract" <t>')
+	send_command('bind ^F9 input /ma "Silence" <t>')
+	send_command('bind ^F10 input /ma "" <t>')
+	send_command('bind ^F11 input /ma "" <t>')
+	send_command('bind ^F12 input /ja "Accession" <me>; input /echo --AOE Light--')
 	
 -- Debuffs ALT	
-	send_command('bind !1 input /ma "Cure" <t>')
-	send_command('bind !2 input /ma "Cure II" <t>')
-	send_command('bind !3 input /ma "Cure III" <t>')
-	send_command('bind !4 input /ma "Cure IV" <t>')
-	send_command('bind !5 input /ma "haste" <t>')
-	send_command('bind !6 input /ma "indi-langour" <t>')
-	send_command('bind !7 input /ma "refresh" <t>')
-	send_command('bind !8 input /ma "Blizzard" <t>')
-	send_command('bind !9 input /ma "Blizzard II" <t>')
-	send_command('bind !0 input /ma "Blizzard III" <t>')
-	send_command('bind !- input /ma "Blizzard IV" <t>')
-	send_command('bind != input /ma "Blizzard V" <t>')
+	send_command('bind !1 input /ma "Paralyna" <t>')
+	send_command('bind !2 input /ma "Silena" <t>')
+	send_command('bind !3 input /ma "Blindna" <t>')
+	send_command('bind !4 input /ma "Cursna" <t>')
+	send_command('bind !5 input /ma "Stona" <t>')
+	send_command('bind !6 input /ma "Poisona" <t>')
+	send_command('bind !7 input /ma "Viruna" <t>')
+	send_command('bind !8 input /ma "Poisona" <t>')
+	send_command('bind !9 input /ma "" <t>')
+	send_command('bind !0 input /ma "Erase" <t>')
+	send_command('bind !- input /ja "Full Circle" <me>')
+	send_command('bind != gs c cycle IdleMode')
 
 -- Misc CTRL	
-	send_command('bind ^1 input /ja "full circle" <me>')
-	send_command('bind ^2 input /ja "radial arcana" <me>')
-	send_command('bind ^3 input /ja "dematerialize" <me>')
-	send_command('bind ^4 input /ja "life cycle" <me>')
-	send_command('bind ^5 input /ma "Paralyna" <t>')
-	send_command('bind ^6 input /ma "Slow" <t>')
-	send_command('bind ^7 input /ma "haste" <t>')
-	send_command('bind ^8 input /ma "Thunder" <t>')
-	send_command('bind ^9 input /ma "Thunder II" <t>')
-	send_command('bind ^0 input /ma "Thunder III" <t>')
-	send_command('bind ^- input /ma "Thunder IV" <t>')
-	send_command('bind ^= input /ma "Thunder V" <t>')
-	
-	send_command('bind @1 input /ma "Paralyna" <t>')
-	send_command('bind @2 input /ma "Silena" <t>')
-	send_command('bind @3 input /ma "Blindna" <t>')
-	send_command('bind @4 input /ma "Cursna" <t>')
-	send_command('bind @5 input /ma "Stona" <t>')
-	send_command('bind @6 input /ma "Poisona" <t>')
-	send_command('bind @7 input /ma "Viruna" <t>')
-	send_command('bind @8 input /ma "Adloquium" <t>')
-	send_command('bind @9 input /ja "Bolster" <me>')
-	send_command('bind @0 input /ja "entrust" <me>')
-	send_command('bind @- input /ja "blaze of glory" <me>')
-	send_command('bind @= input /ja "entrust" <me>')
+	send_command('bind ^1 input /ma "Indi-Torpor" Maximuss')
+	send_command('bind ^2 input /ma "Geo-Frailty" <t>')
+	send_command('bind ^3 input /ma "Cure III" <t>')
+	send_command('bind ^4 input /ma "Cure IV" <t>')
+	send_command('bind ^5 input /ma "" <t>')
+	send_command('bind ^6 input /ma "Flurry" <t>')
+	send_command('bind ^7 input /ma "Haste" <t>')
+	send_command('bind ^8 input /ma "Regen V" <t>')
+	send_command('bind ^9 input /ma "Thundara II" <t>')
+	send_command('bind ^0 input /ma "Blizzara II" <t>')
+	send_command('bind ^- input /ma "Fira II" <t>')
+	send_command('bind ^= input //radial')
 	
     gear.default.weaponskill_waist = "Refoccilation Stone"
 	
@@ -124,7 +98,7 @@ function user_setup()
 	send_command('alias echos input /item "Echo Drops" <me>; input /echo  ECHO DROPS;')
 	send_command('alias mirrors input /item "Mirror\'s Tonic"; input /echo  Petrify screen;')
 	send_command('alias terror input /item "Steadfast Tonic"; input /echo  Terror Screen;')
-	send_command('alias doom input /item "Savior\'s Tonic"; input /echo  Doom Screen;')
+	send_command('alias Sav input /item "Savior\'s Tonic"; input /echo  Doom Screen;')
 	send_command('alias MMPP input /ws "Moonlight"; input /echo  Moonlight;')
 	send_command('alias reme input /item "Remedy" <me>; input /echo  REMEDY;')
 end
@@ -139,7 +113,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
     sets.precast.JA.Bolster = {body="Bagua Tunic"}
-    sets.precast.JA['Life cycle'] = {body="Geomancy Tunic", back="Nantosuelta's Cape"}
+    sets.precast.JA['Life cycle'] = {body="Geomancy Tunic +2", back="Nantosuelta's Cape"}
     sets.precast.JA['Full Circle'] = {head="Azimuth Hood +1"}
     sets.precast.JA['Curative Recantation'] = {hands="Bagua Mitaines"}
 	sets.precast.JA['Primeval Zeal'] = {head="Bagua Galero"}
@@ -166,8 +140,6 @@ function init_gear_sets()
 	}
 	
 	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
-	
-	--sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Befouled crown"})
 	
 	sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, { 
 		body="Heka's kalasiris", 
@@ -212,11 +184,11 @@ function init_gear_sets()
         head=gear.merlinicHood_Magic,
 		neck="Eddy Necklace",
 		ear1="Barkarole earring",
-		ear2="Friomisi Earring",
+		ear2="Regal Earring",
         body="Jhakri Robe +2",
 		hands="Otomi Gloves",
 		ring1="Strendu ring",
-		ring2="Vertigo Ring",
+		ring2="Stikini Ring +1",
         back="Nantosuelta's Cape",
 		waist="Refoccilation Stone",
 		legs="Gyve trousers",
@@ -262,7 +234,7 @@ function init_gear_sets()
 	-- Cure Omen--
 	--[[sets.midcast.Cure = {
 		main={name="Ames", priority=16},
-		sub={name="Culminus", priority=15},
+		sub={name="Ammurapi Shield", priority=15},
 		head="Bagua galero", 
 		neck="Sanctity necklace", 
 		ear1="Odnowa Earring",
@@ -271,42 +243,43 @@ function init_gear_sets()
 		hands="Geomancy mitaines +3", 
 		ring1="Haoma's Ring",
 		ring2="Meridian ring", 
-		back="Lifesteam Cape", 
+		back="Lifestream Cape", 
 		waist="Pythia Sash +1", 
-		legs="Bagua Pants +1", 
+		legs="Bagua Pants +1", -
 		feet="Azimuth gaiters"
 	}]]--
 	
 	---Normal Cure--
     
 	sets.midcast.Cure = {
-		main={name="Ames", priority=16},
-		sub={name="Ammurapi Shield", priority=15},
+		main={name="Grioavolr",priority=16},
+		sub={name="Giuoco Grip", priority=15},
 		head="Vanya Hood", 
 		neck="Incanter's Torque", 
 		ear1="Novia Earring", 
 		ear2="Mendicant's Earring", 
 		body="Vrikodara Jupon", 
-		hands="Bagua mitaines",
+		hands="Telchine Gloves",
 		ring1="Lebeche Ring", 
-		ring2="Sirona's Ring",
-        back="Oretania's Cape +1", 
+		ring2="Stikini Ring +1",
+        back="Solemnity Cape", 
 		waist=gear.ElementalObi, 
-		legs="Assiduity pants +1", 
+		legs="Vanya Slops", 
 		feet="Vanya clogs"
 	}
 
     sets.midcast.Curaga = {
-		main={name="Ames",priority=16},
-		sub={name="Genmei Shield", priority=15},
+		main={name="Grioavolr",priority=16},
+		sub={name="Giuoco Grip", priority=15},
 		head="Vanya Hood", 
 		neck="Incanter's Torque", 
 		ear1="Novia Earring",
 		ear2="Mendicant's Earring", 
-		body="Heka's kalasiris", 
+		body="Heka's kalasiris",
+		hands="Telchine Gloves",		
 		ring1="Haoma's Ring", 
-		ring2="Sirona's Ring",
-        back="Seshaw cape", 
+		ring2="Stikini Ring +1",
+        back="Solemnity Cape", 
 		waist=gear.ElementalObi, 
 		legs="Vanya Slops", 
 		feet="Vanya clogs"
@@ -348,7 +321,7 @@ function init_gear_sets()
  sets.midcast['Enhancing Magic'] = {
 		main={name="Gada",priority=16},
 		sub={name="Ammurapi Shield",priority=15},
-        head="Befouled crown",
+        head="Telchine Cap",
 		neck="Incanter's Torque",
 		ear2="Andoaa Earring",
         body=gear.telchineChasuble_Enhancing,
@@ -360,6 +333,7 @@ function init_gear_sets()
 	
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'],{
 		neck="Stone Gorget",
+		ear1="Earthcry Earring",
 		waist="Siegel Sash",
 		legs="Shedir Seraweels"
 	})
@@ -412,7 +386,7 @@ function init_gear_sets()
 
 	sets.midcast.Geomancy = set_combine(sets.midcast.conserve, {
 		main={name="Idris", priority=16},
-		sub={name="Culminus", priority=15},
+		sub={name="Ammurapi Shield", priority=15},
 		range="Dunna",
 		head="Azimuth Hood +1",
 		neck="Incanter's Torque",
@@ -425,7 +399,7 @@ function init_gear_sets()
 	
 	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.conserve, {
 		main={name="Idris", priority=16},
-		sub={name="Culminus", priority=15},
+		sub={name="Ammurapi Shield", priority=15},
 		range="Dunna",
 		head="Azimuth Hood +1",
 		neck="Incanter's Torque",
@@ -451,7 +425,7 @@ function init_gear_sets()
 		ear2="Etiolation Earring",
         body="Jhakri Robe +2",
 		hands="Geomancy mitaines +3",
-		ring1="Vocane Ring",
+		ring1="Dark Ring",
 		ring2="Defending Ring",
         back="Umbra Cape",
 		waist="Slipor Sash",
@@ -469,7 +443,7 @@ function init_gear_sets()
 		ear2="Etiolation Earring",
         body="Jhakri Robe +2",
 		hands="Bagua Mitaines",
-		ring1="Vocane Ring",
+		ring1="Dark Ring",
 		ring2="Defending Ring",
         back="Umbra Cape",
 		waist="Slipor Sash",
@@ -487,7 +461,7 @@ function init_gear_sets()
 		ear2="Etiolation Earring",
         body="Vrikodara jupon",
 		hands="Geomancy mitaines +3",
-		ring1="Vocane Ring",
+		ring1="Dark Ring",
 		ring2="Defending Ring",
         back="Umbra Cape",
 		waist="Slipor Sash",
@@ -507,14 +481,19 @@ function init_gear_sets()
 		ear2="Etiolation Earring",
 		body=gear.telchineChasuble_Pet,
 		hands="Telchine Gloves",
-		ring1="Vocane Ring",
+		ring1="Dark Ring",
 		ring2="Defending Ring",
 		back=gear.NantosueltaCape_Pet,
 		waist="Isa Belt",
-		legs=gear.telchineBraconi_Pet,
+		legs=gear.telchineBraconi_Pet, 
 		feet="Bagua Sandals +1"
 	}
 
+	sets.idle.PetHybrid = {
+        head="Anwig salade",neck="Empath necklace",ear1="Enmerkar earring",ear2="Rimeice earring",
+        body="Pitre tobe +1",hands="Rao kote",ring1="Varar ring",ring2="Varar Ring",
+        back="Visucius's mantle",waist="Isa belt",legs=gear.herculeanTrousers_Pet,feet="Rao sune-ate"}
+	
 
     -- .Indi sets are for when an Indi-spell is active.
     sets.idle.Indi = set_combine(sets.idle)
@@ -523,20 +502,20 @@ function init_gear_sets()
     --sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet)
 
     --[[sets.idle.Weak = {main="Terra's Staff",sub="Oneiros Grip",range="Dunna",
-		head="Spurrina Coif",neck="Loricate Torque +1",ear1="Friomisi Earring",ear2="Barkarole Earring",
-		body="Vrikodara Jupon",hands="Geomancy Mitaines +1",ring1="Vocane Ring",ring2="Defending Ring",
+		head="Spurrina Coif",neck="Loricate Torque +1",ear1="Regal Earring",ear2="Barkarole Earring",
+		body="Vrikodara Jupon",hands="Geomancy Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Solemnity Cape",waist="Fucho-no-Obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}]]--
 
     -- Defense sets
 
     sets.defense.PDT = {ammo="Staunch Tathlum",
-		head="Spurrina Coif",neck="Loricate Torque +1",ear1="Friomisi Earring",ear2="Barkarole Earring",
-		body="Vrikodara Jupon",hands="Geomancy Mitaines +1",ring1="Vocane Ring",ring2="Defending Ring",
+		head="Spurrina Coif",neck="Loricate Torque +1",ear1="Regal Earring",ear2="Barkarole Earring",
+		body="Vrikodara Jupon",hands="Geomancy Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Solemnity Cape",waist="Fucho-no-Obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.defense.MDT = {ammo="Staunch Tathlum",
-		head="Spurrina Coif",neck="Loricate Torque +1",ear1="Friomisi Earring",ear2="Barkarole Earring",
-		body="Vrikodara Jupon",hands="Geomancy Mitaines +1",ring1="Vocane Ring",ring2="Defending Ring",
+		head="Spurrina Coif",neck="Loricate Torque +1",ear1="Regal Earring",ear2="Barkarole Earring",
+		body="Vrikodara Jupon",hands="Geomancy Mitaines +1",ring1="Dark Ring",ring2="Defending Ring",
 		back="Solemnity Cape",waist="Fucho-no-Obi",legs="Assiduity Pants +1",feet="Geomancy Sandals +1"}
 
     sets.Kiting = {feet="Geomancy Sandals +1"}
@@ -547,11 +526,11 @@ function init_gear_sets()
     -- Elemental Magic sets
 
 	sets.midcast['Elemental Magic'] = {
-        main={name="Solstice", priority=16},
+        main={name="Idris", priority=16},
 		sub={name="Ammurapi Shield", priority=15},
         head=gear.merlinicHood_Magic,
 		neck="Mizukage-no-Kubikazari",
-		ear1="Friomisi Earring",
+		ear1="Regal Earring",
 		ear2="Barkaro. Earring",
         body=gear.merlinicJubbah_Magic,
 		hands="Amalric Gages",
@@ -564,12 +543,12 @@ function init_gear_sets()
 	}
 	
 	sets.midcast['Elemental Magic'].NOMB = {
-        main={name="Solstice", priority=16},
+        main={name="Idris", priority=16},
 		sub={name="Ammurapi Shield", priority=15},
 		ammo="Pemphredo Tathlum",
         head=gear.merlinicHood_Magic,
 		neck="Saevus Pendant +1",
-		ear1="Friomisi Earring",
+		ear1="Regal Earring",
 		ear2="Barkaro. Earring",
         body=gear.merlinicJubbah_Magic,
 		hands="Jhakri Cuffs +2",
@@ -581,7 +560,9 @@ function init_gear_sets()
 		feet=gear.merlinicCrackows_Magic
 	}
 	
-	sets.midcast['Elemental Magic'].Merit = set_combine(sets.midcast['Elemental Magic'].MB, {body="Seidr Cotehardie"})
+	sets.midcast['Elemental Magic'].Merit = set_combine(sets.midcast['Elemental Magic'], {
+		body="Seidr Cotehardie"
+	})
 	
     sets.midcast.Impact = set_combine(sets.midcast['Elemental Magic'], {body="Twilight Cloak",head=""})
 	
@@ -597,11 +578,11 @@ function init_gear_sets()
 		ammo="Pemphredo Tathlum",
 		head=gear.merlinicHood_Magic,
 		neck="Erra Pendant",
-		ear1="Enchanter earring +1",
+		ear1="Regal Earring",
 		ear2="Barkaro. Earring",
 		body=gear.merlinicJubbah_Magic,
-		hands="Jhakri Cuffs +2",
-		ring1="Vertigo Ring",
+		hands="Geomancy Mitaines +3",
+		ring1="Stikini Ring +1",
 		ring2="Evanscence ring",
 		back=gear.NantosueltaCape_Magic,
 		waist="Luminary Sash",
@@ -609,10 +590,8 @@ function init_gear_sets()
 		feet=gear.merlinicCrackows_Magic
 	}
 
-	sets.midcast.drain = set_combine(sets.midcast['Dark Magic'], {
+	sets.midcast.Drain = set_combine(sets.midcast['Dark Magic'], {
 		head="Bagua Galero",
-		ear1="Hirudinea earring",
-		ring1="Archon Ring",
 		waist="Fucho-no-obi",
 		feet=gear.merlinicCrackows_Magic
 	})
@@ -627,40 +606,40 @@ function init_gear_sets()
 		sub={name="Ammurapi Shield", priority=15},
         head=gear.merlinicHood_Magic,
 		neck="Incanter's Torque",
-		ear1="Psystorm Earring",
-		ear2="Lifestorm Earring",
-        body="Jhakri Robe +2",
-		hands="Jhakri Cuffs +2",
+		ear1="Regal Earring",
+		ear2="Dignitary Earring",
+        body=gear.merlinicJubbah_Magic,
+		hands="Geomancy Mitaines +3",
 		ring1="Kishar Ring",
-		ring2="Vertigo Ring",
+		ring2="Stikini Ring +1",
         back=gear.NantosueltaCape_Magic,
 		waist="Luminary sash",
-		legs="Jhakri slops +2",
+		legs=gear.merlinicShalwar_Magic,
 		feet="Jhakri pigaches +2"
 	}
 
     sets.midcast.IntEnfeebles = {
-		main={name="Solstice", priority=16},
+		main={name="Idris", priority=16},
 		sub={name="Ammurapi Shield", priority=15},
         head=gear.merlinicHood_Magic,
 		neck="Incanter's Torque",
-		ear1="Enchanter earring +1",
+		ear1="Regal Earring",
 		ear2="Barkaro. Earring",
-        body="Jhakri Robe +2",
-		hands="Jhakri Cuffs +2",
+        body=gear.merlinicJubbah_Magic,
+		hands="Geomancy Mitaines +3",
 		ring1="Kishar Ring",
-		ring2="Vertigo Ring",
+		ring2="Stikini Ring +1",
        back=gear.NantosueltaCape_Magic,
 		waist="Luminary sash",
-		legs="Jhakri slops +2",
+		legs=gear.merlinicShalwar_Magic,
 		feet="Jhakri pigaches +2"
 	}
 
-	sets.midcast.sleep = set_combine(sets.midcast.IntEnfeebles,{
+	sets.midcast.Sleep = set_combine(sets.midcast.IntEnfeebles,{
 		main={name="Idris", priority=16},
 		sub={name="Ammurapi Shield", priority=15},
 		ring1="Archon Ring",
-		ring2="Vertigo Ring",
+		ring2="Stikini Ring +1",
         back=gear.NantosueltaCape_Magic,
 		legs="Jhakri slops +2",
 		feet=gear.merlinicCrackows_Macc

@@ -4,8 +4,8 @@ function init_include()
 	gear.merlinicHood_Magic = { name="Merlinic Hood", augments={'Mag. Acc.+13 "Mag.Atk.Bns."+13','Magic burst dmg.+10%',}}
 	gear.merlinicHood_FC = {name="Merlinic Hood", augments={'"Mag.Atk.Bns."+6','"Fast Cast"+6','INT+10',}}
 	
-	gear.merlinicJubbah_FC = {name="Merlinic Jubbah", augments={'"Fast Cast"+7',}}
-	gear.merlinicJubbah_Magic = {name="Merlinic Jubbah", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Magic burst dmg.+10%','CHR+9',}}
+	gear.merlinicJubbah_FC = {name="Merlinic Jubbah", augments={'"Fast Cast"+6','INT+6','Mag. Acc.+5','"Mag.Atk.Bns."+15',}}
+	gear.merlinicJubbah_Magic = {name="Merlinic Jubbah", augments={'Mag. Acc.+23','Magic burst dmg.+9%','"Mag.Atk.Bns."+11',}}
 	
 	gear.merlinicDastanas_Pet = { name="Merlinic Dastanas", augments={'Blood Pact Dmg.+8','Pet: STR+3','Pet: Mag. Acc.+7',}}
 	gear.merlinicDastanas_FC = { name="Merlinic Dastanas", augments={'"Mag.Atk.Bns."+24','"Fast Cast"+6',}}

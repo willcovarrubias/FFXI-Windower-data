@@ -19,53 +19,6 @@ function job_setup()
 	send_command('alias terror input /item "Steadfast Tonic"; input /echo  Terror Screen;')
 	send_command('alias doom input /item "Savior\'s Tonic"; input /echo  Doom Screen;')
 	send_command('alias MMPP input /ws "Moonlight"; input /echo  Moonlight;')
-	send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
-
-	send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
-	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 10; input /item "Dimensional ring (holla)" <me>; ')
-	send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 10; input /item "Dimensional ring (dem)" <me>; ')
-	send_command('alias mea input /equip ring2 "Dimensional ring (mea)"; wait 10; input /item "Dimensional ring (mea)" <me>; ')
-	send_command('alias capa input /equip ring2 "capacity ring"; wait 10; input /item "capacity ring" <me>; ')
-	send_command('alias fac input /equip ring2 "facility ring"; wait 10; input /item "capacity ring" <me>; ')
-
-	send_command('alias key input /item "Forbidden Key" <t>; ')
-	send_command('alias ech input /item "Echo Drops" <me>')
-	send_command('alias holy input /item "Holy Water" <me>')
-	send_command('alias rem input /item "Remedy" <me>') 
-	
-	send_command('alias sil input /ma "silence" <t>')
-	
-	send_command('alias fc input //ja "Full Circle"')
-	send_command('alias ilan input /ma "indi-Languor" <t>')
-	send_command('alias glan input /ma "Geo-Languor" <t>')
-	send_command('alias imal input /ma "Indi-Malaise" <t>')
-	send_command('alias gmal input /ma "Geo-Malaise" <t>')
-	send_command('alias ivex input /ma "Indi-Vex" <t>')
-	send_command('alias gvex input /ma "Geo-Vex" <t>')
-	send_command('alias ihas input /ma "Indi-Haste" <t>')
-	send_command('alias ghas input /ma "Geo-Haste" <t>')
-	send_command('alias ifad input /ma "Indi-fade" <t>')
-	send_command('alias gfad input /ma "Geo-fade" <t>')
-	send_command('alias ifen input /ma "Indi-fend" <t>')
-	send_command('alias gfen input /ma "Geo-fend" <t>')
-	send_command('alias ifra input /ma "Indi-Frailty" <t>')
-	send_command('alias gfra input /ma "Geo-Frailty" <t>')		
-	send_command('alias iacu input /ma "Indi-Acumen" <t>')
-	send_command('alias gauc input /ma "Geo-Acumen" <t>')
-	send_command('alias itor input /ma "Indi-Torpor" <t>')
-	send_command('alias gtor input /ma "Geo-Torpor" <t>')
-	send_command('alias ifoc input /ma "Indi-focus" <t>')
-	send_command('alias gfoc input /ma "Geo-focus" <t>')
-	send_command('alias iref input /ma "Indi-Refresh" <t>')
-	send_command('alias gref input /ma "Geo-Refresh" <t>')
-	send_command('alias ifur input /ma "Indi-Fury" <t>')
-	send_command('alias gfur input /ma "Geo-Fury" <t>')
-	send_command('alias ipre input /ma "Indi-Precision" <t>')
-	send_command('alias gpre input /ma "Geo-Precision" <t>')
-	send_command('alias ibar input /ma "Indi-Barrier" <t>')
-	send_command('alias gbar input /ma "Geo-Barrier" <t>')
-	send_command('alias iwil input /ma "Indi-Wilt" <t>')
-	send_command('alias gwil input /ma "Geo-Wilt" <t>')
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -82,15 +35,15 @@ function user_setup()
 	send_command('bind !F1 input /ma "Drain" <t>')
 	send_command('bind !F2 input /ma "Aspir" <t>')
 	send_command('bind !F3 input /ma "Aspir II" <t>')
-	send_command('bind !F4 input /ma "Aspir III" <t>')
+	send_command('bind !F4 input /ma "Break" <t>')
 	send_command('bind !F5 input /ma "Bind" <t>')
 	send_command('bind !F6 input /ma "Gravity" <t>')
 	send_command('bind !F7 input /ma "Stun" <t>')
 	send_command('bind !F8 input /ma "Sleep" <t>')
 	send_command('bind !F9 input /ma "Sleep II" <t>')
-	send_command('bind !F10 input /item "echo drops" <me>')
-	send_command('bind !F11 input /item "holy water" <me>')
-	send_command('bind !F12 input /item "remedy" <me>')
+	send_command('bind !F10 input /ja "Manifestation" <me>; /echo --AOE Dark--')
+	send_command('bind !F11 gs c cycle CastingMode')
+	send_command('bind !F12 gs c cycle OffenseMode')
 	
 -- 	Buffs CTRL
 	send_command('bind ^F1 input /ma "Blink" <me>')
@@ -99,66 +52,40 @@ function user_setup()
 	send_command('bind ^F4 input /ma "Aquaveil" <me>')
 	send_command('bind ^F5 input /ma "Klimaform" <me>')
 	send_command('bind ^F6 input /ma "Dispel" <t>')
-	send_command('bind ^F7 input /ma "indi-fury" <me>')
-	send_command('bind ^F8 input /ma "geo-frailty" <bt>')
-	send_command('bind ^F9 input /ma "indi-attunement" <t>')
-	send_command('bind ^F10 input /ma "indi-precision" <me>')
-	send_command('bind ^F11 input /ma "geo-vex" <bt>')
-	send_command('bind ^F12 input /ma "indi-vex" <t>')
-
-	send_command('bind @F1 input /ma "poisona" <t>')
-	send_command('bind @F2 input /ma "blindna" <t>')
-	send_command('bind @F3 input /ma "silena" <t>')
-	send_command('bind @F4 input /ma "stona" <t>')
-	send_command('bind @F5 input /ma "viruna" <t>')
-	send_command('bind @F6 input /ma "cursna" <t>')
-	send_command('bind @F7 input /ma "Cure" <t>')
-	send_command('bind @F8 input /ma "Cure II" <t>')
-	send_command('bind @F9 input /ma "Cure IV" <t>')
-	send_command('bind @F10 input /item "Echo Drops" <me>')
-	send_command('bind @F11 input /ma "sneak" <t>')
-	send_command('bind @F12 input /ma "invisible" <t>')
+	send_command('bind ^F7 input /ma "Frazzle" <t>')
+	send_command('bind ^F8 input /ma "Distract" <t>')
+	send_command('bind ^F9 input /ma "Silence" <t>')
+	send_command('bind ^F10 input /ma "" <t>')
+	send_command('bind ^F11 input /ma "" <t>')
+	send_command('bind ^F12 input /ja "Accession" <me>; input /echo --AOE Light--')
 	
 -- Debuffs ALT	
-	send_command('bind !1 input /ma "Cure" <t>')
-	send_command('bind !2 input /ma "Cure II" <t>')
-	send_command('bind !3 input /ma "Cure III" <t>')
-	send_command('bind !4 input /ma "Cure IV" <t>')
-	send_command('bind !5 input /ma "haste" <t>')
-	send_command('bind !6 input /ma "indi-langour" <t>')
-	send_command('bind !7 input /ma "erase" <t>')
-	send_command('bind !8 input /ma "Blizzard" <t>')
-	send_command('bind !9 input /ma "Blizzard II" <t>')
-	send_command('bind !0 input /ma "Blizzard III" <t>')
-	send_command('bind !- input /ma "Blizzard IV" <t>')
-	send_command('bind != input /ma "Blizzard V" <t>')
+	send_command('bind !1 input /ma "Paralyna" <t>')
+	send_command('bind !2 input /ma "Silena" <t>')
+	send_command('bind !3 input /ma "Blindna" <t>')
+	send_command('bind !4 input /ma "Cursna" <t>')
+	send_command('bind !5 input /ma "Stona" <t>')
+	send_command('bind !6 input /ma "Poisona" <t>')
+	send_command('bind !7 input /ma "Viruna" <t>')
+	send_command('bind !8 input /ma "" <me>')
+	send_command('bind !9 input /ma "" <t>')
+	send_command('bind !0 input /ma "Erase" <t>')
+	send_command('bind !- input /ja "Full Circle" <me>')
+	send_command('bind != gs c cycle IdleMode')
 
 -- Misc CTRL	
-	send_command('bind ^1 input /ja "full circle" <me>')
-	send_command('bind ^2 input /ja "radial arcana" <me>')
-	send_command('bind ^3 input /ja "dematerialize" <me>')
-	send_command('bind ^4 input /ja "life cycle" <me>')
-	send_command('bind ^5 input /ma "flurry" <t>')
-	send_command('bind ^6 input /ma "Slow" <t>')
-	send_command('bind ^7 input /ma "haste" <t>')
-	send_command('bind ^8 input /ma "Thunder" <t>')
-	send_command('bind ^9 input /ma "Thunder II" <t>')
-	send_command('bind ^0 input /ma "Thunder III" <t>')
-	send_command('bind ^- input /ma "Thunder IV" <t>')
-	send_command('bind ^= input /ma "Thunder V" <t>')
-	
-	send_command('bind @1 input /ma "Paralyna" <t>')
-	send_command('bind @2 input /ma "Silena" <t>')
-	send_command('bind @3 input /ma "Blindna" <t>')
-	send_command('bind @4 input /ma "Cursna" <t>')
-	send_command('bind @5 input /ma "Stona" <t>')
-	send_command('bind @6 input /ma "Poisona" <t>')
-	send_command('bind @7 input /ma "Viruna" <t>')
-	send_command('bind @8 input /ma "Adloquium" <t>')
-	send_command('bind @9 input /ma "Regen V" <t>')
-	send_command('bind @0 input /ja "Erase" <t>')
-	send_command('bind @- input /ja "blaze of glory" <me>')
-	send_command('bind @= input /ja "entrust" <me>')
+	send_command('bind ^1 input /ma "Cure" <t>')
+	send_command('bind ^2 input /ma "Cure II" <t>')
+	send_command('bind ^3 input /ma "Cure III" <t>')
+	send_command('bind ^4 input /ma "Cure IV" <t>')
+	send_command('bind ^5 input /ma "" <t>')
+	send_command('bind ^6 input /ma "Flurry" <t>')
+	send_command('bind ^7 input /ma "Haste" <t>')
+	send_command('bind ^8 input /ma "Regen II" <t>')
+	send_command('bind ^9 input /ma "Thundara II" <t>')
+	send_command('bind ^0 input /ma "Blizzara II" <t>')
+	send_command('bind ^- input /ma "Fira II" <t>')
+	send_command('bind ^= input //radial')
 
 end
 
@@ -675,18 +602,18 @@ function init_gear_sets()
     sets.midcast.MndEnfeebles = {
 		main="Idris", 
 		sub="Ammurapi Shield",
-        head="Jhakri Coronal +2",
+        head=gear.merlinicHood_Magic,
 		neck="Incanter's Torque",
-		ear1="Regal Earring",
-		ear2="Dignitary's Earring",
+		ear1="Psystorm Earring",
+		ear2="Lifestorm Earring",
         body="Jhakri Robe +2",
-		hands="Jhakri cuffs +2",
-		ring1="Vertigo Ring",
-		ring2="Kishar Ring",
-        back="Lifestream Cape",
+		hands="Jhakri cuffs +1",
+		ring1="Kishar Ring",
+		ring2="Vertigo Ring",
+        back="Izdubar Mantle",
 		waist="Luminary sash",
-		legs="Jhakri Slops +2",
-		feet="Jhakri pigaches +2"
+		legs="Jhakri Slops +1",
+		feet="Jhakri pigaches +1"
 	}
 
     sets.midcast.IntEnfeebles = {
@@ -848,22 +775,6 @@ function job_state_change(stateField, newValue, oldValue)
             disable('main','sub','range','ammo')
         else
             enable('main','sub','range','ammo')
-        end
-    end
-end
-
-function job_get_spell_map(spell, default_spell_map)
-    if spell.action_type == 'Magic' then
-        if spell.skill == 'Enfeebling Magic' then
-            if spell.type == 'WhiteMagic' then
-                return 'MndEnfeebles'
-            else
-                return 'IntEnfeebles'
-            end
-        elseif spell.skill == 'Geomancy' then
-            if spell.english:startswith('Indi') then
-                return 'Indi'
-            end
         end
     end
 end

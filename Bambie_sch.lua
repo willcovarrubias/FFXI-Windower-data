@@ -52,6 +52,9 @@ function job_setup()
 	send_command('alias rem input /item "Remedy" <me>')
 	send_command('alias revit input /item "Super Revitalizer" <me>')
 	send_command('alias doom input /item "Savior\'s tonic" <me>')
+	
+	send_command('alias pup1 input //exec sch/pup1.txt')
+	send_command('alias pup2 input //exec sch/pup2.txt')
 
 end
 

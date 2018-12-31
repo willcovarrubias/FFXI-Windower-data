@@ -40,10 +40,29 @@ function job_setup()
 
     state.Buff['Pianissimo'] = buffactive['pianissimo'] or false
 	
-	send_command('alias lea input /pcmd leave; wait 2; input /l2 out; ')
-	send_command('alias sp1 input /l2 need a spot Rosa; ')
-	send_command('alias sp2 input /l2 need a spot Sock; ')
-
+	send_command('alias honor input /ma "Honor March" <me>')
+	send_command('alias Adv input /ma "Advancing March" <me>')
+	send_command('alias Vict input /ma "Victory March" <me>')
+	send_command('alias Min5 input /ma "Valor Minuet V" <me>')
+	send_command('alias Min4 input /ma "Valor Minuet IV" <me>')
+	send_command('alias Ball1 input //Mage\'s Ballad ')
+	send_command('alias Ball2 input //Mage\'s Ballad II')
+	send_command('alias Ball3 input //Mage\'s Ballad III ')
+	send_command('alias pae1 input /ma "Army\'s paeon" <me>; ')
+	send_command('alias pae2 input /ma "Army\'s paeon II" <me>; ')
+	send_command('alias pae3 input /ma "Army\'s paeon III" <me>; ')
+	send_command('alias pae4 input /ma "Army\'s paeon IV" <me>; ')
+	send_command('alias Pae6 input /ma "Army\'s Paeon VI" <me>')
+	send_command('alias Pae5 input /ma "Army\'s Paeon V" <me>')
+	send_command('alias Hunt input //"Hunter\'s Prelude')
+	send_command('alias Arch input //"Archer\'s Prelude')
+	send_command('alias Mad input /ma "Sword Madrigal" <t>')
+	send_command('alias Acc input /ma "Blade Madrigal" <t>')
+	send_command('alias Carn input /ma "Carnage Elegy" <t>')
+	send_command('alias Pin input /ma "Pining Nocturne" <t>')
+	send_command('alias Fina input /ma "Magic Finale" <t>')
+	send_command('alias Foe input /ma "Foe Requiem VII" <t>')
+	
 	send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
 	send_command('alias warp input /equip ring2 "warp ring"; wait 11; input /item "Warp Ring" <me>; ')
 	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 11; input /item "Dimensional ring (holla)" <me>; ')
@@ -52,45 +71,43 @@ function job_setup()
 	send_command('alias capa input /equip ring2 "capacity ring"; wait 10; input /item "capacity ring" <me>; ')
 	
 	send_command('alias cha input /console gs c cycle LullabyChat')
-	send_command('alias song1 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
-	send_command('alias song2 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
-	send_command('alias song3 input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>; wait 6; input /ma "mage\'s ballad" <me>; wait 6; input /ma "victory march" <me>;')
+	
+	send_command('alias omencard input //mad; wait 6; input //vict; wait 6; input //pae5; wait 6;input //pae6; wait 6; input //adv; wait 7; input //honor')
+	send_command('alias Omenint input /ma "Learned Etude" <me>; wait 6; input /ma "Sage Etude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Mage\'s Ballad III" <me>; wait 6; input /ma "Honor March" <me>;')
+	
+	
+	send_command('alias song1 input //min5; wait 6; input //vict; wait 6; input //pae5; wait 6;input //pae6; wait 6; input //Min4; wait 7; input //honor')
+	send_command('alias song2 input //Ball3; wait 6; input //ball2; wait 6; input //pae5; wait 6;input //pae6; wait 6; input //vict; wait 7; input //honor')
+
+	
+	send_command('alias son1 input //min5; wait 6; input //vict; wait 6; input //Min4; wait 7; input //honor')
+	send_command('alias son2 input //Ball3; wait 6; input //ball2; wait 6; input //vict; wait 7; input //honor')
+	
+	
+	--send_command('alias song2 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
+	--send_command('alias song3 input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>; wait 6; input /ma "mage\'s ballad" <me>; wait 6; input /ma "victory march" <me>;')
 	send_command('alias song4 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "blade madrigal" <me>;')
 	send_command('alias song5 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "blade madrigal" <me>;')
 	send_command('alias song6 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "hunter\'s prelude" <me>;')
 	send_command('alias song7 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "hunter\'s prelude" <me>;')
 	send_command('alias song8 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')
 	send_command('alias song9 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')	
-	send_command('alias song10 input /ma "victory march" <me>; wait 6; input /ma "advancing march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>;')
+	send_command('alias song10 input /ma "Honor March" <me>; wait 6; input /ma "Victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>;')
 	send_command('alias song11 input /ma "victory march" <me>; wait 6; input /ma "advancing march" <me>; wait 6; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>;')	
 	send_command('alias song12 input /ma "blade madrigal" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "earth carol" <me>; wait 6; input /ma "earth carol II" <me>;')
 	send_command('alias song13 input /ma "blade madrigal" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "earth carol" <me>; wait 6; input /ma "earth carol II" <me>;')	
-	send_command('alias song14 input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Dextrous Etude" <me>; wait 6; input /ma "Uncanny Etude" <me>;')
+	send_command('alias song14 inpu//ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Dextrous Etude" <me>; wait 6; input /ma "Uncanny Etude" <me>;')
 	send_command('alias song15 input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>; wait 6; input /ma "Dextrous Etude" <me>; wait 6; input /ma "Uncanny Etude" <me>;')	
 	send_command('alias song16 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "mage\'s ballad III" <me>;')
-	send_command('alias song17 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "mage\'s ballad III" <me>;')	
+	send_command('alias song17 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me> wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "mage\'s ballad III" <me>;')	
 	send_command('alias song18 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
 	send_command('alias song19 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
 	send_command('alias song20 input /ma "fire carol II" <me>; wait 6; input /ma "earth carol II" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
 	send_command('alias song21 input /ma "fire carol II" <me>; wait 6; input /ma "earth carol II" <me>; wait 6; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
 	send_command('alias song22 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
 	send_command('alias song23 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
-	send_command('alias song24 input /ma "Honor March" <me>; wait 6; input /ma "blade madrigal" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song25 input /ma "Honor March" <me>; wait 6; input /ma "blade madrigal" <me>; wait 6; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song26 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song27 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song28 input /ma "Honor March" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song29 input /ma "Honor March" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song30 input /ma "victory march" <me>; wait 6; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Sage Etude" <me>; wait 6; input /ma "Learned Etude" <me>;')
-	send_command('alias song31 input /ma "victory march" <me>; wait 6; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "Sage Etude" <me>; wait 6; input /ma "Learned Etude" <me>;')
-	send_command('alias song32 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song33 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song34 input /ma "fire carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song35 input /ma "fire carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song36 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>;')
-	send_command('alias song37 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>;')
-	send_command('alias song38 input /ma "wind carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "wind carol" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song39 input /ma "wind carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "wind carol" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song24 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song25 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "blade madrigal" <me>;')
 
 	
 	send_command('alias int1 input /ma "Learned Etude" <me>; ')
@@ -100,13 +117,8 @@ function job_setup()
 	send_command('alias dex1 input /ma "Dextrous Etude" <me>; ')
 	send_command('alias dex2 input /ma "Uncanny Etude" <me>; ')
 	
-	send_command('alias god input /ma "Goddess\'s Hymnus" <t>; ')
-	
 	send_command('alias wing1 input /item "lucid wings I" <me>; ')
 	send_command('alias wing2 input /item "lucid wings II" <me>; ')
-	
-	send_command('alias ra1 input /ma "archer\'s prelude" <t>; ')
-	send_command('alias ra2 input /ma "hunter\'s prelude" <t>; ')
 	
 	send_command('alias fc1 input /ma "fire carol" <me>; ')
 	send_command('alias fc2 input /ma "fire carol II" <me>; ')
@@ -116,34 +128,8 @@ function job_setup()
 	send_command('alias wc2 input /ma "wind carol II" <me>; ')
 	send_command('alias ec1 input /ma "earth carol" <me>; ')
 	send_command('alias ec2 input /ma "earth carol II" <me>; ')
-	send_command('alias lc1 input /ma "lightning carol" <me>; ')
-	send_command('alias lc2 input /ma "lightning carol II" <me>; ')
-	send_command('alias llc1 input /ma "light carol" <me>; ')
-	send_command('alias llc2 input /ma "light carol II" <me>; ')
-	send_command('alias dc1 input /ma "dark carol" <me>; ')
-	send_command('alias dc2 input /ma "dark carol II" <me>; ')
 	send_command('alias sche input /ma "Sentinel\'s Scherzo" <t>; ')
 	send_command('alias hm input /ma "Honor March" <t>; ')
-	
-	send_command('alias pae1 input /ma "Army\'s paeon" <t>; ')
-	send_command('alias pae2 input /ma "Army\'s paeon II" <t>; ')
-	send_command('alias pae3 input /ma "Army\'s paeon III" <t>; ')
-	send_command('alias pae4 input /ma "Army\'s paeon IV" <t>; ')
-	send_command('alias pae5 input /ma "Army\'s paeon V" <t>; ')
-	send_command('alias pae6 input /ma "Army\'s paeon VI" <t>; ')
-	send_command('alias pae7 input /ma "Army\'s paeon VII" <t>; ')
-	
-	send_command('alias min5 input /ma valor minuet V" <t>; ')
-	send_command('alias min4 input /ma "valor minuet IV" <t>; ')
-	send_command('alias min3 input /ma "valor minuet III" <t>; ')
-	send_command('alias min2 input /ma "valor minuet II" <t>; ')
-	send_command('alias min1 input /ma "valor minuet" <t>; ')
-	
-	send_command('alias minn5 input /ma "Knight\'s Minne V" <t>; ')
-	send_command('alias minn4 input /ma "Knight\'s Minne IV" <t>; ')
-	send_command('alias minn3 input /ma "Knight\'s Minne III" <t>; ')
-	send_command('alias minn2 input /ma "Knight\'s Minne II" <t>; ')
-	send_command('alias minn1 input /ma "Knight\'s Minne" <t>; ')
 	
 	send_command('alias seal input /ja "Elemental Seal" <me>; ')
 	send_command('alias fis input /equip range "halcyon rod";input /equip ammo "Robber Rig";input /equip head "Midras\'s helm +1"; ')
@@ -151,7 +137,6 @@ function job_setup()
 	send_command('alias holy input /item "Holy Water" <me>')
 	send_command('alias rem input /item "Remedy" <me>')
 	send_command('alias revit input /item "Super Revitalizer" <me>')
-
 	
 	
     -- For tracking current recast timers via the Timers plugin.
@@ -170,87 +155,61 @@ function user_setup()
     state.IdleMode:options('Normal', 'NoAftercast')
 	
 	--Alt
-	send_command('bind @F1 input /ma "Fire Threnody II" <t>')
-	send_command('bind @F2 input /ma ""Ice Threnody II" <t>')
-	send_command('bind @F3 input /ma "Wind Threnody II" <t>')
-	send_command('bind @F4 input /ma "Earth Threnody II" <t>')
-	send_command('bind @F5 input /ma "Lightning Threnody II" <t>')
-	send_command('bind @F6 input /ma "Water Threnody II" <t>')
-	send_command('bind @F7 input /ma "Light Threnody II" <t>')
-	send_command('bind @F8 input /ma "Dark Threnody II" <t>')
-	send_command('bind @F9 input /ma "pining Nocturne" <t>')
-	send_command('bind @F10 input /ma "Sentinel\'s Scherzo" <t>')
-	send_command('bind @F11 input /ma "hunter\'s prelude" <t>')
-	send_command('bind @F12 input /ma "archer\'s prelude" <t>')
-	
--- 	Buffs ALT
-	send_command('bind !F1 input /ma "slow" <t>')
-	send_command('bind !F2 input /ma "paralyze" <t>')
-	send_command('bind !F3 input /ma "silence" <t>')
-	send_command('bind !F4 input /ma "foe requiem VII" <t>')
-	send_command('bind !F5 input /ma "Stoneskin" <me>')
-	send_command('bind !F6 input /ma "sentinel\'s scherzo" <t>')
-	send_command('bind !F7 input /ma "valor minuet II" <t>')
-	send_command('bind !F8 input /ma "valor minuet V" <t>')
-	send_command('bind !F9 input /ma "dextrous etude" <t>')
-	send_command('bind !F10 input /ma "blink" <me>')
-	send_command('bind !F11 input /ja "pianissimo" <me>')
-	send_command('bind !F12 input /ja "troubadour" <me>')
+	send_command('bind !F1 input /ma "Horde Lullaby II" <t>')
+	send_command('bind !F2 input /ma "Horde Lullaby" <t>')
+	send_command('bind !F3 input /ma "Foe Lullaby II" <me>')
+	send_command('bind !F4 input /ma "Foe Lullaby" <me>')
+	send_command('bind !F5 input /ma "" <me>')
+	send_command('bind !F6 input /ma "" <t>')
+	send_command('bind !F7 input /ma "" <t>')
+	send_command('bind !F8 input /ma "" <t>')
+	send_command('bind !F9 input /ma "" <t>')
+	send_command('bind !F10 input /ja "Penury" <me>; /echo --Save Mana--')
+	send_command('bind !F11 input /ja "Celerity" <me>; /echo --Fast Casting--')
+	send_command('bind !F12 gs c cycle OffenseMode')
 	
 -- 	Buffs CTRL
-	send_command('bind ^F1 input /ma "poisona" <t>')
-	send_command('bind ^F2 input /ma "blindna" <t>')
-	send_command('bind ^F3 input /ma "silena" <t>')
-	send_command('bind ^F4 input /ma "stona" <t>')
-	send_command('bind ^F5 input /ma "viruna" <t>')
-	send_command('bind ^F6 input /ma "cursna" <t>')
-	send_command('bind ^F7 input /ma "valor minuet III" <t>')
-	send_command('bind ^F8 input /ma "valor minuet IV" <t>')
-	send_command('bind ^F9 input /ma "sinewy etude" <t>')
-	send_command('bind ^F10 input /ma "stoneskin" <me>')
-	send_command('bind ^F11 input /ma "haste" <t>')
-	send_command('bind ^F12 input /ja "nightingale" <me>')
-
-	send_command('bind @1 input /equip range "gjallarhorn"')
-	send_command('bind @2 input /equip range "Daurdabla"')
-	send_command('bind @3 input /ma "mage\'s ballad" <t>')
-	send_command('bind @4 input /ma "fire carol II" <t>')
-	send_command('bind @5 input /ma "ice carol II" <t>')
-	send_command('bind @6 input /ma "wind carol II" <t>')
-	send_command('bind @7 input /ma "earth carol II" <t>')
-	send_command('bind @8 input /ma "lightning carol II" <me>')
-	send_command('bind @9 input /ma "water carol II" <t>')
-	send_command('bind @0 input /ma "light carol II" <t>')
-	send_command('bind @- input /ma "dark carol II" <t>')
-	send_command('bind @= input /ma "Curaga II" <t>')
+	send_command('bind ^F1 input /ma "Blink" <me>')
+	send_command('bind ^F2 input /ma "Stoneskin" <me>')
+	send_command('bind ^F3 input /ma "Phalanx" <me>')
+	send_command('bind ^F4 input /ma "Dispel" <t>')
+	send_command('bind ^F5 input /ma "Dia II" <t>')
+	send_command('bind ^F6 input /ma "Slow" <t>')
+	send_command('bind ^F7 input /ma "Paralyze" <t>')
+	send_command('bind ^F8 input /ma "Addle" <t>')
+	send_command('bind ^F9 input /ma "Silence" <t>')
+	send_command('bind ^F10 input /ma "Holy II" <t>')
+	send_command('bind ^F11 input /ma "Banish III" <t>')
+	send_command('bind ^F12 input /ja "Accession" <me>; input /echo --AOE--')
 	
 -- Debuffs ALT	
-	send_command('bind !1 input /ma "paralyna" <t>')
-	send_command('bind !2 input /ma "Cure IV" <t>')
-	send_command('bind !3 input /ma "erase" <t>')
-	send_command('bind !4 input /ma "mage\'s ballad III" <t>')
-	send_command('bind !5 input /ma "Curaga II" <t>')
-	send_command('bind !6 input /ma "victory march" <t>')
-	send_command('bind !7 input /ma "blade madrigal" <t>')
-	send_command('bind !8 input /ma "foe lullaby II" <t>')
-	send_command('bind !9 input /ma "invisible" <t>')
-	send_command('bind !0 input /ja "divine seal" <t>')
-	send_command('bind !- input /ja "marcato" <me>')
-	send_command('bind != input /ja "tenuto" <t>')
+	send_command('bind !1 input /ma "Paralyna" <t>')
+	send_command('bind !1 input //carn')
+	send_command('bind !2 input /ma "Silena" <t>')
+	send_command('bind !3 input /ma "Blindna" <t>')
+	send_command('bind !4 input /ma "Cursna" <t>')
+	send_command('bind !5 input /ma "Stona" <t>')
+	send_command('bind !6 input /ma "Poisona" <t>')
+	send_command('bind !7 input /ma "Viruna" <t>')
+	send_command('bind !8 input /ma "Esuna" <me>')
+	send_command('bind !9 input /ma "Sacrifice" <t>')
+	send_command('bind !0 input /ma "Erase" <t>')
+	send_command('bind !- input /ja "Divine Caress" <me>')
+	send_command('bind != gs c cycle IdleMode')
 
 -- Misc CTRL	
-	send_command('bind ^1 input /ma "Curaga" <t>')
-	send_command('bind ^2 input /ma "Cure III" <t>')
-	send_command('bind ^3 input /ma "magic finale" <t>')
-	send_command('bind ^4 input /ma "mage\'s ballad II" <t>')
-	send_command('bind ^5 input /ma "Chocobo mazurka" <t>')
-	send_command('bind ^6 input /ma "advancing march" <t>')
-	send_command('bind ^7 input /ma "sword madrigal" <t>')
-	send_command('bind ^8 input /ma "horde lullaby II" <t>')
-	send_command('bind ^9 input /ma "sneak" <t>')
-	send_command('bind ^0 input /ma "carnage elegy" <t>')
-	send_command('bind ^- input /ja "soul voice" <me>')
-	send_command('bind ^= input /ja "clarion call" <me>')
+	send_command('bind ^1 input /ma "Flash" <t>')
+	send_command('bind ^2 input /ma "Curaga" <t>')
+	send_command('bind ^3 input /ma "Cure III" <t>')
+	send_command('bind ^4 input /ma "Cure IV" <t>')
+	send_command('bind ^5 input /ma "Cure V" <t>')
+	send_command('bind ^6 input /ma "Cure VI" <t>')
+	send_command('bind ^7 input /ma "Haste" <t>')
+	send_command('bind ^8 input /ma "Regen IV" <t>')
+	send_command('bind ^9 input /ma "Repose" <t>')
+	send_command('bind ^0 input /ma "Full Cure" <t>')
+	send_command('bind ^- input /ja "Devotion" <t>')
+	send_command('bind ^= input /ja "Sublimation" <me>')	
     -- Adjust this if using the Terpander (new +song instrument)
     info.ExtraSongInstrument = 'Daurdabla'
     -- How many extra songs we can keep from Daurdabla/Terpander
@@ -287,12 +246,12 @@ function init_gear_sets()
 		ear1="Enchanter Earring +1",
 		ear2="Loquacious Earring",
         body="Inyanga Jubbah +2",
-		hands="Leyline Gloves",
+		hands="Gendewitha Gages",
 		ring1="Kishar Ring",
 		ring2="Prolix Ring",
         back="Intarabus\'s cape",
 		waist="Witful Belt",
-		legs=gear.chironicHose_FC,
+		legs="Chironic Hose",
 		feet=gear.chironicSlippers_FC
 		}
 
@@ -305,6 +264,7 @@ function init_gear_sets()
 	--legs="Querkening brais"
 	--feet="Bihu Slippers +1"
 	})
+
     sets.precast.FC.BardSong['Honor March'] = set_combine(sets.precast.FC.BardSong, {range="Marsyas"})
 
     sets.precast.FC.Daurdabla = set_combine(sets.precast.FC.BardSong, {range=info.ExtraSongInstrument})
@@ -335,11 +295,11 @@ function init_gear_sets()
     -- Midcast Sets
 
     -- General set for recast times.
+    sets.midcast.FastRecast = sets.precast.FC
 	
 	    -- For song buffs (duration and AF3 set bonus)
     sets.midcast.SongEffect = {
 		main="Kali",
-		range="gjallarhorn",
 		sub={name="Genmei Shield", priority=15},
         head="Inyanga tiara +2",
 		neck="Moonbow Whistle",
@@ -348,7 +308,7 @@ function init_gear_sets()
         body="Fili Hongreline +1",
 		hands="Inyanga Dastanas +2",
 		ring1="Kishar Ring",
-		ring2="Stikini Ring +1",
+		ring2="Vertigo ring",
         back="Intarabus\'s cape",
 		waist="Luminary Sash",
 		legs="Inyanga Shalwar +2",
@@ -359,7 +319,6 @@ function init_gear_sets()
     sets.midcast.SongDebuff = {
 		--main="Kali",
 		sub={name="Ammurapi Shield", priority=15}, 
-		range="gjallarhorn",
         head="Inyanga tiara +2",
 		neck="Moonbow Whistle",
 		ear1="Enchanter Earring +1",
@@ -367,7 +326,7 @@ function init_gear_sets()
         body="Fili Hongreline +1",
 		hands="Inyanga Dastanas +2",
 		ring1="Kishar Ring",
-		ring2="Stikini Ring +1",
+		ring2="Vertigo ring",
         back="Intarabus\'s cape",
 		waist="Luminary Sash",
 		legs="Inyanga Shalwar +2",

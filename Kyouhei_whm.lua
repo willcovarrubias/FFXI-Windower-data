@@ -15,51 +15,6 @@ function job_setup()
     include('Kyouhei-Include.lua')
 	state.Buff['Afflatus Solace'] = buffactive['Afflatus Solace'] or false
     state.Buff['Afflatus Misery'] = buffactive['Afflatus Misery'] or false
-
-	send_command('alias sil input /ma "silence" <t>')
-	
-	send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
-	send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
-	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 10; input /item "Dimensional ring (holla)" <me>; ')
-	send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 10; input /item "Dimensional ring (dem)" <me>; ')
-	send_command('alias mea input /equip ring2 "Dimensional ring (mea)"; wait 10; input /item "Dimensional ring (mea)" <me>; ')
-	send_command('alias capa input /equip ring2 "capacity ring"; wait 10; input /item "capacity ring" <me>; ')
-
-	send_command('alias dex input /ma "boost-dex" <me>')
-	send_command('alias str input /ma "boost-str" <me>')
-	send_command('alias mind input /ma "boost-dex" <me>')
-	send_command('alias vit input /ma "boost-vit" <me>')
-	send_command('alias int input /ma "boost-int" <me>')
-	send_command('alias agi input /ma "boost-agi" <me>')
-	
-	send_command('alias p5 input /ma "Protect V" <t>')
-	send_command('alias s5 input /ma "shell V" <t>')
-	
-	send_command('alias aus input /ma "auspice" <me>')
-	send_command('alias bene input /ja "benediction" <me>')
-	send_command('alias ds input /ja "Divine Seal" <me>')
-	send_command('alias dc input /ja "Divine Caress" <me>')
-	send_command('alias sac input /ja "Sacrosanctity" <me>')
-	send_command('alias asy input /ja "Asylum" <me>')
-	send_command('alias dev input /ja "devotion" <t>')
-	send_command('alias mat input /ja "martyr" <t>')
-	
-	send_command('alias mb input /ws "mystic boon" <t>')
-	
-	send_command('alias cel input /item "Rubicund Cell" <t>; input /item "Cobalt Cell" <t>; input /item "Phase Displacer" <t>;')
-	send_command('alias dis input /item "Phase Displacer" <t>; ')
-	send_command('alias atk input /attack <bt>; ')
-	
-	
-	send_command('alias b1 input /ma "banish" <t>')
-	send_command('alias b2 input /ma "banish II" <t>')
-	send_command('alias b3 input /ma "banish III" <t>')
-	send_command('alias aqu input /ma "aquaveil" <me>')
-	send_command('alias asy input /ja "asylum" <me>')
-	send_command('alias key input /item "Forbidden Key" <t>; ')
-	send_command('alias ech input /item "Echo Drops" <me>')
-	send_command('alias holy input /item "Holy Water" <me>')
-	send_command('alias rem input /item "Remedy" <me>')
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -73,86 +28,70 @@ function user_setup()
     state.IdleMode:options('Normal', 'Refresh', 'PDT')
 	
 -- 	Buffs ALT
-	send_command('bind !F1 input /ma "Slow" <t>')
-	send_command('bind !F2 input /ma "Paralyze" <t>')
-	send_command('bind !F3 input /ma "Silence" <t>')
-	send_command('bind !F4 input /ma "Addle" <t>')
-	send_command('bind !F5 input /ma "Blind" <t>')
-	send_command('bind !F6 input /ma "Poison" <t>')
-	send_command('bind !F7 input /ma "Repose" <t>')
-	send_command('bind !F8 input /ma "reraise IV" <me>')
-	send_command('bind !F9 input /ma "Cura" <me>')
-	send_command('bind !F10 input /ma "Cura II" <me>')
-	send_command('bind !F11 input /ma "Cura III" <me>')
-	send_command('bind !F12 input /ma "Arise" <t>')
+	send_command('bind !F1 input /ma "" <me>')
+	send_command('bind !F2 input /ma "" <me>')
+	send_command('bind !F3 input /ma "" <me>')
+	send_command('bind !F4 input /ma "" <me>')
+	send_command('bind !F5 input /ma "" <me>')
+	send_command('bind !F6 input /ma "" <t>')
+	send_command('bind !F7 input /ma "" <t>')
+	send_command('bind !F8 input /ma "" <t>')
+	send_command('bind !F9 input /ma "" <t>')
+	send_command('bind !F10 input /ja "Penury" <me>; /echo --Save Mana--')
+	send_command('bind !F11 input /ja "Celerity" <me>; /echo --Fast Casting--')
+	send_command('bind !F12 gs c cycle OffenseMode')
 	
 -- 	Buffs CTRL
-	send_command('bind ^F1 input /ma "Protectra V" <me>')
-	send_command('bind ^F2 input /ma "Shellra V" <me>')
-	send_command('bind ^F3 input /ma "Blink" <me>')
-	send_command('bind ^F4 input /ma "Stoneskin" <me>')
-	send_command('bind ^F5 input /ma "Barfira" <me>')
-	send_command('bind ^F6 input /ma "Barblizzara" <me>')
-	send_command('bind ^F7 input /ma "Baraera" <me>')
-	send_command('bind ^F8 input /ma "Barstonra" <me>')
-	send_command('bind ^F9 input /ma "Barthundra" <me>')
-	send_command('bind ^F10 input /ma "Barwatera" <me>')
-	send_command('bind ^F11 input /ma "sacrifice" <t>')
-	send_command('bind ^F12 input /ma "esuna" <me>')
-
-	send_command('bind @F1 input /ma "poisona" <t>')
-	send_command('bind @F2 input /ma "blindna" <t>')
-	send_command('bind @F3 input /ma "silena" <t>')
-	send_command('bind @F4 input /ma "stona" <t>')
-	send_command('bind @F5 input /ma "viruna" <t>')
-	send_command('bind @F6 input /ma "cursna" <t>')
-	send_command('bind @F7 input /ma "Cure" <t>')
-	send_command('bind @F8 input /ma "Cure II" <t>')
-	send_command('bind @F9 input /ma "Cure V" <t>')
-	send_command('bind @F10 input /item "Echo Drops" <me>')
-	send_command('bind @F11 input /ma "sneak" <t>')
-	send_command('bind @F12 input /ma "invisible" <t>')
-	
-	send_command('bind @1 input /ma "Cure VI" <t>')
-	send_command('bind @2 input /ma "Curaga" <t>')
-	send_command('bind @3 input /ma "Curaga II" <t>')
-	send_command('bind @4 input /ma "Curaga III" <t>')
-	send_command('bind @5 input /ma "Curaga IV" <t>')
-	send_command('bind @6 input /ma "BarSleepra" <me>')
-	send_command('bind @7 input /ma "barpoisonra" <me>')
-	send_command('bind @8 input /ma "barparalyzra" <me>')
-	send_command('bind @9 input /ma "barblindra" <me>')
-	send_command('bind @0 input /ma "Sleepga" <t>')
-	send_command('bind @- input /ma "Sleep II" <t>')
-	send_command('bind @= input /ja "Benediction" <me>')
+	send_command('bind ^F1 input /ma "Blink" <me>')
+	send_command('bind ^F2 input /ma "Stoneskin" <me>')
+	send_command('bind ^F3 input /ma "Phalanx" <me>')
+	send_command('bind ^F4 input /ma "Dispel" <t>')
+	send_command('bind ^F5 input /ma "Dia II" <t>')
+	send_command('bind ^F6 input /ma "Slow" <t>')
+	send_command('bind ^F7 input /ma "Paralyze" <t>')
+	send_command('bind ^F8 input /ma "Addle" <t>')
+	send_command('bind ^F9 input /ma "Silence" <t>')
+	send_command('bind ^F10 input /ma "Holy II" <t>')
+	send_command('bind ^F11 input /ma "Banish III" <t>')
+	send_command('bind ^F12 input /ja "Accession" <me>; input /echo --AOE--')
 	
 -- Debuffs ALT	
-	send_command('bind !1 input /ma "aurorastorm" <me>')
-	send_command('bind !2 input /ma "regen IV" <t>')
-	send_command('bind !3 input /ma "Cure III" <t>')
-	send_command('bind !4 input /ma "Cure IV" <t>')
-	send_command('bind !5 input /ma "Haste" <t>')
-	send_command('bind !6 input /ja "accession" <me>')
-	send_command('bind !7 input /ma "Erase" <t>')
-	send_command('bind !8 input /ma "Boost-str" <me>')
-	send_command('bind !9 input /ma "Boost-int" <me>')
-	send_command('bind !0 input /ma "auspice" <me>')
-	send_command('bind !- input /ja "divine caress" <me>')
+	send_command('bind !1 input /ma "Paralyna" <t>')
+	send_command('bind !2 input /ma "Silena" <t>')
+	send_command('bind !3 input /ma "Blindna" <t>')
+	send_command('bind !4 input /ma "Cursna" <t>')
+	send_command('bind !5 input /ma "Stona" <t>')
+	send_command('bind !6 input /ma "Poisona" <t>')
+	send_command('bind !7 input /ma "Viruna" <t>')
+	send_command('bind !8 input /ma "Esuna" <me>')
+	send_command('bind !9 input /ma "Sacrifice" <t>')
+	send_command('bind !0 input /ma "Erase" <t>')
+	send_command('bind !- input /ja "Divine Caress" <me>')
 	send_command('bind != gs c cycle IdleMode')
 
 -- Misc CTRL	
-	send_command('bind ^1 input /ja "light arts" <me>')
-	send_command('bind ^2 input /ja "Afflatus Solace" <me>')
-	send_command('bind ^3 input /ja "Afflatus Misery" <me>')
-	send_command('bind ^4 input /ja "Sublimation" <me>')
-	send_command('bind ^5 input /ma "paralyna" <t>')
-	send_command('bind ^6 input /ja "celerity" <me>')
-	send_command('bind ^7 input /ja "penury" <me>')
-	send_command('bind ^8 input /ma "Flash" <t>')
+	send_command('bind ^1 input /ma "Flash" <t>')
+	send_command('bind ^2 input /ma "Curaga" <t>')
+	send_command('bind ^3 input /ma "Cure III" <t>')
+	send_command('bind ^4 input /ma "Cure IV" <t>')
+	send_command('bind ^5 input /ma "Cure V" <t>')
+	send_command('bind ^6 input /ma "Cure VI" <t>')
+	send_command('bind ^7 input /ma "Haste" <t>')
+	send_command('bind ^8 input /ma "Regen IV" <t>')
 	send_command('bind ^9 input /ma "Repose" <t>')
-	send_command('bind ^0 input /ja "sacrosanctity" <me>')
-	send_command('bind ^- input /ma "Devotion" <t>')
-	send_command('bind ^= input /ja "Divine Seal" <me>')
+	send_command('bind ^0 input /ma "Full Cure" <t>')
+	send_command('bind ^- input /ja "Devotion" <t>')
+	send_command('bind ^= input /ja "Sublimation" <me>')
+
+
+
+	send_command('alias MMPP input /ws "Moonlight"; input /echo  Moonlight;')
+	send_command('alias reme input /item "Remedy" <me>; input /echo  REMEDY;')
+	send_command('alias echos input /item "Echo Drops" <me>; input /echo  ECHO DROPS;')
+	send_command('alias petri input /item "Mirror\'s Tonic" <me>; input /echo  Petrify screen;')
+	send_command('alias terror input /item "Steadfast Tonic" <me>; input /echo  Terror Screen;')
+	send_command('alias doom input /item "Savior\'s Tonic" <me>; input /echo  Doom Screen;')
+	send_command('alias revit input /item "Super Revitalizer" <me>')
 	
 	
 end
@@ -263,7 +202,7 @@ function init_gear_sets()
 		hands="Ayanmo Manopolas +2",
 		ring1="Cacoethic Ring +1",
 		ring2="Rufescent ring",
-        back="Alaunus's Cape",
+         back=gear.AlaunusCape_Meele,
 		waist="Fotia Belt",
 		legs="Ayanmo cosciales +2",
 		feet="Ayanmo Gambieras +2"
@@ -296,7 +235,7 @@ function init_gear_sets()
 		hands="Ayanmo Manopolas +2",
 		ring1="Ifrit ring",
 		ring2="Rufescent ring",
-        back="Alaunus's Cape",
+         back=gear.AlaunusCape_Meele,
 		waist="Luminary sash",
 		legs="Ebers pantaloons +1",
 		feet="Chironic slippers"
@@ -313,11 +252,27 @@ function init_gear_sets()
 		hands="Ayanmo Manopolas +2",
 		ring1="Cacoethic Ring +1",
 		ring2="Rufescent ring",
-        back="Alaunus's Cape",
+         back=gear.AlaunusCape_Meele,
 		waist="Fotia Belt",
 		legs="Ayanmo cosciales +2",
 		feet="Ayanmo gambieras +2"
 	}
+		
+	sets.precast.WS['Randgrith'] = {	
+        head="Ayanmo zucchetto +2",
+		neck="Fotia Gorget",
+		ear1="Ishvara Earring",
+		ear2="Regal Earring",
+        body="Piety Briault +3",
+		hands="Ayanmo Manopolas +2",
+		ring1="Ifrit ring",
+		ring2="Rufescent ring",
+        back=gear.AlaunusCape_Magic,
+		waist="Fotia Belt",
+		legs="Theophany Pantaloons +3",
+		feet="Piety duckbills +2"
+	}	
+		
 		
     -- Midcast Sets
     

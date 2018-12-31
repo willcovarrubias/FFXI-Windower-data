@@ -15,13 +15,15 @@ function job_setup()
 
 include('Alaza-Include.lua')
 
-send_command('alias tank input /equip main "Aettir"; input /equip sub "Refined grip +1";' )
-send_command('alias dps input /equip main "Zulfiqar"; input /equip sub "Bloodrain strap";' )
+send_command('alias ass input /as Dracosam' )
 
-send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
-send_command('alias tp input /equip main "Aettir"; input /equip sub "umbra strap"; input /equip ammo "ginsen"; input /equip head "herculean helm"; input /equip neck "combatant\'s torque"; input /equip ear1 "cessance earring"; input /equip ear2 "sherida earring"; input /equip body "herculean vest"; input /equip hands "herculean gloves"; input /equip ring1 "epona\'s ring"; input /equip ring2 "hetairoi ring"; input /equip back "Agema cape"; input /equip waist "flume belt +1"; input /equip legs "herculean trousers"; input /equip feet "herculean boots"; ')
+send_command('alias tank input /equip main "Epeolatry"; input /equip sub "Refined grip +1";' )
+send_command('alias dps input /equip main "Lionheart"; input /equip sub "Bloodrain strap";' )
 
-send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
+
+send_command('alias tp input /equip main "Lionheart"; input /equip sub "umbra strap"; input /equip ammo "ginsen"; input /equip head "herculean helm"; input /equip neck "combatant\'s torque"; input /equip ear1 "cessance earring"; input /equip ear2 "sherida earring"; input /equip body "herculean vest"; input /equip hands "herculean gloves"; input /equip ring1 "epona\'s ring"; input /equip ring2 "hetairoi ring"; input /equip back "Agema cape"; input /equip waist "flume belt +1"; input /equip legs "herculean trousers"; input /equip feet "herculean boots"; ')
+
+send_command('alias trust input /ma "qultada" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "king of hearts" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
 send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
 send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 10; input /item "Dimensional ring (holla)" <me>; ')
 send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 10; input /item "Dimensional ring (dem)" <me>; ')
@@ -31,17 +33,8 @@ send_command('alias capa input /equip ring2 "capacity ring"; wait 10; input /ite
 send_command('alias ray input /ja "rayke" <t>; input /party --rayke--')
 send_command('alias gam input /ja "gambit" <t>; input /party --gambit--')
 
-send_command('alias gka input /equip main "shinai"; input /equip head "kengo hachimaki"; input /equip sub "umbra strap"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-send_command('alias kat input /equip main "trainee burin"; input /equip head "kengo hachimaki"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-send_command('alias swd input /equip main "firetongue"; input /equip head "kengo hachimaki"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-send_command('alias clu input /equip main "heartbeater"; input /equip head "kengo hachimaki"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-send_command('alias dag input /equip main "chicken knife II"; input /equip head "kengo hachimaki"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-send_command('alias pol input /equip main "pitchfork +1"; input /equip head "kengo hachimaki"; input /equip sub "umbra strap"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-send_command('alias sta input /equip main "chatoyant staff"; input /equip head "kengo hachimaki"; input /equip sub "umbra strap"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-send_command('alias scy input /equip main "bronze zaghnal"; input /equip head "kengo hachimaki"; input /equip sub "umbra strap"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-send_command('alias gsw input /equip main "Lament"; input /equip head "kengo hachimaki"; input /equip sub "umbra strap"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-send_command('alias kill input /equip main "chango"; input /equip head "kengo hachimaki"; input /equip sub "umbra strap"; input /equip neck "Combatant\'s torque"; input /equip body "sulevia\'s platemail +2" ; input /equip hands "Sulev. Gauntlets +2"; input /equip legs "sulevia\'s cuisses +2"; input /equip feet "sulevia\'s leggings +2"; input /equip back "Solemnity cape"')
-
+	send_command('alias p5 input /ma "Protect IV" <t>')
+	send_command('alias s5 input /ma "shell V" <t>')
 
 send_command('alias aqu input /ma "aquaveil" <me>')
 send_command('alias ech input /item "Echo Drops" <me>')
@@ -101,9 +94,9 @@ function user_setup()
 	send_command('bind !3 input /ws "Dimidiation" <t>')
 	send_command('bind !4 input /ja "warcry" <me>')
 	send_command('bind !5 input /ja "aggressor" <me>')
-	send_command('bind !6 input /ja "conspirator" <me>')
-	send_command('bind !7 input /ja "presto" <me>')
-	send_command('bind !8 input /ma "utsusemi: ni" <me>')
+	send_command('bind !6 input /ja "haste" <me>')
+	send_command('bind !7 input /ja "regen IV" <me>')
+	send_command('bind !8 input /ma "refresh" <me>')
 	send_command('bind !9 input /ja "spectral jig" <me>')
 	send_command('bind !0 input //exec thf/TA_Mandalic.txt')
 	send_command('bind !- input /ja "Divine Caress" <me>')
@@ -135,7 +128,7 @@ function user_setup()
 	send_command('bind ^F9 input /ja "bully" <t>')
 	send_command('bind ^F10 input /ma "Holy II" <t>')
 	send_command('bind ^F11 input /ma "Banish III" <t>')
-	send_command('bind ^F12 input /ja "Accession" <me>; input /echo --AOE--')
+	send_command('bind ^F12 input //gs c cycle OffenseMode')
 	
 	send_command('bind !F1 input /ja "Curing Waltz" <stpc>')
 	send_command('bind !F2 input /ja "Curing Waltz II" <stpc>')
@@ -244,7 +237,7 @@ function init_gear_sets()
 
 	sets.precast.JA['Gambit'] = 
 		{
-			hands="Runeist mitons +1"
+			hands="Regal Gauntlets"
 		}
 		
 	sets.precast.JA['Battuta'] = 
@@ -261,7 +254,7 @@ function init_gear_sets()
 		
 	sets.precast.JA['Elemental Sforzo'] = 
 		{
-			body="Futhark coat +1"
+			body="Futhark coat +2"
 		}
 		
 	sets.precast.JA['Odyllic Subterfuge'] = {}
@@ -278,18 +271,18 @@ function init_gear_sets()
         
       
 	sets.precast.WS['Resolution'] = {
-		ammo="Seething bomblet +1",
-        head=gear.herculeanHelm_TA,
+		ammo="Knobkierrie",
+        head="Lilitu headpiece",
 		neck="Fotia gorget",
-		ear1="Moonshade earring",
-		ear2="cessance earring",
-        body="Meghanada cuirie +1",
-		hands="Meghanada gloves +1",
-		ring1="Ifrit ring +1",
-		ring2="Shukuyu ring",
-        back="ogma\'s cape",
+		ear1="Sherida earring",
+		ear2="Brutal earring",
+        body="Futhark coat +2",
+		hands="Meghanada gloves +2",
+		ring1="Regal ring",
+		ring2="Niqmaddu ring",
+        back="Ogma\'s cape",
 		waist="Fotia Belt",
-		legs="Carmine cuisses +1",
+		legs="Samnuha tights",
 		feet=gear.herculeanBoots_TA
 		}
 		
@@ -335,22 +328,22 @@ function init_gear_sets()
 	sets.midcast.Cure = set_combine(sets.midcast.FastRecast, {neck="Phalaina locket", back="Solemnity cape", hands="Weatherspoon cuffs +1"})
 	
 	sets.midcast.Phalanx = set_combine(sets.midcast.FastRecast, {head="Futhark bandeau +1", neck="Incanter's torque", ear1="Andoaa earring", 
-	hands="Runeist mitons +1",legs="Futhark trousers +1", back="Evasionist's cape"})
+	hands="Regal Gauntlets",legs="Futhark trousers +1", back="Evasionist's cape"})
 	
 	sets.midcast.Flash = set_combine (sets.midcast.FastRecast, {neck="Unmoving collar +1", ear1="Cryptic earring",ear2="Pluto's pearl",ring1="Eihwaz ring",ring2="Apeile ring",
 			back="Mubvumbamiri mantle",	waist="Goading belt",legs="Erilaz leg guards +1",feet="Erilaz greaves +1"})
 			
-	sets.midcast.Regen = set_combine(sets.midcast.FastRecast, {head="Runeist bandeau +1", hands="Runeist mitons +1",legs="Futhark trousers +1"})
+	sets.midcast.Regen = set_combine(sets.midcast.FastRecast, {head="Runeist bandeau +1", hands="Regal Gauntlets",legs="Futhark trousers +1"})
 	
-	sets.midcast.Aquaveil = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Runeist mitons +1",legs="Futhark trousers +1"})
+	sets.midcast.Aquaveil = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Regal Gauntlets",legs="Futhark trousers +1"})
 	
-	sets.midcast.Crusade = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Runeist mitons +1",legs="Futhark trousers +1"})
+	sets.midcast.Crusade = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Regal Gauntlets",legs="Futhark trousers +1"})
 	
-	sets.midcast.Foil = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Runeist mitons +1",legs="Futhark trousers +1"})
+	sets.midcast.Foil = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Regal Gauntlets",legs="Futhark trousers +1"})
 	
-	sets.midcast.Temper = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Runeist mitons +1",legs="Futhark trousers +1"})
+	sets.midcast.Temper = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Regal Gauntlets",legs="Futhark trousers +1"})
 	
-	sets.midcast.Refresh = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Runeist mitons +1",legs="Futhark trousers +1"})
+	sets.midcast.Refresh = set_combine(sets.midcast.FastRecast, {head="Erilaz galea +1", hands="Regal Gauntlets",legs="Futhark trousers +1"})
 	
     
     -- Sets to return to when not performing an action.
@@ -365,20 +358,20 @@ function init_gear_sets()
 		neck="Loricate torque +1",
 		ear1="Genmei earring",
 		ear2="Odnowa earring +1",
-        body="Futhark coat +1",
-		hands=gear.herculeanGloves_DT,
-		ring1="warden's Ring",
+        body="Futhark coat +2",
+		hands="Regal Gauntlets",
+		ring1="Moonbeam Ring",
 		ring2="Defending Ring",
-        back="mecistopins mantle",
+        back="Ogma's cape",
 		waist="Flume belt +1",
 		legs="Carmine cuisses +1",
 		feet="Erilaz greaves +1"
 		}
 
     sets.idle.PDT = {ammo="Staunch tathlum",
-        head="Futhark bandeau +1",neck="Loricate torque +1",ear1="Genmei earring",ear2="Odnowa earring +1",
-        body="Futhark coat +1",hands=gear.herculeanGloves_DT,ring1="Vocane ring",ring2="Defending Ring",
-        back="Evasionist's cape",waist="Flume belt +1",legs="Erilaz leg guards +1",feet="Erilaz greaves +1"}
+        head="Futhark bandeau +1",neck="Loricate torque +1",ear1="Odnowa earring",ear2="Odnowa Earring +1",
+        body="Futhark coat +2",hands="Regal Gauntlets",ring1="Moonbeam ring",ring2="Defending Ring",
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Erilaz leg guards +1",feet="Erilaz greaves +1"}
 
 	sets.idle.MDT = {ammo="Staunch tathlum",
         head="Sulevia's mask +1",neck="Loricate torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
@@ -415,19 +408,21 @@ function init_gear_sets()
    
 
 	sets.engaged.STP = {
-		ammo="Ginsen",
-		head="Dampening Tam",
-		neck="Asperity necklace",
-		ear1="Sherida Earring",
-		ear2="Brutal earring",
-        body=gear.herculeanVest_TP,
-		hands="Adhemar wristbands",
-		ring1="Epona's ring",
-		ring2="Petrov Ring",
-        back="Lupine cape",
-		waist="Windbuffet belt +1",
-		legs=gear.herculeanTrousers_TP,
-		feet=gear.herculeanBoots_TP
+		main="Epeolatry",
+    sub="Utu Grip",
+    ammo="Yamarang",
+    head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
+    body={ name="Futhark Coat +2", augments={'Enhances "Elemental Sforzo" effect',}},
+    hands="Regal Gauntlets",
+    legs="Ayanmo cosciales +2",
+    feet="Ayanmo gambieras +2",
+    neck="Loricate Torque +1",
+    waist="Windbuffet Belt +1",
+    left_ear="Sherida Earring",
+    right_ear="Brutal Earring",
+    left_ring="Moonbeam Ring",
+    right_ring="Defending Ring",
+    back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+5','Weapon skill damage +10%',}}
 		}
 		
 	 sets.engaged.Acc = {ammo="Seething bomblet +1",
@@ -436,9 +431,9 @@ function init_gear_sets()
         back="Toutatis's cape",waist="Ioskeha belt",legs="Meghanada chausses",feet="Meghanada jambeaux +1"}
 
 	sets.engaged.Tank = {ammo="Staunch tathlum",
-        head="Futhark bandeau +1",neck="Loricate torque +1",ear1="Genmei earring",ear2="Odnowa earring +1",
-        body="Futhark coat +1",hands=gear.herculeanGloves_DT,ring1="Vocane ring",ring2="Defending Ring",
-        back="Evasionist's cape",waist="Flume belt",legs="Erilaz leg guards +1",feet="Erilaz greaves +1"}
+        head="Futhark bandeau +1",neck="Loricate torque +1",ear1="Odnowa Earring",ear2="Odnowa Earring +1",
+        body="Futhark coat +2",hands="Regal Gauntlets",ring1="Moonbeam ring",ring2="Defending Ring",
+        back="Moonbeam Cape",waist="Flume belt +1",legs="Erilaz leg guards +1",feet="Erilaz greaves +1"}
 		
 	
 

@@ -26,7 +26,7 @@ function init_include()
 	gear.herculeanTrousers_RAWSD = {name="Herculean Trousers", augments={'Rng.Acc.+16 Rng.Atk.+16','Weapon skill damage +3%','CHR+9','Rng.Acc.+6','Rng.Atk.+13',}}
 	gear.herculeanTrousers_MAB = { name="Herculean Trousers", augments={'Mag. Acc.+3','Weapon skill damage +4%','"Mag.Atk.Bns."+14',}}
 	gear.herculeanTrousers_DT = { name="Herculean Trousers", augments={'Accuracy+29','Damage taken-3%',}}
-	gear.herculeanTrousers_WSD = {name="Herculean Trousers", augments={'Weapon skill damage +3%','DEX+11','Attack+1',}}--Will be replaced eventually.
+	gear.herculeanTrousers_WSD = {name="Herculean Trousers", augments={'Pet: DEX+5','STR+7','Weapon skill damage +7%',}}
 	
 	---Herculean Boots---
 	gear.herculeanBoots_TA = { name="Herculean Boots", augments={'Accuracy+17 Attack+17','"Triple Atk."+4','DEX+1','Attack+6',}}
@@ -52,7 +52,7 @@ function init_include()
 	---Odyssean Trousers---
 	gear.odysseanLegs_STP = { name="Odyssean Cuisses", augments={'Accuracy+20 Attack+20','"Store TP"+7','CHR+6','Attack+11',}}
 	gear.odysseanLegs_WSD = { name="Odyssean Cuisses", augments={'Accuracy+24 Attack+24','Weapon skill damage +4%','DEX+9','Accuracy+14','Attack+5',}}
-	gear.odysseanLegs_MAB = { name="Odyssean Cuisses", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','"Store TP"+7','MND+10','Mag. Acc.+6','"Mag.Atk.Bns."+14',}}
+	gear.odysseanLegs_MAB = { name="Odyssean Cuisses", augments={'Accuracy+13','"Mag.Atk.Bns."+29','Damage taken-4%','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
 	
 	---Odyssean Greaves---
 	gear.odysseanGreaves_FC = { name="Odyssean Greaves", augments={'Attack+27','"Fast Cast"+5','DEX+3','Accuracy+7',}}
@@ -113,7 +113,8 @@ function init_include()
 	
 	---Ambuscade Capes---
 	---PLD---
-	gear.Rudianos_WSD = {  name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
+	gear.Rudianos_WSD = { name="Rudianos's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
+	gear.Rudianos_STP = { name="Rudianos's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+5','"Store TP"+10','Damage taken-5%',}}
 	
 	---WAR---
 	gear.cicholMantle_DA = { name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}}
@@ -126,7 +127,7 @@ function init_include()
 	gear.rosmertasCape_WSD = { name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}}
 	
 	---RNG---
-	gear.belenusCape_WSD = { name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
+	gear.belenusCape_WSD = { name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%','Damage taken-5%',}}
 	gear.belenusCape_STP = { name="Belenus's Cape", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10','Damage taken-5%',}}
 	gear.belenusCape_Snap = { name="Belenus's Cape", augments={'"Snapshot"+10',}}
 	gear.belenusCape_Crit = { name="Belenus's Cape", augments={'DEX+20','Rng.Acc.+20 Rng.Atk.+20','DEX+10','Crit.hit rate+10',}}
@@ -154,6 +155,7 @@ function init_include()
 	---COR---
 	gear.CamulusMantle_Snap = { name="Camulus's Mantle", augments={'"Snapshot"+10',}}
 	gear.CamulusMantle_RAWSD = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}}
+	gear.CamulusMantle_WSD = { name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 	gear.CamulusMantle_MeleeSTP = { name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}}
 	gear.CamulusMantle_RangeSTP = { name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Rng.Acc.+10','"Store TP"+10',}}
 	---Telchine Enchancement Duration---

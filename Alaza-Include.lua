@@ -20,14 +20,13 @@ function init_include()
 	gear.herculeanVest_TP = { name="Herculean Vest", augments={'Accuracy+15 Attack+15','"Triple Atk."+3','AGI+9','Attack+1',}}
 	
 	gear.herculeanGloves_TP = { name="Herculean Gloves", augments={'Accuracy+16 Attack+16','"Triple Atk."+2','DEX+6','Accuracy+10',}}
-	gear.herculeanGloves_refresh = { name="Herculean Gloves", augments={'Pet: AGI+5','"Conserve MP"+4','"Refresh"+1','Accuracy+7 Attack+7','Mag. Acc.+11 "Mag.Atk.Bns."+11',}}
 	
 	gear.herculeanTrousers_TP = { name="Herculean Trousers", augments={'Accuracy+24 Attack+24','Crit.hit rate+2','DEX+4','Accuracy+11',}}
 	gear.herculeanTrousers_refresh = { name="Herculean Trousers", augments={'Pet: VIT+9','"Store TP"+1','"Refresh"+2','Accuracy+5 Attack+5','Mag. Acc.+1 "Mag.Atk.Bns."+1',}}
 	
 	gear.herculeanBoots_TP = { name="Herculean Boots", augments={'Attack+19','"Triple Atk."+4','Accuracy+11',}}
-	gear.herculeanBoots_refresh = { name="Herculean Boots", augments={'INT+10','Pet: "Store TP"+7','"Refresh"+2',}}
-	
+	gear.herculeanBoots_TA = { name="Herculean Boots", augments={'Attack+19','"Triple Atk."+4','Accuracy+11',}}
+
 	--- Pup Stuff --- 
 	gear.herculeanHelm_Pet = { name="Herculean Helm", augments={'Pet: "Store TP"+11','Pet: Attack+10 Pet: Rng.Atk.+10','Pet: "Mag.Atk.Bns."+2',}}
 	gear.herculeanGloves_Pet = { name="Herculean Gloves", augments={'Pet: "Store TP"+10','Pet: STR+2','Pet: Attack+12 Pet: Rng.Atk.+12','Pet: "Mag.Atk.Bns."+9',}}

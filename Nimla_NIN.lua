@@ -23,7 +23,7 @@ function job_setup()
 	send_command('alias tp1 input /equip main "Uchigatana";' )
 	send_command('alias tp input /equip main "Heishi Shorinken"; input /equip sub "Kikoku";' )
 	
-	send_command('alias trust input /ma "qultada" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "king of hearts" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
+	send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
 	send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
 	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 10; input /item "Dimensional ring (holla)" <me>; ')
 	send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 10; input /item "Dimensional ring (dem)" <me>; ')
@@ -181,19 +181,19 @@ function init_gear_sets()
        
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
-    sets.precast.WS = {ammo="Happo Shuriken",
-    head={ name="Herculean Helm", augments={'Accuracy+21','Weapon skill damage +5%','AGI+3','Attack+14',}},
+    sets.precast.WS = {ammo="Seeth. Bomblet +1",
+    head={ name="Herculean Helm", augments={'"Triple Atk."+3','DEX+5','Accuracy+13','Attack+11',}},
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
-    hands={ name="Herculean Gloves", augments={'Attack+16','Weapon skill damage +2%','STR+7',}},
-    legs="Hiza. Hizayoroi +1",
-    feet={ name="Herculean Boots", augments={'Weapon skill damage +3%','STR+5','Attack+4',}},
+    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
+    feet={ name="Herculean Boots", augments={'Accuracy+9 Attack+9','"Triple Atk."+3','STR+2','Accuracy+14',}},
     neck="Fotia Gorget",
     waist="Fotia Belt",
-    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +25',}},
-    right_ear="Ishvara Earring",
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    right_ear="Brutal Earring",
     left_ring="Petrov Ring",
     right_ring="Epona's Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}},
+    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
 }
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -207,28 +207,23 @@ function init_gear_sets()
     sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS,{})
     
     --------------------------------------
-    -- Midcast sets
-    --------------------------------------
+ -- Midcast Sets
+    
+    sets.midcast.FastRecast = {back="Andartia's mantle",feet="Hattori Kyahan +1"}
 
-    sets.midcast.FastRecast = {neck="Magoraga Beads",body="Mochizuki Chainmail +1",feet="Hattori Kyahan +1",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}}
-        
-    sets.midcast.Utsusemi = set_combine(sets.midcast.SelfNinjutsu, {neck="Magoraga Beads",body="Mochizuki Chainmail +1",feet="Hattori Kyahan +1",back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}})
+ 	sets.midcast.Utsusemi = {back="Andartia's mantle",hands="Mochizuki tekko +2",feet="Hattori Kyahan +1"}
+	
+	sets.midcast.ElementalNinjutsu = {
+        head=gear.herculeanHelm_MAB,neck="Sanctity necklace",ear1="Friomisi earring",ear2="Novio earring",
+        body="Samnuha coat",hands="Leyline gloves",ring1="Shiva ring +1",ring2="Dingir ring",
+        back="",waist="Eschan stone",legs=gear.herculeanTrousers_MAB,feet=gear.herculeanBoots_MAB}
 
-    sets.midcast.ElementalNinjutsu = {
-        head="Hachiya Hatsuburi +1",neck="Sanctity Necklace",ear1="Strophadic Earring",ear2="Hecate's Earring",
-        body={ name="Samnuha Coat", augments={'Mag. Acc.+1',}},hands="Hattori Tekko +1",ring1="Prolix ring",ring2="Mujin Band",
-        back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},waist="Sailfi Belt +1",legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},feet="Hachiya Kyahan +1"}
+	sets.midcast.NinjutsuDebuff = {ammo="Yamarang",
+        head="Hachiya Hatsuburi +3",neck="Sanctity necklace",ear1="Dignitary's earring",ear2="Enchanter earring +1",
+        body="Samnuha coat",hands="Mochizuki Tekko +2",ring1="Regal ring",ring2="Etana ring",
+        back="",waist="Eschan stone",legs="Mochizuki hakama +1",feet=gear.herculeanBoots_MAB}
 
-    sets.midcast.ElementalNinjutsu.Resistant = set_combine(sets.midcast.Ninjutsu,{})
-
-    sets.midcast.NinjutsuDebuff = {
-        head="Hachiya Hatsuburi +1",neck="Sanctity Necklace",ear1="Strophadic Earring",ear2="Hecate's Earring",
-        body={ name="Samnuha Coat", augments={'Mag. Acc.+1',}},hands="Hattori Tekko +1",ring1="Prolix ring",ring2="Mujin Band",
-        back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},waist="Sailfi Belt +1",legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},feet="Hachiya Kyahan +1"}
-
-    sets.midcast.NinjutsuBuff = {head="Hachiya Hatsuburi +1"}
-
-    sets.midcast.RA = {}
+	sets.midcast.NinjutsuBuff = {head="Hachiya Hatsuburi +3",neck="Incanter's torque",back="Yokaze Mantle", hands="Mochizuki tekko +2"}
 	
     -- Hachiya Hakama/Thurandaut Tights +1
 
@@ -268,20 +263,7 @@ function init_gear_sets()
     back="Solemnity Cape",
 }
 
-    sets.idle.Town = {ammo="Happo Shuriken",
-    head="Protective Specs.",
-    body="Councilor's Garb",
-    hands={ name="Herculean Gloves", augments={'Attack+16','Weapon skill damage +2%','STR+7',}},
-    legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
-    feet=gear.MovementFeet,
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear="Etiolation Earring",
-    right_ear="Loquac. Earring",
-    left_ring="Sheltered Ring",
-    right_ring="Fortified Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}},
-}
+  
     
     sets.idle.Weak = {ammo="Happo Shuriken",
     head="Blistering Sallet",
@@ -353,19 +335,19 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
     
     -- Normal melee group
-    sets.engaged = {ammo="Happo Shuriken",
-    head="Hizamaru Somen +1",
+    sets.engaged = {ammo="Seki Shuriken",
+    head={ name="Herculean Helm", augments={'"Triple Atk."+3','DEX+5','Accuracy+13','Attack+11',}},
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
-    hands={ name="Floral Gauntlets", augments={'Rng.Acc.+15','Accuracy+15','"Triple Atk."+3','Magic dmg. taken -4%',}},
+    hands="Adhemar wristbands",
     legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
-    feet="Hiza. Sune-Ate +1",
+    feet={ name="Herculean Boots", augments={'Accuracy+9 Attack+9','"Triple Atk."+3','STR+2','Accuracy+14',}},
     neck="Lissome Necklace",
     waist="Windbuffet Belt +1",
     left_ear="Cessance Earring",
     right_ear="Brutal Earring",
     left_ring="Petrov Ring",
     right_ring="Epona's Ring",
-    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
+    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 }	
     sets.engaged.Acc = {ammo="Happo Shuriken",
     head="Hizamaru Somen +1",

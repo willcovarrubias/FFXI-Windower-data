@@ -119,7 +119,7 @@ function user_setup()
 	send_command('bind ^F8 input /ja "despoil" <t>')
 	send_command('bind ^F9 input /ja "bully" <t>')
 	send_command('bind ^F10 input /ma "Holy II" <t>')
-	send_command('bind ^F11 input //gs c cycle IdleMode')
+	send_command('bind ^F11 input /ma "Banish III" <t>')
 	send_command('bind ^F12 input //gs c cycle OffenseMode')
 	
 	send_command('bind !F1 input /ja "Curing Waltz" <stpc>')
@@ -188,10 +188,10 @@ function init_gear_sets()
 		ear1="ishvara earring",
 		ear2="Dominance Earring +1",
         body="Souveran Cuirass",
-		hands="Sulevia's gauntlets",
-		ring1="Apate Ring",
-		ring2="Pyrosoul Ring",
-        back="Cerb. Mantle +1",
+		hands="Meghanada gloves +2",
+		--ring1="Regal Ring",
+		ring2="Regal Ring",
+        --back="Cerb. Mantle +1",
 		waist="Fotia Belt",
 		legs="Sulvia's Cuisses",
 		feet="Sulevia's Leggings"
@@ -358,7 +358,7 @@ function init_gear_sets()
         head="Dampening Tam",
 		neck="Anu Torque",
 		ear1="Sherida Earring",
-		ear2="Eabani Earring",
+		ear2="Cessance Earring",
         body="Adhemar jacket",
 		hands="Plunderer's armlets +1",
 		ring1="Hetairoi Ring",

@@ -41,22 +41,110 @@ function job_setup()
     state.Buff['Pianissimo'] = buffactive['pianissimo'] or false
 
 	send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
-	send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
-	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 10; input /item "Dimensional ring (holla)" <me>; ')
-	send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 10; input /item "Dimensional ring (dem)" <me>; ')
-	send_command('alias mea input /equip ring2 "Dimensional ring (mea)"; wait 10; input /item "Dimensional ring (mea)" <me>; ')
+	send_command('alias warp input /equip ring2 "warp ring"; wait 11; input /item "Warp Ring" <me>; ')
+	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 11; input /item "Dimensional ring (holla)" <me>; ')
+	send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 11; input /item "Dimensional ring (dem)" <me>; ')
+	send_command('alias mea input /equip ring2 "Dimensional ring (mea)"; wait 11; input /item "Dimensional ring (mea)" <me>; ')
 	send_command('alias capa input /equip ring2 "capacity ring"; wait 10; input /item "capacity ring" <me>; ')
+	
+	send_command('alias cha input /console gs c cycle LullabyChat')
+	send_command('alias song1 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
+	send_command('alias song2 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
+	send_command('alias song3 input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>; wait 6; input /ma "mage\'s ballad" <me>; wait 6; input /ma "victory march" <me>;')
+	send_command('alias song4 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song5 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song6 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "hunter\'s prelude" <me>;')
+	send_command('alias song7 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "hunter\'s prelude" <me>;')
+	send_command('alias song8 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song9 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')	
+	send_command('alias song10 input /ma "victory march" <me>; wait 6; input /ma "advancing march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>;')
+	send_command('alias song11 input /ma "victory march" <me>; wait 6; input /ma "advancing march" <me>; wait 6; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>;')	
+	send_command('alias song12 input /ma "blade madrigal" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "earth carol" <me>; wait 6; input /ma "earth carol II" <me>;')
+	send_command('alias song13 input /ma "blade madrigal" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "earth carol" <me>; wait 6; input /ma "earth carol II" <me>;')	
+	send_command('alias song14 input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Dextrous Etude" <me>; wait 6; input /ma "Uncanny Etude" <me>;')
+	send_command('alias song15 input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>; wait 6; input /ma "Dextrous Etude" <me>; wait 6; input /ma "Uncanny Etude" <me>;')	
+	send_command('alias song16 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "mage\'s ballad III" <me>;')
+	send_command('alias song17 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "mage\'s ballad III" <me>;')	
+	send_command('alias song18 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
+	send_command('alias song19 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
+	send_command('alias song20 input /ma "fire carol II" <me>; wait 6; input /ma "earth carol II" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song21 input /ma "fire carol II" <me>; wait 6; input /ma "earth carol II" <me>; wait 6; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song22 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
+	send_command('alias song23 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
+	send_command('alias song24 input /ma "Honor March" <me>; wait 6; input /ma "blade madrigal" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
+	send_command('alias song25 input /ma "Honor March" <me>; wait 6; input /ma "blade madrigal" <me>; wait 6; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
+	send_command('alias song26 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
+	send_command('alias song27 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
+	send_command('alias song28 input /ma "Honor March" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
+	send_command('alias song29 input /ma "Honor March" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
+	send_command('alias song30 input /ma "victory march" <me>; wait 6; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Sage Etude" <me>; wait 6; input /ma "Learned Etude" <me>;')
+	send_command('alias song31 input /ma "victory march" <me>; wait 6; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "Sage Etude" <me>; wait 6; input /ma "Learned Etude" <me>;')
+	send_command('alias song32 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song33 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song34 input /ma "fire carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song35 input /ma "fire carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song36 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>;')
+	send_command('alias song37 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>;')
+	send_command('alias song38 input /ma "wind carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "wind carol" <me>; wait 6; input /ma "blade madrigal" <me>;')
+	send_command('alias song39 input /ma "wind carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "wind carol" <me>; wait 6; input /ma "blade madrigal" <me>;')
 
+	
 	send_command('alias int1 input /ma "Learned Etude" <me>; ')
 	send_command('alias int2 input /ma "Sage Etude" <me>; ')
 	send_command('alias agi1 input /ma "Quick Etude" <me>; ')
 	send_command('alias agi2 input /ma "Swift Etude" <me>; ')
+	send_command('alias dex1 input /ma "Dextrous Etude" <me>; ')
+	send_command('alias dex2 input /ma "Uncanny Etude" <me>; ')
+	
+	send_command('alias wing1 input /item "lucid wings I" <me>; ')
+	send_command('alias wing2 input /item "lucid wings II" <me>; ')
+	
+	send_command('alias ra1 input /ma "archer\'s prelude" <t>; ')
+	send_command('alias ra2 input /ma "hunter\'s prelude" <t>; ')
+	
+	send_command('alias fc1 input /ma "fire carol" <me>; ')
+	send_command('alias fc2 input /ma "fire carol II" <me>; ')
+	send_command('alias ic1 input /ma "ice carol" <me>; ')
+	send_command('alias ic2 input /ma "ice carol II" <me>; ')
+	send_command('alias wc1 input /ma "wind carol" <me>; ')
+	send_command('alias wc2 input /ma "wind carol II" <me>; ')
+	send_command('alias ec1 input /ma "earth carol" <me>; ')
+	send_command('alias ec2 input /ma "earth carol II" <me>; ')
+	send_command('alias lc1 input /ma "lightning carol" <me>; ')
+	send_command('alias lc2 input /ma "lightning carol II" <me>; ')
+	send_command('alias llc1 input /ma "light carol" <me>; ')
+	send_command('alias llc2 input /ma "light carol II" <me>; ')
+	send_command('alias dc1 input /ma "dark carol" <me>; ')
+	send_command('alias dc2 input /ma "dark carol II" <me>; ')
+	send_command('alias sche input /ma "Sentinel\'s Scherzo" <t>; ')
+	send_command('alias hm input /ma "Honor March" <t>; ')
+	
+	send_command('alias pae1 input /ma "Army\'s paeon" <t>; ')
+	send_command('alias pae2 input /ma "Army\'s paeon II" <t>; ')
+	send_command('alias pae3 input /ma "Army\'s paeon III" <t>; ')
+	send_command('alias pae4 input /ma "Army\'s paeon IV" <t>; ')
+	send_command('alias pae5 input /ma "Army\'s paeon V" <t>; ')
+	send_command('alias pae6 input /ma "Army\'s paeon VI" <t>; ')
+	send_command('alias pae7 input /ma "Army\'s paeon VII" <t>; ')
+	
+	send_command('alias min5 input /ma valor minuet V" <t>; ')
+	send_command('alias min4 input /ma "valor minuet IV" <t>; ')
+	send_command('alias min3 input /ma "valor minuet III" <t>; ')
+	send_command('alias min2 input /ma "valor minuet II" <t>; ')
+	send_command('alias min1 input /ma "valor minuet" <t>; ')
+	
+	send_command('alias minn5 input /ma "Knight\'s Minne V" <t>; ')
+	send_command('alias minn4 input /ma "Knight\'s Minne IV" <t>; ')
+	send_command('alias minn3 input /ma "Knight\'s Minne III" <t>; ')
+	send_command('alias minn2 input /ma "Knight\'s Minne II" <t>; ')
+	send_command('alias minn1 input /ma "Knight\'s Minne" <t>; ')
 	
 	send_command('alias seal input /ja "Elemental Seal" <me>; ')
 	send_command('alias fis input /equip range "halcyon rod";input /equip ammo "Robber Rig";input /equip head "Midras\'s helm +1"; ')
-	send_command('alias echo input /item "Echo Drops" <me>')
+	send_command('alias ech input /item "Echo Drops" <me>')
 	send_command('alias holy input /item "Holy Water" <me>')
 	send_command('alias rem input /item "Remedy" <me>')
+	send_command('alias revit input /item "Super Revitalizer" <me>')
 	
 	
     -- For tracking current recast timers via the Timers plugin.
@@ -133,7 +221,7 @@ function user_setup()
 	send_command('bind !2 input /ma "Cure IV" <t>')
 	send_command('bind !3 input /ma "erase" <t>')
 	send_command('bind !4 input /ma "mage\'s ballad III" <t>')
-	send_command('bind !5 input /ma "Curaga" <t>')
+	send_command('bind !5 input /ma "Curaga II" <t>')
 	send_command('bind !6 input /ma "victory march" <t>')
 	send_command('bind !7 input /ma "blade madrigal" <t>')
 	send_command('bind !8 input /ma "foe lullaby II" <t>')
@@ -166,7 +254,7 @@ function user_setup()
     
     -- Additional local binds
 
-    --include("Exemel-Include.lua")
+    include("Alaza-Include.lua")
 end
 
 
@@ -184,10 +272,21 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {main="Kali",
+    sets.precast.FC = {
+		--main="Kali",
+		head="Vanya hood",
         neck="Voltsurge Torque",
-        body="Inyanga Jubbah +1",hands="Leyline Gloves",
-        back=gear.Intarabus_FC}
+		ear1="Enchanter Earring +1",
+		ear2="Loquacious Earring",
+        body="Inyanga Jubbah +2",
+		hands="Leyline Gloves",
+		ring1="Kishar Ring",
+		ring2="Petrov Ring",
+        back="Intarabus\'s cape",
+		waist="aoidos' belt",
+		legs="Doyen pants",
+		feet="Bihu Slippers +1"
+		}
 
     sets.precast.FC.Cure = set_combine(sets.precast.FC, {body="Heka's Kalasiris"})
 
@@ -198,7 +297,7 @@ function init_gear_sets()
     sets.precast.FC.BardSong['Honor March'] = set_combine(sets.precast.FC.BardSong, {range="Marsyas"})
 
     sets.precast.FC.Daurdabla = set_combine(sets.precast.FC.BardSong, {range=info.ExtraSongInstrument})
-        
+    sets.precast.duration = set_combine(sets.precast.FC, {waist="Siegel Sash"}) 
     
     -- Precast sets to enhance JAs
     
@@ -229,37 +328,51 @@ function init_gear_sets()
         
     -- Gear to enhance certain classes of songs.  No instruments added here since Gjallarhorn is being used. //Or, my Gjallarhorn is bad and I feel bad.
 
-    sets.midcast.Ballad = {legs="Fili Rhingrave +1"}
-    sets.midcast.Lullaby = {range="Daurdabla",hands="Brioso Cuffs +1"}
-    sets.midcast['Foe Lullaby'] = {range="Marsyas",hands="Brioso Cuffs +1"}
-    sets.midcast['Foe Lullaby II'] = {range="Marsyas",hands="Brioso Cuffs +1"}
-    sets.midcast.Madrigal = {head="Fili Calot +1",back=gear.Intarabus_FC}
-    sets.midcast.Prelude = {back=gear.Intarabus_FC}
-    sets.midcast.March = {hands="Fili Manchettes +1"}
+    sets.midcast.Ballad = {legs="Fili Rhingrave +1",range="gjallarhorn"}
+    sets.midcast.Lullaby = {range="Marsyas",hands="Brioso Cuffs +3"}
+    sets.midcast['Foe Lullaby'] = {range="Marsyas",hands="Brioso Cuffs +3"}
+    sets.midcast['Foe Lullaby II'] = {range="Marsyas",hands="Brioso Cuffs +3"}
+    sets.midcast.Madrigal = {range="gjallarhorn",head="Fili Calot +1",back="Intarabus\'s cape"}
+    sets.midcast.Prelude = {back="Intarabus\'s cape",range="gjallarhorn"}
+    sets.midcast.March = {hands="Fili Manchettes +1",range="gjallarhorn"}
     sets.midcast["Honor March"] = {range="Marsyas",hands="Fili Manchettes +1"}
-    sets.midcast.Minuet = {body="Fili Hongreline +1"}
-    sets.midcast.Minne = {}
-    sets.midcast.Carol = {}
-    sets.midcast.Etude = {}
-    sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +1"}
+    sets.midcast.Minuet = {body="Fili Hongreline +1",range="gjallarhorn"}
+    sets.midcast.Minne = {range="gjallarhorn"}
+    sets.midcast.Carol = {range="gjallarhorn"}
+    sets.midcast.Etude = {range="gjallarhorn"}
+    sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +1",range="gjallarhorn"}
     sets.midcast["Magic Finale"] = {legs="Fili Rhingrave +1"}
     sets.midcast["Goddess's Hymnus"] = set_combine(sets.precast.FC.BardSong, {range="Daurdabla"})
-    sets.midcast.Paeon = set_combine(sets.precast.FC.BardSong, {range="Daurdabla"})
+    sets.midcast.Paeon = set_combine(sets.precast.FC.BardSong, {legs="Doyen pants",feet="Bihu Slippers +1",range="Daurdabla"})
 
     sets.midcast.Mazurka = {range=info.ExtraSongInstrument}
     
 
     -- For song buffs (duration and AF3 set bonus)
-    sets.midcast.SongEffect = {main="Kali",sub="Genmei Shield",
-        head="Fili Calot +1",neck="Moonbow Whistle",
-        body="Fili Hongreline +1",hands="Fili Manchettes +1",
-        back=gear.Intarabus_FC,legs="Inyanga Shalwar +1",feet="Brioso Slippers +1"}
+    sets.midcast.SongEffect = {
+		--main="Kali",
+		sub="Genmei Shield",
+        head="Fili Calot +1",
+		neck="Moonbow Whistle",
+		ear1="Enchanter Earring +1",
+		ear2="Loquacious Earring",
+        body="Fili Hongreline +1",
+		hands="Fili Manchettes +1",
+		ring1="Kishar Ring",
+		ring2="Petrov Ring",
+        back="Intarabus\'s cape",
+		waist="aoidos' belt",
+		legs="Inyanga Shalwar +2",
+		feet="Brioso Slippers +3"
+		}
 
     -- For song defbuffs (duration primary, accuracy secondary)
-    sets.midcast.SongDebuff = {main="Kali",sub="Genmei Shield",
-        head="Fili Calot +1",neck="Moonbow Whistle",
+    sets.midcast.SongDebuff = {
+		--main="Kali",
+		sub="Genmei Shield",
+        head="Inyanga tiara +2",neck="Moonbow Whistle",
         body="Fili Hongreline +1",hands="Fili Manchettes +1",
-        back=gear.Intarabus_FC,waist="Pya'ekue belt",legs="Inyanga Shalwar +1",feet="Brioso Slippers +1"}
+        back="Intarabus\'s cape",waist="Pya'ekue belt",legs="Inyanga Shalwar +2",feet="Brioso Slippers +3"}
 
     -- For song defbuffs (accuracy primary, duration secondary)
     sets.midcast.ResistantSongDebuff = sets.midcast.SongDebuff
@@ -287,9 +400,18 @@ function init_gear_sets()
     sets.midcast.Curaga = sets.midcast.Cure
 
     sets.midcast['Enhancing Magic'] = {
-        head=gear.telchineCap_Enhancing,neck="Incanter's Torque",
-        body=gear.telchineChasuble_Enhancing,
-        legs=gear.telchineBraconi_Enhancing}
+        main="Gada",
+		sub="Ammurapi Shield",
+		head="Telchine Cap",
+		neck="Incanter's Torque",
+		ear1="Calamitous earring",
+		ear2="Andoaa Earring",
+        body="Telchine Chasuble",
+		hands="Telchine Gloves",
+		waist="Pythia Sash",
+		legs="Telchine Braconi",
+		feet="Telchine Pigaches"
+		}
     
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Stone Gorget",waist="Siegel Sash"})
 
@@ -306,7 +428,7 @@ function init_gear_sets()
 
     sets.idle = {main="Mafic Cudgel",sub="Genmei Shield",
         head="Blistering Sallet +1",neck="Loricate Torque +1",ear1="Moonshade Earring",ear2="Etiolation Earring",
-        body="Vrikodara Jupon",hands="Ayanmo Manopolas +1",ring1="Vocane Ring",ring2="Defending Ring",
+        body="Bihu Jstscrops +1",hands="Ayanmo Manopolas +1",ring1="warden\'s Ring",ring2="Defending Ring",
         back="Mecistopins Mantle",waist="Flume Belt +1",legs="Assiduity Pants +1",feet="Fili Cothurnes +1"}
 
     sets.idle.NoAftercast = {}
@@ -555,9 +677,9 @@ function calculate_duration(spellName, spellMap)
     if player.equipment.range == "Daurdabla" then mult = mult + 0.3 end -- change to 0.25 with 90 Daur
     if player.equipment.range == "Gjallarhorn" then mult = mult + 0.4 end
     if player.equipment.range == "Marsyas" then mult = mult + 0.5 end
-    if player.equipment.range == "Gjallarhorn" then mult = mult + 0.3 end
-    if player.equipment.range == "Daurdabla" then mult = mult + 0.1 end
-    if player.equipment.range == "Daurdabla +1" then mult = mult + 0.2 end
+    if player.equipment.range == "Linos" then mult = mult + 0.3 end
+    if player.equipment.range == "Blurred Harp" then mult = mult + 0.1 end
+    if player.equipment.range == "Blurred Harp +1" then mult = mult + 0.2 end
 
     if player.equipment.main == "Carnwenhan" then mult = mult + 0.5 end -- 0.1 for 75, 0.4 for 95, 0.5 for 99/119
     if player.equipment.main == "Kali" then mult = mult + 0.05 end
@@ -570,7 +692,7 @@ function calculate_duration(spellName, spellMap)
     if player.equipment.body == "Fili Hongreline +1" then mult = mult + 0.12 end
     if player.equipment.legs == "Inyanga Shalwar" then mult = mult + 0.12 end
     if player.equipment.legs == "Inyanga Shalwar +1" then mult = mult + 0.15 end
-    if player.equipment.legs == "Inyanga Shalwar +1" then mult = mult + 0.17 end
+    if player.equipment.legs == "Inyanga Shalwar +2" then mult = mult + 0.17 end
     if player.equipment.feet == "Brioso Slippers" then mult = mult + 0.1 end
     if player.equipment.feet == "Brioso Slippers +1" then mult = mult + 0.11 end
     if player.equipment.feet == "Brioso Slippers +2" then mult = mult + 0.13 end
@@ -580,25 +702,25 @@ function calculate_duration(spellName, spellMap)
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +1" then mult = mult + 0.1 end
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +2" then mult = mult + 0.1 end
     if spellMap == 'Paeon' and player.equipment.head == "Brioso Roundlet +3" then mult = mult + 0.2 end
+    if spellMap == 'Madrigal' and player.equipment.head == "Fili Calot" then mult = mult + 0.1 end
     if spellMap == 'Madrigal' and player.equipment.head == "Fili Calot +1" then mult = mult + 0.1 end
-    if spellMap == 'Madrigal' and player.equipment.head == "Fili Calot +1 +1" then mult = mult + 0.1 end
     if spellMap == 'Madrigal' and player.equipment.back == "Intarabus's Cape" then mult = mult + 0.1 end
     if spellMap == 'Prelude' and player.equipment.back == "Intarabus's Cape" then mult = mult + 0.1 end
     if spellMap == 'Minuet' and player.equipment.body == "Fili Hongreline" then mult = mult + 0.1 end
     if spellMap == 'Minuet' and player.equipment.body == "Fili Hongreline +1" then mult = mult + 0.1 end
     if spellMap == 'March' and player.equipment.hands == 'Fili Manchettes' then mult = mult + 0.1 end
     if spellMap == 'March' and player.equipment.hands == 'Fili Manchettes +1' then mult = mult + 0.1 end
+    if spellMap == 'Ballad' and player.equipment.legs == "Fili Rhingrave" then mult = mult + 0.1 end
     if spellMap == 'Ballad' and player.equipment.legs == "Fili Rhingrave +1" then mult = mult + 0.1 end
-    if spellMap == 'Ballad' and player.equipment.legs == "Fili Rhingrave +1 +1" then mult = mult + 0.1 end
-    if spellMap == 'Ballad' and player.equipment.range == "Daurdabla +1" then mult = mult + 0.2 end
+    if spellMap == 'Ballad' and player.equipment.range == "Blurred Harp +1" then mult = mult + 0.2 end
     if spellMap == 'Lullaby' and player.equipment.hands == "Brioso Cuffs" then mult = mult + 0.1 end
     if spellMap == 'Lullaby' and player.equipment.hands == "Brioso Cuffs +1" then mult = mult + 0.1 end
     if spellMap == 'Lullaby' and player.equipment.hands == "Brioso Cuffs +2" then mult = mult + 0.1 end
     if spellMap == 'Lullaby' and player.equipment.hands == "Brioso Cuffs +3" then mult = mult + 0.2 end
-    if spellMap == 'Lullaby' and player.equipment.range == "Daurdabla" then mult = mult + 0.2 end
-    if spellMap == 'Lullaby' and player.equipment.range == "Daurdabla +1" then mult = mult + 0.2 end
+    if spellMap == 'Lullaby' and player.equipment.range == "Blurred Harp" then mult = mult + 0.2 end
+    if spellMap == 'Lullaby' and player.equipment.range == "Blurred Harp +1" then mult = mult + 0.2 end
+    if spellName == "Sentinel's Scherzo" and player.equipment.feet == "Fili Cothurnes" then mult = mult + 0.1 end
     if spellName == "Sentinel's Scherzo" and player.equipment.feet == "Fili Cothurnes +1" then mult = mult + 0.1 end
-    if spellName == "Sentinel's Scherzo" and player.equipment.feet == "Fili Cothurnes +1 +1" then mult = mult + 0.1 end
     
     if spellName == "Sentinel's Scherzo" then
         if buffactive['Soul Voice'] then

@@ -1,4 +1,4 @@
-	-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 -- Setup functions for this job.  Generally should not be modified.
 -------------------------------------------------------------------------------------------------------------------
 
@@ -13,21 +13,16 @@ end
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
 
-	include('Nimla-Include.lua')
-	
-	send_command('alias mab input /equip main "Medeina kilij"; input /equip sub "Nibiru Cudgel";' )
-	send_command('alias tp input /equip main "Sequence"; input /equip sub "Tanmogayi +1";' )
+send_command('alias mab input /equip main "Nibiru cudgel"; input /equip sub "Nibiru cudgel";' )
+send_command('alias alm input /equip main "Almace"; input /equip sub "Sequence";' )
+send_command('alias seq input /equip main "Sequence"; input /equip sub "Almace";' )
+send_command('alias ohshit input /equip body "Ayanmo corazza +2"; input /equip neck "Loricate torque +1"; input /equip ring1 "Vocane ring"; input /equip legs "Ayanmo cosciales +2"; input /equip ring2 "Defending ring";')
+send_command('alias mg input /diffusion; wait 2; input /unbridledlearning; wait 2; input /mightyguard;')
+send_command('alias verve input /diffusion; wait 2; input /unbridledlearning; wait 2; input /carcharianverve;')
+send_command('alias craftgear input //gs equip sets.crafting')
+send_command('alias th input //gs equip sets.treasureHunter')
 
-	send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
-	send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
-	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 10; input /item "Dimensional ring (holla)" <me>; ')
-	send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 10; input /item "Dimensional ring (dem)" <me>; ')
-	send_command('alias mea input /equip ring2 "Dimensional ring (mea)"; wait 10; input /item "Dimensional ring (mea)" <me>; ')
-	send_command('alias capa input /equip ring2 "capacity ring"; wait 10; input /item "capacity ring" <me>; ')
-
-	send_command('alias ech input /item "Echo Drops" <me>; ')
-	send_command('alias holy input /item "Holy Water" <me>; ')
-	send_command('alias rem input /item "Remedy" <me>; ')
+include('Nimla-Include.lua')
 
 state.Buff['Burst Affinity'] = buffactive['Burst Affinity'] or false
 	state.Buff['Chain Affinity'] = buffactive['Chain Affinity'] or false
@@ -208,97 +203,11 @@ end
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
 
-	state.OffenseMode:options('STP', 'Acc', 'PDT')
+	state.OffenseMode:options('STP', 'Acc', 'Tank')
     --state.CastingMode:options('Normal', 'Resistant')
 	state.IdleMode:options('Normal', 'PDT', 'Learning')
 	--state.EngagedMode:options('Haste', 'Acc', 'PDT')
-	
-	
-	send_command('bind @1 input /ma "nat. meditation" <me>')
-	send_command('bind @2 input /ma "erratic flutter" <me>')
-	send_command('bind @3 input /ma "mighty guard" <me>')
-	send_command('bind @4 input /ma "Occultation" <me>')
-	send_command('bind @5 input /ma "barrier tusk" <me>')
-	send_command('bind @6 input /ma "Carcharian Verve" <me>')
-	send_command('bind @7 input /ja "Shield Bash" <t>')
-	send_command('bind @8 input /ma "Regen IV" <t>')
-	send_command('bind @9 input //exec thf/SA_Rudra.txt')
-	send_command('bind @0 input //exec thf/SA_Mandalic.txt')
-	send_command('bind @- input /ma "Devotion" <t>')
-	send_command('bind @= input /ja "Divine Seal" <me>')
 
--- Misc CTRL	
-	send_command('bind ^1 input /ja "Burst Affinity" <me>')
-	send_command('bind ^2 input /ws "Savage Blade" <t>')
-	send_command('bind ^3 input /ma "nat. meditation" <me>')
-	send_command('bind ^4 input /ma "erratic flutter" <me>')
-	send_command('bind ^5 input /ma "mighty guard" <me>')
-	send_command('bind ^6 input /ma "Occultation" <me>')
-	send_command('bind ^7 input /ma "barrier tusk" <me>')
-	send_command('bind ^8 input /ma "Carcharian Verve" <me>')
-	send_command('bind ^9 input /ja "spectral jig" <me>')
-	send_command('bind ^0 input //exec thf/SA_Mandalic.txt')
-	send_command('bind ^- input /ma "Devotion" <t>')
-	send_command('bind ^= input /ja "Divine Seal" <me>')
-	
--- Debuffs ALT
-	send_command('bind !1 input /ma "Sudden Lunge" <t>')
-	send_command('bind !2 input /ws "chant du cygne" <t>')
-	send_command('bind !3 input /ws "Exenterator" <t>')
-	send_command('bind !4 input /ws "Requiescat" <t>')
-	send_command('bind !5 input /ma "mighty guard" <me>')
-	send_command('bind !6 input /ma "Occultation" <me>')
-	send_command('bind !7 input /ma "barrier tusk" <me>')
-	send_command('bind !8 input /ma "Carcharian Verve" <me>')
-	send_command('bind !9 input /ja "chocobo jig II" <me>')
-	send_command('bind !0 input //exec thf/TA_Mandalic.txt')
-	send_command('bind !- input /ja "Divine Caress" <me>')
-	send_command('bind != input //gs c cycle OffenseMode')
-	
--- 	Buffs CTRL
-
-	send_command('bind @F1 input /ma "subduction" <t>')
-	send_command('bind @F2 input /ma "Tenebral Crush" <t>')
-	send_command('bind @F3 input /ja "trick attack" <me>')
-	send_command('bind @F4 input /ma "Dispel" <t>')
-	send_command('bind @F5 input /ma "Dia II" <t>')
-	send_command('bind @F6 input /ma "Slow" <t>')
-	send_command('bind @F7 input /ma "Paralyze" <t>')
-	send_command('bind @F8 input /ma "Addle" <t>')
-	send_command('bind @F9 input /ma "Silence" <t>')
-	send_command('bind @F10 input /ma "Holy II" <t>')
-	send_command('bind @F11 input /ma "Banish III" <t>')
-	send_command('bind @F12 input /ja "Accession" <me>; input /echo --AOE--')
-
-	send_command('bind ^F1 input /ma "subduction" <t>')
-	send_command('bind ^F2 input /ma "glutinous dart" <t>')
-	send_command('bind ^F3 input /ma "Tenebral Crush" <t>')
-	send_command('bind ^F4 input /ja "feather step" <t>')
-	send_command('bind ^F5 input /ja "animated flourish" <t>')
-	send_command('bind ^F6 input /ja "no foot rise" <me>')
-	send_command('bind ^F7 input /ja "steal" <t>')
-	send_command('bind ^F8 input /ja "despoil" <t>')
-	send_command('bind ^F9 input /ja "bully" <t>')
-	send_command('bind ^F10 input /ma "Holy II" <t>')
-	send_command('bind ^F11 input //gs c cycle IdleMode')
-	send_command('bind ^F12 input //gs c cycle OffenseMode')
-	
-	send_command('bind !F1 input /ja "unbridled learning" <me>')
-	send_command('bind !F2 input /ja "diffusion" <me>')
-	send_command('bind !F3 input /ja "Curing Waltz III" <stpc>')
-	send_command('bind !F4 input /ja "Curing Waltz IV" <stpc>')
-	send_command('bind !F5 input /ma "magic fruit" <stpc>')
-	send_command('bind !F6 input /ja "Healing Waltz" <stpc>')
-	send_command('bind !F7 input /ja "Divine Waltz" <me>')
-	send_command('bind !F8 input /ja "Divine Waltz II"  <me>')
-	send_command('bind !F9 input /ma "Silence" <t>')
-	send_command('bind !F10 input /ma "Holy II" <t>')
-	send_command('bind !F11 input /ma "Banish III" <t>')
-	send_command('bind !F12 input /ja "Accession" <me>; input /echo --AOE--')
-	
-	
-	include('Nelli-Include.lua')
-	
     update_combat_form()
     select_default_macro_book()
 end
@@ -312,14 +221,14 @@ function init_gear_sets()
     -- Precast Sets
 
     -- Fast cast sets for spells
-    sets.precast.FC = {head="Carmine mask",neck="baetyl pendant", body="dread jupon",ring1="Prolix ring", ring2="kishar ring",ear1="etiolation earring",ear2="Loquacious Earring", hands="Thaumas gloves", legs="Orvail pants +1", waist="Witful belt"}
+    sets.precast.FC = {ammo="Sapience orb", head="Carmine mask",neck="Baetyl Pendant",ring1="Prolix ring", ring2="Kishar ring",ear1="Enchanter earring +1",
+	ear2="Etiolation Earring", hands="Leyline gloves", back="Swith cape +1",legs="Ayanmo cosciales +2", waist="Witful belt"}
         
-    sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Mavi mintan +2", hands="mv. bazubands +1"})
-	sets.precast.JA['diffusion'] = {feet="Mirage Charuqs +2"}
+    sets.precast.FC['Blue Magic'] = set_combine(sets.precast.FC, {body="Hashishin mintan"})
 
     --sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {head="Umuthi Hat"})
 
-	sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {neck="Diemer gorget", ear1="Nourishing earring +1"})
+	--sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {})
 
   --  sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 
@@ -329,23 +238,6 @@ function init_gear_sets()
     -- CureMelee spell map should default back to Healing Magic.
     
     -- Precast sets to enhance JAs
-   sets.precast.JA['Provoke'] = 
-		{
-			head="Eschite helm", 
-			neck="Unmoving collar +1", 
-			ear1="Pluto's pearl",
-			ear2="Pluto's pearl",
-			body="Reverence surcoat +1",
-			hands="Eschite gauntlets",
-			ring1="Eihwaz ring",
-			ring2="Apeile ring",
-			back="Mubvumbamiri mantle",
-			waist="Goading belt",
-			legs="Souveran diechlings",
-			feet="Souveran schuhs"
-		}
-
-
 
     -- Waltz set (chr and vit)
   --  sets.precast.Waltz = {}
@@ -357,103 +249,49 @@ function init_gear_sets()
    -- gear.default.weaponskill_neck = "Asperity Necklace"
     --gear.default.weaponskill_waist = ""
         
-    sets.precast.WS['Chant du Cygne'] = {ammo="Ginsen",
-    head={ name="Herculean Helm", augments={'Attack+3','Weapon skill damage +5%','DEX+6','Accuracy+11',}},
-    body="Jhakri Robe +2",
-    hands="Jhakri Cuffs +1",
-    legs={ name="Herculean Trousers", augments={'Accuracy+10','Weapon skill damage +5%','DEX+5','Attack+11',}},
-    feet={ name="Herculean Boots", augments={'Accuracy+9','Weapon skill damage +3%','STR+14','Attack+10',}},
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear="Pixie Earring",
-    right_ear="Ishvara Earring",
-    left_ring="Apate Ring",
-    right_ring="Rufescent Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
-}
+    sets.precast.WS['Chant du Cygne'] = {ammo="Jukukik feather",
+        head="Adhemar bonnet +1",neck="Fotia gorget",ear1="Domin. Earring +1",ear2="Brutal earring",
+        body="Adhemar jacket +1",hands="Adhemar wristbands +1",ring1="Ilabrat Ring",ring2="Begrudging ring",
+        back=gear.rosmertasCape_Crit,waist="Fotia Belt",legs=gear.herculeanTrousers_Crit,feet=gear.herculeanBoots_TA}
     
-	sets.precast.WS['Requiescat'] = {ammo="Ginsen",
-    head={ name="Herculean Helm", augments={'Attack+3','Weapon skill damage +5%','DEX+6','Accuracy+11',}},
-    body="Jhakri Robe +2",
-    hands="Jhakri Cuffs +1",
-    legs={ name="Herculean Trousers", augments={'Accuracy+10','Weapon skill damage +5%','DEX+5','Attack+11',}},
-    feet={ name="Herculean Boots", augments={'Accuracy+9','Weapon skill damage +3%','STR+14','Attack+10',}},
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear="Pixie Earring",
-    right_ear="Ishvara Earring",
-    left_ring="Apate Ring",
-    right_ring="Rufescent Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
-}
+	sets.precast.WS['Requiescat'] = {ammo="Amar Cluster",
+        head="Adhemar bonnet +1",neck="Fotia gorget",ear1="Domin. earring +1",ear2="Brutal Earring",
+        body="Adhemar jacket +1",hands="Adhemar wristbands +1",ring1="Rufescent ring",ring2="Epona's Ring",
+        back=gear.rosmertasCape_WSD,waist="Fotia belt",legs="Samnuha tights",feet=gear.herculeanBoots_TA}
 
-	sets.precast.WS['Savage Blade'] = {ammo="Ginsen",
-    head={ name="Herculean Helm", augments={'Attack+3','Weapon skill damage +5%','DEX+6','Accuracy+11',}},
-    body="Jhakri Robe +2",
-    hands="Jhakri Cuffs +1",
-    legs={ name="Herculean Trousers", augments={'Accuracy+10','Weapon skill damage +5%','DEX+5','Attack+11',}},
-    feet={ name="Herculean Boots", augments={'Accuracy+9','Weapon skill damage +3%','STR+14','Attack+10',}},
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear="Pixie Earring",
-    right_ear="Ishvara Earring",
-    left_ring="Apate Ring",
-    right_ring="Rufescent Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
-}
+	sets.precast.WS['Savage Blade'] = {ammo="Floestone",
+        head=gear.herculeanHelm_MAB,neck="Caro necklace",ear1="Moonshade earring",ear2="Ishvara Earring",
+        body="Assimilator's jubbah +3",hands="Jhakri cuffs +2",ring1="Rufescent ring",ring2="Ifrit ring +1",
+        back=gear.rosmertasCape_WSD,waist="Metalsinger Belt",legs=gear.herculeanTrousers_WSD,feet=gear.herculeanBoots_MAB}
 
-	sets.precast.WS['Expiacion'] = {ammo="Ginsen",
-    head={ name="Herculean Helm", augments={'Attack+3','Weapon skill damage +5%','DEX+6','Accuracy+11',}},
-    body="Jhakri Robe +2",
-    hands="Jhakri Cuffs +1",
-    legs={ name="Herculean Trousers", augments={'Accuracy+10','Weapon skill damage +5%','DEX+5','Attack+11',}},
-    feet={ name="Herculean Boots", augments={'Accuracy+9','Weapon skill damage +3%','STR+14','Attack+10',}},
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear="Pixie Earring",
-    right_ear="Ishvara Earring",
-    left_ring="Apate Ring",
-    right_ring="Rufescent Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
-}
+	sets.precast.WS['Black Halo'] = {ammo="Floestone",
+        head="Adhemar bonnet +1",neck="Caro necklace",ear1="Moonshade earring",ear2="Ishvara Earring",
+        body="Assimilator's jubbah +3",hands="Jhakri cuffs +2",ring1="Rufescent ring",ring2="Ifrit ring +1",
+        back=gear.rosmertasCape_WSD,waist="Metalsinger Belt",legs="Samnuha tights",feet="Jhakri pigaches +2"}
+		
+	sets.precast.WS['Expiacion'] = {ammo="Amar Cluster",
+        head="Adhemar bonnet +1",neck="Fotia gorget",ear1="Domin. earring +1",ear2="Brutal Earring",
+        body="Adhemar jacket +1",hands="Adhemar wristbands +1",ring1="Rufescent ring",ring2="Epona's Ring",
+        back=gear.rosmertasCape_STP,waist="Fotia belt",legs="Samnuha tights",feet=gear.herculeanBoots_TA}
+
 	
 
     -- Midcast Sets
-    sets.midcast.FastRecast = set_combine(sets.precast.FC, {ring="Ifrit ring"})
+    sets.midcast.FastRecast = set_combine(sets.precast.FC, {})
  	
 	sets.midcast['Blue Magic'] = {}
 	
 	-- Physical Spells --
 	
-	sets.midcast['Blue Magic'].Physical = {ammo="Ginsen",
-    head="Jhakri Coronal +1",
-    body="Jhakri Robe +2",
-    hands="Jhakri Cuffs +1",
-    legs="Jhakri Slops +1",
-    feet="Jhakri Pigaches +1",
-    neck="Sanctity Necklace",
-    waist="Fotia Belt",
-    left_ear="Dudgeon Earring",
-    right_ear="Heartseeker Earring",
-    left_ring="Cacoethic Ring +1",
-    right_ring="Apate Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
-}
+	sets.midcast['Blue Magic'].Physical = {ammo="Floestone",
+		head="Jhakri coronal +2",neck="Sanctity necklace",ear1="Telos earring",ear2="Domin. Earring +1",
+		body="Jhakri robe +2",hands="Jhakri cuffs +2",ring1="Ifrit Ring +1",ring2="Rajas Ring",
+		back=gear.rosmertasCape_STP,waist="Grunfeld rope",legs=gear.herculeanTrousers_Crit,feet="Jhakri pigaches +2"}
 
-	sets.midcast['Blue Magic'].PhysicalAcc = {ammo="Ginsen",
-    head="Jhakri Coronal +1",
-    body="Jhakri Robe +2",
-    hands="Jhakri Cuffs +1",
-    legs="Jhakri Slops +1",
-    feet="Jhakri Pigaches +1",
-    neck="Sanctity Necklace",
-    waist="Fotia Belt",
-    left_ear="Dudgeon Earring",
-    right_ear="Heartseeker Earring",
-    left_ring="Cacoethic Ring +1",
-    right_ring="Apate Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
-}
+	sets.midcast['Blue Magic'].PhysicalAcc = {ammo="Amar Cluster",
+		head="Jhakri coronal +2",neck="Sanctity necklace",ear1="Telos earring",ear2="Domin. Earring +1",
+		body="Jhakri robe +2",hands="Jhakri cuffs +2",ring1="Ifrit Ring +1",ring2="Rajas Ring",
+		back=gear.rosmertasCape_STP,waist="Grunfeld rope",legs=gear.herculeanTrousers_Crit,feet="Jhakri pigaches +2"}
 
 	sets.midcast['Blue Magic'].PhysicalStr = set_combine(sets.midcast['Blue Magic'].Physical,
 		{})
@@ -481,20 +319,10 @@ function init_gear_sets()
 
 	-- Magical Spells --
 	
-	sets.midcast['Blue Magic'].Magical =  {ammo="Pemphredo Tathlum",
-    head="Jhakri Coronal +1",
-    body="Jhakri Robe +2",
-    hands="Jhakri Cuffs +1",
-    legs="Jhakri Slops +1",
-    feet="Jhakri Pigaches +1",
-    neck="Sanctity Necklace",
-    waist="Penitent's Rope",
-    left_ear="friomisi Earring",
-    right_ear="Hecate's Earring",
-    left_ring="Vertigo Ring",
-    right_ring="Etana Ring",
-    back="Izdubar Mantle",
-}
+	sets.midcast['Blue Magic'].Magical =  { 
+		ammo="Pemphredo tathlum", head="Jhakri coronal +2", neck="Sanctity necklace", ear1="Friomisi earring",ear2="Regal earring",
+		body="Jhakri robe +2",hands="Jhakri cuffs +2",ring1="Strendu Ring",ring2="Shiva Ring +1",
+		back="Cornflower cape",waist="Yamabuki-no-Obi",legs="Jhakri slops +2",feet="Jhakri pigaches +2"}
 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,
 		{ring2="Sangoma Ring"})
@@ -510,7 +338,8 @@ function init_gear_sets()
 
 	sets.midcast['Blue Magic'].MagicalDark = set_combine(sets.midcast['Blue Magic'].Magical, {head="Pixie Hairpin +1",ring2="Archon Ring"})
 
-	sets.midcast['Blue Magic'].MagicAccuracy = set_combine(sets.midcast['Blue Magic'].Magical)
+	sets.midcast['Blue Magic'].MagicAccuracy = set_combine(sets.midcast['Blue Magic'].Magical, {head="Jhakri coronal +2",ear1="Enchanter earring +1",ear2="Dignitary's earring", 
+	waist="Eschan stone",ring2="Kishar ring",ring1="Etana Ring"})
 
 	-- Breath Spells --
 	
@@ -522,20 +351,20 @@ function init_gear_sets()
 		{})
 
 	sets.midcast['Blue Magic'].Healing = {
-		body="Magus jubbah +1",neck="Phalaina locket", back="Cornflower cape",hands="Mavi bazubands +1", legs="Mavi tayt +2"}
+		body="Assimilator's jubbah +3",neck="Incanter's torque", back="Cornflower cape",hands="Mavi bazubands +2", legs="Hashishin tayt"}
 
-	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Mavi Tathlum",
-		neck="Incanter's Torque",
-		hands="mavi Bazubands +1",
-		back="Cornflower Cape",legs="Mavi tayt +2"}
+	sets.midcast['Blue Magic'].SkillBasedBuff = {ammo="Pemphredo Tathlum",
+		neck="Incanter's Torque", body="Assimilator's jubbah +3",
+		hands="Assimilator's Bazubands +1",
+		back="Cornflower Cape",legs="Hashishin tayt"}
 
-	sets.midcast['Blue Magic'].Buff = {}
+	sets.midcast['Blue Magic'].Buff = {neck="Incanter's Torque"}
 
 		    
     -- Sets to return to when not performing an action.
     sets.Learning = {ammo="Mavi Tathlum",
-		neck="Incanter's Torque", body="Magus jubbah",
-		back="Cornflower Cape", hands="mavi bazubands +1",legs="Mavi tayt +2"}
+		neck="Incanter's Torque", body="Assimilator's jubbah +3",
+		back="Cornflower Cape", hands="Assimilator's bazubands +1",legs="Hashishin tayt"}
 
 
     -- Resting sets
@@ -543,77 +372,29 @@ function init_gear_sets()
     
     -- Idle sets
     sets.idle = {ammo="Staunch tathlum",
-        head="Rawhide mask",neck="loricate torque +1",ear1="Thureous earring",ear2="Colossus's Earring",
-        body="Jhakri robe +2",hands="Jhakri cuffs +1",ring1="defending ring",ring2="dark Ring",
-        back="Umbra cape",waist="Flume belt +1",legs="Carmine cuisses",feet="Herculean boots"}
-
-    sets.idle.PDT = {ammo="Staunch tathlum",
-        head="Sulevia's mask +1",neck="Diemer gorget",ear1="Ethereal Earring",ear2="Upsurge earring",
-        body="Reverence surcoat +1",hands="Sulevia's gauntlets +1",ring1="defending ring",ring2="Meridian Ring",
-        back="Umbra cape",waist="Flume belt +1",legs="Sulevia's cuisses +1",feet="Souveran schuhs"}
+        head="Rawhide mask",neck="Loricate torque +1",ear1="Genmei earring",ear2="Etiolation earring",
+        body="Jhakri robe +2",hands=gear.herculeanGloves_Refresh,ring1="Vocane Ring",ring2="Defending Ring",
+        back="Solemnity cape",waist="Flume belt",legs="Carmine cuisses +1",feet=gear.herculeanBoots_Refresh}
 
 	sets.idle.Learning = set_combine(sets.idle, sets.Learning)
  
-    
-    -- Defense sets
+    sets.Kiting = {legs="Carmine cuisses +1"}
+	
+	-- Engaged sets
+	sets.engaged.STP = {ammo="Falcon eye",
+        head="Adhemar bonnet",neck="Lissome necklace",ear1="Cessance earring",ear2="Brutal earring",	
+        body="Adhemar jacket",hands="Adhemar wristbands",ring1="Petrov ring",ring2="Epona's ring",
+        back=gear.rosmertasCape_STP,waist="Windbuffet belt +1",legs="Samnuha tights",feet=gear.herculeanBoots_TA}
 
-    --sets.defense.PDT = {main=gear.Staff.PDT,sub="Achaq Grip",
-     --   head="Gendewitha Caubeen",neck="Twilight Torque",
-      --  body="Gendewitha Bliaut",hands="Gendewitha Gages",ring1="Defending Ring",ring2=gear.DarkRing.physical,
-      --  back="Umbra Cape",legs="Gendewitha Spats",feet="Gendewitha Galoshes"}
+	sets.engaged.Acc = {ammo="Amar Cluster",
+        head="Adhemar bonnet +1",neck="Combatant's torque",ear1="Telos earring",ear2="Dignitary's earring",	
+        body="Adhemar jacket +1",hands="Adhemar wristbands +1",ring1="Etana ring",ring2="Cacoethic ring +1",
+        back=gear.rosmertasCape_STP,waist="Eschan stone",legs="Ayanmo cosciales +2",feet="Jhakri pigaches +2"}
 
-    --sets.defense.MDT = {main=gear.Staff.PDT,sub="Achaq Grip",
-     --   head="Nahtirah Hat",neck="Twilight Torque",
-     --   body="Vanir Cotehardie",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="defending ring",
-     --   back="Tuilha Cape",legs="Bokwus Slops",feet="Gendewitha Galoshes"}
-
-    sets.Kiting = {legs="Carmine cuisses"}
-
-    -- Engaged sets
-
-    -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
-    -- sets if more refined versions aren't defined.
-    -- If you create a set with both offense and defense modes, the offense mode should be first.
-    -- EG: sets.engaged.Dagger.Accuracy.Evasion
-    
-    -- Basic set for if no TP weapon is defined.
-    
-	sets.engaged.STP = {ammo="Ginsen",
-    head={ name="Herculean Helm", augments={'Accuracy+22','"Triple Atk."+3','DEX+1','Attack+15',}},
-    body="adhemar jacket",
-    hands={ name="Herculean Gloves", augments={'Attack+25','"Triple Atk."+4','AGI+8','Accuracy+13',}},
-    legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
-    feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4','AGI+10','Accuracy+8',}},
-    neck="Clotharius Torque",
-    waist="Windbuffet belt +1",
-    left_ear="cessance Earring",
-    right_ear="Eabani Earring",
-    left_ring="hetairoi Ring",
-    right_ring="Epona's Ring",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
-}
-
-	sets.engaged.Acc = {main="Tanmogayi +1",
-    sub={ name="Nibiru Blade", augments={'DEX+10','Accuracy+20','Mag. Acc.+15',}},
-    ammo="Ginsen",
-    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
-    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
-    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
-    legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
-    feet={ name="Herculean Boots", augments={'Accuracy+20 Attack+20','"Triple Atk."+4','AGI+10','Accuracy+8',}},
-    neck="Sanctity Necklace",
-    waist="Windbuffet Belt +1",
-    left_ear="Cessance Earring",
-    right_ear="Brutal Earring",
-    left_ring="Cacoethic Ring",
-    right_ring="Cacoethic Ring +1",
-    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
-}
-
-	sets.engaged.PDT = {ammo="Staunch tathlum",
-        head="Sulevia's mask +1",neck="Diemer gorget",ear1="Upsurge Earring",ear2="Colossus's earring",
-        body="Sulevia's platemail +1",hands="Sulevia's gauntlets +1",ring1="Eihwaz ring",ring2="Dark Ring",
-        back="Rudianos's mantle",waist="Flume belt +1",legs="Sulevia's cuisses +1",feet="Souveran schuhs"}
+	sets.engaged.Tank = {ammo="Staunch tathlum",
+        head=gear.herculeanHelm_DT,neck="Loricate torque +1",ear1="Genmei Earring",ear2="Odnowa earring +1",
+		body="Ayanmo corazza +2",hands=gear.herculeanGloves_DT,ring1="Vocane ring",ring2="Defending Ring",
+		back="Moonbeam cape",waist="Flume belt",legs="Ayanmo cosciales +2",feet=gear.herculeanBoots_Refresh}
 
 
 
@@ -637,7 +418,7 @@ function job_precast(spell, action, spellMap, eventArgs)
 			gear.default.obi_waist = "Hachirin-no-obi"
 		end
 	elseif spell.skill == 'Elemental Magic' or spell.skill == 'Dark Magic' or spell.skill == "Blue Magic" then
-		gear.default.obi_waist = "Salire Belt"
+		gear.default.obi_waist = "Yamabuki-no-Obi"
 		if spell.element == world.weather_element or spell.element == world.day_element then
 			gear.default.obi_waist = "Hachirin-no-obi"
 		end
@@ -730,5 +511,5 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
     -- Default macro set/book
-    set_macro_page(1, 9)
+    set_macro_page(1, 5)
 end

@@ -14,16 +14,8 @@ end
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
     include('Nimla-Include.lua')
-	send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
-	send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
-	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 10; input /item "Dimensional ring (holla)" <me>; ')
-	send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 10; input /item "Dimensional ring (dem)" <me>; ')
-	send_command('alias mea input /equip ring2 "Dimensional ring (mea)"; wait 10; input /item "Dimensional ring (mea)" <me>; ')
-	send_command('alias capa input /equip ring2 "capacity ring"; wait 10; input /item "capacity ring" <me>; ')
-
-	send_command('alias ech input /item "Echo Drops" <me>; ')
-	send_command('alias holy input /item "Holy Water" <me>; ')
-	send_command('alias rem input /item "Remedy" <me>; ')
+	send_command('alias MMPP input /ws "Myrkr"; input /echo  Myrkr ;')
+	send_command('alias echos input /item "Echo Drops" <me>; input /echo  ECHO DROPS;')
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -36,89 +28,63 @@ function user_setup()
     state.CastingMode:options('Normal', 'MB', 'NormalMerit', 'MBMerit')
     state.IdleMode:options('Idle', 'Refresh')
 	
-	send_command('bind !F1 input /ma "Aspir" <t>')
-	send_command('bind !F2 input /ma "Aspir II" <t>')
-	send_command('bind !F3 input /ma "Aspir III" <t>')
-	send_command('bind !F4 input /ma "Break" <t>')
+-- 	Buffs ALT
+	send_command('bind !F1 input /ma "Drain" <t>')
+	send_command('bind !F2 input /ma "Aspir" <t>')
+	send_command('bind !F3 input /ma "Aspir II" <t>')
+	send_command('bind !F4 input /ma "Aspir III" <t>')
 	send_command('bind !F5 input /ma "Bind" <t>')
 	send_command('bind !F6 input /ma "Gravity" <t>')
 	send_command('bind !F7 input /ma "Stun" <t>')
 	send_command('bind !F8 input /ma "Sleep" <t>')
 	send_command('bind !F9 input /ma "Sleep II" <t>')
 	send_command('bind !F10 input /ja "Manifestation" <me>; /echo --AOE Dark--')
-	send_command('bind !F11 input /ja "" <me>; /echo --Fast Casting--')
+	send_command('bind !F11 gs c cycle CastingMode')
 	send_command('bind !F12 gs c cycle OffenseMode')
 	
 -- 	Buffs CTRL
 	send_command('bind ^F1 input /ma "Blink" <me>')
 	send_command('bind ^F2 input /ma "Stoneskin" <me>')
-	send_command('bind ^F3 input /ma "Phalanx" <me>')
+	send_command('bind ^F3 input /ma "Klimaform" <me>')
 	send_command('bind ^F4 input /ma "Aquaveil" <me>')
 	send_command('bind ^F5 input /ma "Klimaform" <me>')
 	send_command('bind ^F6 input /ma "Dispel" <t>')
 	send_command('bind ^F7 input /ma "Frazzle" <t>')
 	send_command('bind ^F8 input /ma "Distract" <t>')
 	send_command('bind ^F9 input /ma "Silence" <t>')
-	send_command('bind ^F10 input /ja "parsimony" <me>')
-	send_command('bind ^F11 input /ma "Sleepga" <t>')
-	send_command('bind ^F12 input /ma "Sleepga II" <t>')
-	
-	send_command('bind @F1 input /ma "poisona" <t>')
-	send_command('bind @F2 input /ma "blindna" <t>')
-	send_command('bind @F3 input /ma "silena" <t>')
-	send_command('bind @F4 input /ma "stona" <t>')
-	send_command('bind @F5 input /ma "viruna" <t>')
-	send_command('bind @F6 input /ma "cursna" <t>')
-	send_command('bind @F7 input /ma "Cure" <t>')
-	send_command('bind @F8 input /ma "Cure II" <t>')
-	send_command('bind @F9 input /ma "Cure IV" <t>')
-	send_command('bind @F10 input /item "Echo Drops" <me>')
-	send_command('bind @F11 input /ma "sneak" <t>')
-	send_command('bind @F12 input /ma "invisible" <t>')
+	send_command('bind ^F10 input ')
+	send_command('bind ^F11 input ')
+	send_command('bind ^F12 input /ja "Manawell" <me>')
 
 
 -- Debuffs ALT	
-	send_command('bind !1 input /ma "thunderstorm" <me>')
-	send_command('bind !2 input /ma "klimaform" <me>')
-	send_command('bind !3 input /ma "Cure III" <t>')
-	send_command('bind !4 input /ma "Cure IV" <t>')
-	send_command('bind !5 input /ma "Haste" <t>')
-	send_command('bind !6 input /ja "accession" <me>')
-	send_command('bind !7 input /ma "Stone VI" <t>')
-	send_command('bind !8 input /ma "Water VI" <t>')
-	send_command('bind !9 input /ma "Aero VI" <t>')
-	send_command('bind !0 input /ma "Fire VI" <t>')
-	send_command('bind !- input /ma "Blizzard VI" <t>')
-	send_command('bind != input /ma "Thunder VI" <t>')
+	send_command('bind !1 input //exec sch/stone.txt')
+	send_command('bind !2 input ///exec sch/water.txt')
+	send_command('bind !3 input //exec sch/wind.txt')
+	send_command('bind !4 input //exec sch/fire.txt')
+	send_command('bind !5 input //exec sch/ice.txt')
+	send_command('bind !6 input //exec sch/thun.txt')
+	send_command('bind !7 input //exec sch/dark.txt')
+	send_command('bind !8 input //exec sch/light.txt')
+	send_command('bind !9 input //exec sch/4step.txt')
+	send_command('bind !0 input //exec sch/6step.txt')
+	send_command('bind !- input /ja "Mana wall" <me>')
+	send_command('bind != input /ja "Sublimation" <me>')
 
-	
--- Debuffs ALT	
-	send_command('bind @1 input /ma "Paralyna" <t>')
-	send_command('bind @2 input /ma "Silena" <t>')
-	send_command('bind @3 input /ma "Blindna" <t>')
-	send_command('bind @4 input /ma "Cursna" <t>')
-	send_command('bind @5 input /ma "Stona" <t>')
-	send_command('bind @6 input /ma "Poisona" <t>')
-	send_command('bind @7 input /ma "Viruna" <t>')
-	send_command('bind @8 input /ma "Adloquium" <t>')
-	send_command('bind @9 input /ma "Regen V" <t>')
-	send_command('bind @0 input /ma "Erase" <t>')
-	send_command('bind @- input /ja "manawell" <me>')
-	send_command('bind @= input /ja "elemental seal" <me>')
 
 -- Misc CTRL	
-	send_command('bind ^1 input /ja "light arts" <me>')
-	send_command('bind ^2 input /ja "Dark arts" <me>')
-	send_command('bind ^3 input /ja "Convert" <me>')
-	send_command('bind ^4 input /ja "Sublimation" <me>')
-	send_command('bind ^5 input /ja "Addendum: White" <me>')
-	send_command('bind ^6 input /ja "Addendum: Black" <me>')
-	send_command('bind ^7 input /ma "stoneja" <t>')
-	send_command('bind ^8 input /ma "waterja" <t>')
-	send_command('bind ^9 input /ma "aeroja" <t>')
-	send_command('bind ^0 input /ma "firaja" <t>')
-	send_command('bind ^- input /ma "blizzaja" <t>')
-	send_command('bind ^= input /ma "thundaja" <t>')
+	send_command('bind ^1 input /item "Oracle\'s Drink" <me>')
+	send_command('bind ^2 input /item "Braver\'s Drink" <me>')
+	send_command('bind ^3 input /item "Assassin\'s Drink" <me>')
+	send_command('bind ^4 input /item "Soldier\'s Drink" <me>')
+	send_command('bind ^5 input /item "Lucid Elixir" <me>')
+	send_command('bind ^6 input /item "Lucid Elixir II" <me>')
+	send_command('bind ^7 input /ma "Haste" <t>')
+	send_command('bind ^8 input //exec sch/fragmentation.txt')
+	send_command('bind ^9 input //exec sch/gravitation.txt')
+	send_command('bind ^0 input //exec sch/distortion.txt')
+	send_command('bind ^- input //exec sch/fusion.txt')
+	send_command('bind ^= input /ja "Alacrity" <me>')
 
 end
 
@@ -137,12 +103,13 @@ function init_gear_sets()
 		neck="Baetyl pendant",
 		ear1="Loquacious Earring",
 		ear2="Etiolation earring",
+		back=gear.TaranusCape_FC,
         body=gear.merlinicJubbah_FC,
 		hands=gear.merlinicDastanas_FC,
 		ring1="Prolix Ring",
 		ring2="Kishar Ring",
 		waist="Channeler's stone",
-		legs="Lengo Pants",
+		legs=gear.merlinicShalwar_FC,
 		feet=gear.merlinicCrackows_FC
 	}
         
@@ -177,9 +144,9 @@ function init_gear_sets()
 	-- Myrkr WS, buff with MP+ ---
 
 	sets.precast.WS['Myrkr'] = {
-		head="Pixie hairpin +1",neck="Sanctity necklace",ear1="Etiolation earring",ear2="Andoaa earring",
-        body="Spaekona's coat +1",hands="Amalric gages",ring1="Prolix ring",ring2="Dark ring",
-        back="Fi follet cape",waist="Hierarch belt",legs=gear.merlinicShalwar_MBB,feet=gear.merlinicCrackows_MBB
+		head="Pixie hairpin +1",neck="Sanctity necklace",ear1="Loquacious earring",ear2="Etiolation earring",
+        body="Amalric doublet",hands="Telchine gloves",ring1="Prolix ring",ring2="Dark ring",
+        back=gear.TaranusCape_FC,waist="Fucho-no-obi",legs=gear.merlinicShalwar_MBB,feet="Telchine pigaches"
 		}
 		
 
@@ -255,8 +222,8 @@ function init_gear_sets()
 
 	sets.midcast['Elemental Magic'] = {ammo="Pemphredo tathlum",
         head="Jhakri coronal +1",neck="Sanctity necklace",ear1="Friomisi earring",ear2="Barkarole earring",
-        body="Jhakri robe +2",hands="Jhakri cuffs +1",ring1="Jhakri ring",ring2="Diamond ring", --Add Shiva+1
-        back="Taranus's cape",waist=gear.ElementalObi,legs="Jhakri slops +1",feet="Jhakri pigaches +1"}
+        body="Jhakri robe +2",hands="Jhakri cuffs +1",ring1="Shiva ring",ring2="Shiva ring", --Add Shiva+1
+        back=gear.TaranusCape_MAB,waist=gear.ElementalObi,legs="Jhakri slops +1",feet="Jhakri pigaches +1"}
  
 	sets.midcast['Elemental Magic'].MB = set_combine(sets.midcast['Elemental Magic'], {head=gear.merlinicHood_MBB, neck="Mizukage-no-Kubikazari",body=gear.merlinicJubbah_MBB,hands="Amalric gages", 
 	legs=gear.merlinicShalwar_MBB, ring1="Mujin band", feet=gear.merlinicCrackows_MBB})	
@@ -274,26 +241,26 @@ function init_gear_sets()
 		ammo="Pemphredo tathlum",
         head="Pixie hairpin +1",neck="Mizukage-no-Kubikazari",ear1="Friomisi earring",ear2="Barkarole earring",
         body=gear.merlinicJubbah_MBB,hands="Amalric gages",ring1="Mujin band",ring2="Archon ring", 
-        back="Taranus's cape",waist=gear.ElementalObi,legs=gear.merlinicShalwar_MBB,feet=gear.merlinicCrackows_MBB
+        back=gear.TaranusCape_MAB,waist=gear.ElementalObi,legs=gear.merlinicShalwar_MBB,feet=gear.merlinicCrackows_MBB
 	}
 	
 	
-	--sets.midcast.Death.MB = {
-	--	set_combine(sets.midcast['Elemental Magic'].MB, {head="Pixie Hairpin +1",ring2="Archon Ring"})
-	--}
+	sets.midcast.Death.MB = {
+		set_combine(sets.midcast['Elemental Magic'].MB, {head="Pixie Hairpin +1",ring2="Archon Ring"})
+	}
 	
 	sets.midcast.Comet = {
 		ammo="Pemphredo tathlum",head="Pixie Hairpin +1",neck="Mizukage-no-Kubikazari",ear1="Friomisi Earring",		ear2="Barkaro. Earring",
-        body="Jhakri robe +2",hands="Amalric Gages",ring1="Mujin Band",ring2="Shiva ring +1",
-		back="Taranus's Cape",waist=gear.ElementalObi,legs="Merlinic Shalwar",feet=gear.merlinicCrackows_Magic
+        body="Jhakri robe +2",hands="Amalric Gages",ring1="Mujin Band",ring2="Shiva ring",
+		back=gear.TaranusCape_MAB,waist=gear.ElementalObi,legs="Merlinic Shalwar",feet=gear.merlinicCrackows_Magic
 	}
 	
 	sets.midcast.Comet.MB = set_combine(sets.midcast['Elemental Magic'].MB, {head="Pixie Hairpin +1", ring2="Archon Ring"})
 	
 	sets.midcast.Impact = {
 		ammo="Pemphredo tathlum",head="",neck="Mizukage-no-Kubikazari",ear1="Friomisi Earring",ear2="Barkaro. Earring",
-        body="Twilight Cloak",hands="Amalric Gages",ring1="Mujin Band",ring2="Shiva ring +1",
-		back="Taranus's Cape",waist=gear.ElementalObi,legs="Merlinic Shalwar",feet=gear.merlinicCrackows_Magic
+        body="Twilight Cloak",hands="Amalric Gages",ring1="Mujin Band",ring2="Shiva ring",
+		back=gear.TaranusCape_MAB,waist=gear.ElementalObi,legs="Merlinic Shalwar",feet=gear.merlinicCrackows_Magic
 	}
 
 	sets.midcast.Impact.MB = set_combine(sets.midcast['Elemental Magic'].MB, {body="Twilight cloak", head=empty,ring2="Archon Ring"})
@@ -308,7 +275,7 @@ function init_gear_sets()
 		hands="Jhakri Cuffs +1",
 		ring1="Vertigo Ring",
 		ring2="Archon Ring",
-        back="Taranus's Cape",
+        back=gear.TaranusCape_MAB,
 		waist="Casso Sash",
 		legs="Jhakri Slops +1",
 		feet="Uk'uxkaj boots"
@@ -324,7 +291,7 @@ function init_gear_sets()
 		hands="Jhakri Cuffs +1",
 		ring1="Vertigo Ring",
 		ring2="Archon Ring",
-        back="Taranus's Cape",
+        back=gear.TaranusCape_MAB,
 		waist="Casso Sash",
 		legs="Jhakri Slops +1",
 		feet="Uk'uxkaj boots"
@@ -373,7 +340,7 @@ function init_gear_sets()
 		hands="Jhakri cuffs +1",
 		ring1="Shiva Ring +1",
 		ring2="Vertigo Ring",
-        back="Taranus's Cape",
+        back=gear.TaranusCape_MAB,
 		waist="Luminary sash",
 		legs="Jhakri Slops +1",
 		feet="Jhakri pigaches +1"
@@ -504,19 +471,16 @@ end
 
 
 function job_precast(spell, action, spellMap, eventArgs)
+	
 	if spellMap == 'Cure' or spellMap == 'Curaga' then
-		gear.default.obi_waist = "Pythia Sash +1"
-		if spell.element == world.weather_element or
-		spell.element == world.day_element then 
-			gear.default.obi_waist = "Hachirin-no-obi"
-		end
-	elseif spell.skill == 'Elemental Magic' or spell.skill == 'Dark Magic' then
-		gear.default.obi_waist = "Refoccilation Stone"
+		gear.default.obi_waist = "Refoccilation stone"
 		if spell.element == world.weather_element or spell.element == world.day_element then
 			gear.default.obi_waist = "Hachirin-no-obi"
 		end
-		if state.CastingMode.value == 'Proc' then
-			classes.CustomClass = 'Proc'
+	elseif spell.skill == 'Elemental Magic' or spell.skill == 'Dark Magic' or spell.skill == "Blue Magic" then
+		gear.default.obi_waist = "Refoccilation stone"
+		if spell.element == world.weather_element or spell.element == world.day_element then
+			gear.default.obi_waist = "Hachirin-no-obi"
 		end
 	end
 end

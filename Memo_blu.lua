@@ -13,24 +13,14 @@ end
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
 
-	send_command('alias mab input /equip main "Nibiru Cudgel"; input /equip sub "Nibiru Cudgel";' )
-	send_command('alias tp input /equip main "Almace"; input /equip sub "Sequence";' )
-
-	send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
-	send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
-	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 10; input /item "Dimensional ring (holla)" <me>; ')
-	send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 10; input /item "Dimensional ring (dem)" <me>; ')
-	send_command('alias mea input /equip ring2 "Dimensional ring (mea)"; wait 10; input /item "Dimensional ring (mea)" <me>; ')
-	send_command('alias capa input /equip ring2 "capacity ring"; wait 10; input /item "capacity ring" <me>; ')
-	send_command('alias cel input /item "Rubicund Cell" <t>; input /item "Cobalt Cell" <t>; input /item "Phase Displacer" <t>;')
-	send_command('alias dis input /item "Phase Displacer" <t>; ')
-	send_command('alias atk input /attack <bt>; ')
-
-	send_command('alias ibu input /item "Ibushi Shinai" <me>; ')
-	send_command('alias key input /item "Forbidden Key" <t>; ')
-	send_command('alias ech input /item "Echo Drops" <me>')
-	send_command('alias holy input /item "Holy Water" <me>')
-	send_command('alias rem input /item "Remedy" <me>') 
+send_command('alias mab input /equip main "Nibiru cudgel"; input /equip sub "Nibiru cudgel";' )
+send_command('alias alm input /equip main "Almace"; input /equip sub "Sequence";' )
+send_command('alias seq input /equip main "Sequence"; input /equip sub "Almace";' )
+send_command('alias ohshit input /equip body "Ayanmo corazza +2"; input /equip neck "Loricate torque +1"; input /equip ring1 "Vocane ring"; input /equip legs "Ayanmo cosciales +2"; input /equip ring2 "Defending ring";')
+send_command('alias mg input /diffusion; wait 2; input /unbridledlearning; wait 2; input /mightyguard;')
+send_command('alias verve input /diffusion; wait 2; input /unbridledlearning; wait 2; input /carcharianverve;')
+send_command('alias craftgear input //gs equip sets.crafting')
+send_command('alias th input //gs equip sets.treasureHunter')
 
 include('Memo-Include.lua')
 
@@ -217,90 +207,9 @@ function user_setup()
     --state.CastingMode:options('Normal', 'Resistant')
 	state.IdleMode:options('Normal', 'PDT', 'Learning')
 	--state.EngagedMode:options('Haste', 'Acc', 'PDT')
-	send_command('bind @1 input /ma "nat. meditation" <me>')
-	send_command('bind @2 input /ma "erratic flutter" <me>')
-	send_command('bind @3 input /ma "mighty guard" <me>')
-	send_command('bind @4 input /ma "Occultation" <me>')
-	send_command('bind @5 input /ma "barrier tusk" <me>')
-	send_command('bind @6 input /ma "Carcharian Verve" <me>')
-	send_command('bind @7 input /ja "Shield Bash" <t>')
-	send_command('bind @8 input /ma "Regen IV" <t>')
-	send_command('bind @9 input //exec thf/SA_Rudra.txt')
-	send_command('bind @0 input //exec thf/SA_Mandalic.txt')
-	send_command('bind @- input /ma "Devotion" <t>')
-	send_command('bind @= input /ja "Divine Seal" <me>')
-
--- Misc CTRL	
-	send_command('bind ^1 input /ja "Burst Affinity" <me>')
-	send_command('bind ^2 input /ws "Savage Blade" <t>')
-	send_command('bind ^3 input /ma "nat. meditation" <me>')
-	send_command('bind ^4 input /ma "erratic flutter" <me>')
-	send_command('bind ^5 input /ma "mighty guard" <me>')
-	send_command('bind ^6 input /ma "Occultation" <me>')
-	send_command('bind ^7 input /ma "barrier tusk" <me>')
-	send_command('bind ^8 input /ma "Carcharian Verve" <me>')
-	send_command('bind ^9 input /ja "spectral jig" <me>')
-	send_command('bind ^0 input //exec thf/SA_Mandalic.txt')
-	send_command('bind ^- input /ma "Devotion" <t>')
-	send_command('bind ^= input /ja "Divine Seal" <me>')
-	
--- Debuffs ALT
-	send_command('bind !1 input /ma "Sudden Lunge" <t>')
-	send_command('bind !2 input /ws "chant du cygne" <t>')
-	send_command('bind !3 input /ws "Requiescat" <t>')
-	send_command('bind !4 input /ws "sanguine blade" <t>')
-	send_command('bind !5 input /ma "magic hammer" <t>')
-	send_command('bind !6 input /ma "Occultation" <me>')
-	send_command('bind !7 input /ma "barrier tusk" <me>')
-	send_command('bind !8 input /ma "Carcharian Verve" <me>')
-	send_command('bind !9 input /ja "chocobo jig II" <me>')
-	send_command('bind !0 input //exec thf/TA_Mandalic.txt')
-	send_command('bind !- input /ja "Divine Caress" <me>')
-	send_command('bind != input //gs c cycle OffenseMode')
-	
--- 	Buffs CTRL
-
-	send_command('bind @F1 input /ma "subduction" <t>')
-	send_command('bind @F2 input /ma "Tenebral Crush" <t>')
-	send_command('bind @F3 input /ma "Spectral floe" <t>')
-	send_command('bind @F4 input /ma "dream flower" <t>')
-	send_command('bind @F5 input /ma "Dia II" <t>')
-	send_command('bind @F6 input /ma "Slow" <t>')
-	send_command('bind @F7 input /ma "Paralyze" <t>')
-	send_command('bind @F8 input /ma "Addle" <t>')
-	send_command('bind @F9 input /ma "Silence" <t>')
-	send_command('bind @F10 input /ma "Holy II" <t>')
-	send_command('bind @F11 input /ma "Banish III" <t>')
-	send_command('bind @F12 input /ja "Accession" <me>; input /echo --AOE--')
-
-	send_command('bind ^F1 input /ma "subduction" <t>')
-	send_command('bind ^F2 input /ma "glutinous dart" <t>')
-	send_command('bind ^F3 input /ma "Tenebral Crush" <t>')
-	send_command('bind ^F4 input /ja "feather step" <t>')
-	send_command('bind ^F5 input /ja "animated flourish" <t>')
-	send_command('bind ^F6 input /ja "no foot rise" <me>')
-	send_command('bind ^F7 input /ja "steal" <t>')
-	send_command('bind ^F8 input /ma "dream flower" <t>')
-	send_command('bind ^F9 input /ja "bully" <t>')
-	send_command('bind ^F10 input /ma "Holy II" <t>')
-	send_command('bind ^F11 input /ma "Banish III" <t>')
-	send_command('bind ^F12 input /ja "Accession" <me>; input /echo --AOE--')
-	
-	send_command('bind !F1 input /ja "unbridled learning" <me>')
-	send_command('bind !F2 input /ja "diffusion" <me>')
-	send_command('bind !F3 input /ja "Curing Waltz III" <stpc>')
-	send_command('bind !F4 input /ja "Curing Waltz IV" <stpc>')
-	send_command('bind !F5 input /ma "magic fruit" <stpc>')
-	send_command('bind !F6 input /ja "Healing Waltz" <stpc>')
-	send_command('bind !F7 input /ja "Divine Waltz" <me>')
-	send_command('bind !F8 input /ja "Divine Waltz II"  <me>')
-	send_command('bind !F9 input /ma "Silence" <t>')
-	send_command('bind !F10 input /ma "Holy II" <t>')
-	send_command('bind !F11 input /ma "Banish III" <t>')
-	send_command('bind !F12 input /ja "Accession" <me>; input /echo --AOE--')
 
     update_combat_form()
-
+    select_default_macro_book()
 	
 end
 
@@ -345,8 +254,8 @@ function init_gear_sets()
         head="Adhemar bonnet +1",neck="Fotia gorget",ear1="Domin. Earring +1",ear2="Brutal earring",
         body="Adhemar jacket +1",hands="Adhemar wristbands +1",ring1="Ilabrat Ring",ring2="Begrudging ring",
         back=gear.rosmertasCape_Crit,waist="Fotia Belt",legs=gear.herculeanTrousers_Crit,feet=gear.herculeanBoots_TA}
-    
-	sets.precast.WS['Requiescat'] = {ammo="Amar Cluster",
+	
+    sets.precast.WS['Requiescat'] = {ammo="Amar Cluster",
         head="Adhemar bonnet +1",neck="Fotia gorget",ear1="Domin. earring +1",ear2="Brutal Earring",
         body="Adhemar jacket +1",hands="Adhemar wristbands +1",ring1="Rufescent ring",ring2="Epona's Ring",
         back=gear.rosmertasCape_WSD,waist="Fotia belt",legs="Samnuha tights",feet=gear.herculeanBoots_TA}
@@ -413,7 +322,7 @@ function init_gear_sets()
 	
 	sets.midcast['Blue Magic'].Magical =  { 
 		ammo="Pemphredo tathlum", head="Jhakri coronal +2", neck="Sanctity necklace", ear1="Friomisi earring",ear2="Regal earring",
-		body="Jhakri robe +2",hands="Jhakri cuffs +2",ring1="Strendu Ring",ring2="Shiva Ring +1",
+		body="Shamash robe",hands="Amalric gages +1",ring1="Shiva Ring +1",ring2="Shiva Ring +1",
 		back="Cornflower cape",waist="Yamabuki-no-Obi",legs="Jhakri slops +2",feet="Jhakri pigaches +2"}
 
 	sets.midcast['Blue Magic'].Magical.Resistant = set_combine(sets.midcast['Blue Magic'].Magical,
@@ -472,8 +381,8 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {ammo="Staunch tathlum",
         head="Rawhide mask",neck="Loricate torque +1",ear1="Genmei earring",ear2="Etiolation earring",
-        body="Jhakri robe +2",hands=gear.herculeanGloves_Refresh,ring1="Vocane Ring",ring2="Defending Ring",
-        back="Solemnity cape",waist="Flume belt",legs="Carmine cuisses +1",feet=gear.herculeanBoots_Refresh}
+        body="Shamash robe",hands=gear.herculeanGloves_Refresh,ring1="Vocane Ring",ring2="Defending Ring",
+        back="Solemnity cape",waist="Flume belt +1",legs="Carmine cuisses +1",feet=gear.herculeanBoots_Refresh}
 
 	sets.idle.Learning = set_combine(sets.idle, sets.Learning)
  
@@ -493,7 +402,7 @@ function init_gear_sets()
 	sets.engaged.Tank = {ammo="Staunch tathlum",
         head="Adhemar bonnet +1",neck="Loricate torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
 		body="Ayanmo corazza +2",hands="Adhemar wristbands +1",ring1="Vocane ring",ring2="Defending Ring",
-		back="Moonbeam cape",waist="Flume belt",legs="Ayanmo cosciales +2",feet=gear.herculeanBoots_TA}
+		back="Moonbeam cape",waist="Flume belt +1",legs="Ayanmo cosciales +2",feet=gear.herculeanBoots_TA}
 
 
 

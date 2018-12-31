@@ -24,7 +24,7 @@ end
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
     state.OffenseMode:options('None', 'Normal')
-    state.CastingMode:options('Normal', 'Merit', 'MeritNOMB', 'NOMB')
+    state.CastingMode:options('Normal', 'MB', 'NormalMerit', 'MBMerit')
     state.IdleMode:options('Normal', 'Refresh', 'PDT', 'EXP')
 	
 -- 	Buffs ALT
@@ -115,15 +115,16 @@ function init_gear_sets()
     sets.precast.FC = { 
 		ammo="Sapience Orb",
         head=gear.merlinicHood_FC,
-		neck="Orunmila's Torque",
-		ear1="Enchanter Earring +1",
+		neck="Baetyl pendant",
+		ear1="Etiolation Earring",
 		ear2="Loquacious Earring",
         body=gear.merlinicJubbah_FC,
+		back="Bane cape",
 		hands=gear.merlinicDastanas_FC,
 		waist="Channeler's Stone",
 		ring1="Prolix Ring",
 		ring2="Kishar Ring",
-		legs="Orvail Pants +1",
+		legs="Lengo pants",
 		feet=gear.merlinicCrackows_FC
 	}
         
@@ -226,15 +227,15 @@ function init_gear_sets()
 		head="Pixie Hairpin +1",
 		neck="Sanctity Necklace",
 		ear1="Mendicant's Earring",
-		ear2="Andoaa Earring",
-		body="Vanya Robe",
-		hands="Nares Cuffs",
-		ring1="Prolix Ring",
-		ring2="Lebeche Ring",
-		back="Oretania's cape +1",
+		ear2="Loquacious Earring",
+		body="Witching Robe",
+		hands="Vanya Cuffs",
+		ring1="Etana Ring",
+		ring2="Dark Ring",
+		back="Bane cape",
 		waist="Luminary Sash",
-		legs="Merlinic Shalwar",
-		feet="Chelona Boots"
+		legs="Psycloth lappas",
+		feet="Psycloth boots"
 	}	
 
     
@@ -399,72 +400,73 @@ function init_gear_sets()
         legs="Piety Pantaloons"
 	}
    
+   
+--state.CastingMode:options('Normal', 'MB', 'NormalMerit', 'MBMerit')   
  	sets.midcast['Elemental Magic'] = {
 		ammo="Pemphredo tathlum",
-		head=gear.merlinicHood_Magic,
-		neck="Mizukage-no-Kubikazari",
+		head="Jhakri coronal +1",
+		neck="Sanctity necklace",
 		ear1="Friomisi Earring",
 		ear2="Barkaro. Earring",
-        body=gear.merlinicJubbah_Magic,
-		hands="Amalric gages",
-		ring1="Mujin Band",
-		ring2="Shiva Ring +1",
-        back="Izdubar mantle",
+        body="Jhakri robe +1",
+		hands="Jhakri cuffs +1",
+		ring1="Strendu ring",
+		ring2="Vertigo ring",
+        back="Taranus's cape",
 		waist=gear.ElementalObi,
-		legs="Merlinic Shalwar",
-		feet=gear.merlinicCrackows_Magic
+		legs="Jhakri slops +1",
+		feet="Jhakri pigaches +1"
 	}
  
-	sets.midcast['Elemental Magic'].MeritNOMB = {
-		ammo="Pemphredo Tathlum",
-        head=gear.merlinicHood_Magic,
-		neck="Sanctity Necklace",
-		ear1="Friomisi Earring",
-		ear2="Barkaro. Earring",
-        body="Spaekona's Coat +1",
-		hands="Jhakri Cuffs +1",
-		ring1="Shiva Ring +1",
-		ring2="Strendu Ring",
-        back="Izdubar mantle",
-		waist=gear.ElementalObi,
-		legs="Merlinic Shalwar",
-		feet=gear.merlinicCrackows_Magic
-	}	
-	
-	sets.midcast['Elemental Magic'].Merit = {
+	sets.midcast['Elemental Magic'].MB = {
 		ammo="Pemphredo tathlum",
 		head=gear.merlinicHood_Magic,
 		neck="Mizukage-no-Kubikazari",
 		ear1="Friomisi Earring",
 		ear2="Barkaro. Earring",
-        body="Spaekona's Coat +1",
+        body=gear.merlinicJubbah_Magic,
 		hands="Amalric gages",
 		ring1="Mujin Band",
-		ring2="Shiva Ring +1",
-        back="Izdubar mantle",
+		ring2="Strendu Ring",
+        back="Taranus's cape",
 		waist=gear.ElementalObi,
-		legs="Merlinic Shalwar",
+		legs=gear.merlinicShalwar_Magic,
 		feet=gear.merlinicCrackows_Magic
 	}	
-
-	sets.midcast['Elemental Magic'].NOMB = {
-		ammo="Pemphredo Tathlum",
-        head=gear.merlinicHood_Magic,
-		neck="Saevus Pendant +1",
+	
+	sets.midcast['Elemental Magic'].MBMerit = {
+		ammo="Pemphredo tathlum",
+		head=gear.merlinicHood_Magic,
+		neck="Mizukage-no-Kubikazari",
 		ear1="Friomisi Earring",
 		ear2="Barkaro. Earring",
-        body=gear.merlinicJubbah_Magic,
-		hands="Jhakri Cuffs +1",
-		ring1="Shiva Ring +1",
+        body="Spaekona's coat +1",
+		hands="Amalric gages",
+		ring1="Mujin Band",
 		ring2="Strendu Ring",
-        back="Izdubar mantle",
+        back="Taranus's cape",
 		waist=gear.ElementalObi,
-		legs="Merlinic Shalwar",
+		legs=gear.merlinicShalwar_Magic,
 		feet=gear.merlinicCrackows_Magic
 	}
 	
-	
-	 sets.midcast.Death = {
+	sets.midcast['Elemental Magic'].NormalMerit = {
+		ammo="Pemphredo tathlum",
+		head="Jhakri coronal +1",
+		neck="Sanctity necklace",
+		ear1="Friomisi Earring",
+		ear2="Barkaro. Earring",
+        body="Spaekona's coat +1",
+		hands="Jhakri cuffs +1",
+		ring1="Strendu ring",
+		ring2="Vertigo ring",
+        back="Taranus's cape",
+		waist=gear.ElementalObi,
+		legs="Jhakri slops +1",
+		feet="Jhakri pigaches +1"
+	}	
+
+	sets.midcast.Death = {
 		ammo="Pemphredo tathlum",
 		head="Pixie Hairpin +1",
 		neck="Mizukage-no-Kubikazari",
@@ -474,13 +476,14 @@ function init_gear_sets()
 		hands="Amalric Gages",
 		ring1="Mujin Band",
 		ring2="Archon Ring",
-        back="Izdubar mantle",
+        back="Taranus's cape",
 		waist=gear.ElementalObi,
-		legs="Merlinic Shalwar",
+		legs=gear.merlinicShalwar_Magic,
 		feet=gear.merlinicCrackows_Magic
 	}
 	
-	 sets.midcast.Comet = {
+	
+	 sets.midcast.Death.MB = {
 		ammo="Pemphredo tathlum",
 		head="Pixie Hairpin +1",
 		neck="Mizukage-no-Kubikazari",
@@ -490,25 +493,73 @@ function init_gear_sets()
 		hands="Amalric Gages",
 		ring1="Mujin Band",
 		ring2="Archon Ring",
-        back="Izdubar mantle",
+        back="Taranus's cape",
 		waist=gear.ElementalObi,
-		legs="Merlinic Shalwar",
+		legs=gear.merlinicShalwar_Magic,
+		feet=gear.merlinicCrackows_Magic
+		}
+		
+	sets.midcast.Comet = {
+		ammo="Pemphredo tathlum",
+		head="Pixie Hairpin +1",
+		neck="Mizukage-no-Kubikazari",
+		ear1="Friomisi Earring",
+		ear2="Barkaro. Earring",
+        body=gear.merlinicJubbah_Magic,
+		hands="Amalric Gages",
+		ring1="Mujin Band",
+		ring2="Archon Ring",
+        back="Taranus's cape",
+		waist=gear.ElementalObi,
+		legs=gear.merlinicShalwar_Magic,
+		feet=gear.merlinicCrackows_Magic
+	}
+	
+	 sets.midcast.Comet.MB = {
+		ammo="Pemphredo tathlum",
+		head="Pixie Hairpin +1",
+		neck="Mizukage-no-Kubikazari",
+		ear1="Friomisi Earring",
+		ear2="Barkaro. Earring",
+        body=gear.merlinicJubbah_Magic,
+		hands="Amalric Gages",
+		ring1="Mujin Band",
+		ring2="Archon Ring",
+        back="Taranus's cape",
+		waist=gear.ElementalObi,
+		legs=gear.merlinicShalwar_Magic,
 		feet=gear.merlinicCrackows_Magic
 	}
 	
 	sets.midcast.Impact = {
 		ammo="Pemphredo tathlum",
-		head="",
+		head="Pixie Hairpin +1",
 		neck="Mizukage-no-Kubikazari",
 		ear1="Friomisi Earring",
 		ear2="Barkaro. Earring",
-        body="Twilight Cloak",
+        body=gear.merlinicJubbah_Magic,
 		hands="Amalric Gages",
 		ring1="Mujin Band",
 		ring2="Archon Ring",
-        back="Izdubar mantle",
+        back="Taranus's cape",
 		waist=gear.ElementalObi,
-		legs="Merlinic Shalwar",
+		legs=gear.merlinicShalwar_Magic,
+		feet=gear.merlinicCrackows_Magic
+	}
+	
+	sets.midcast.Impact.MB = {
+		ammo="Pemphredo tathlum",
+		head="Pixie Hairpin +1",
+		neck="Mizukage-no-Kubikazari",
+		ear1="Friomisi Earring",
+		ear2="Barkaro. Earring",
+        body=gear.merlinicJubbah_Magic,
+		hands="Amalric Gages",
+		ring1="Mujin Band",
+		ring2="Archon Ring",
+        back="Taranus's cape",
+		waist=gear.ElementalObi,
+		legs=gear.merlinicShalwar_Magic,
 		feet=gear.merlinicCrackows_Magic
 	}
 	
@@ -532,8 +583,8 @@ function init_gear_sets()
 		
     sets.midcast['Dark Magic'] = {
 		ammo="Pemphredo tathlum",
-        head="Befouled Crown",
-		neck="Incanter's Torque",
+        head="Jhakri coronal +1",
+		neck="Erra pendant",
 		ear1="Psystorm Earring",
 		ear2="Lifestorm Earring",
         body="Jhakri robe +1",
@@ -543,21 +594,15 @@ function init_gear_sets()
         back="Taranus's Cape",
 		waist="Luminary sash",
 		legs="Jhakri Slops +1",
-		feet="Uk'uxkaj boots"
+		feet="Jhakri pigaches +1"
 	}
 	
 	sets.midcast.drain = set_combine(sets.midcast['Dark Magic'], {
-		head=gear.merlinicHood_Magic,
-		ring2="Evanscence ring",
-		legs="Jhakri Slops +1",
-		feet=gear.merlinicCrackows_Macc
+		ring2="Evanscence ring"
 	})
 	
 	sets.midcast.aspir = set_combine(sets.midcast['Dark Magic'], {
-		head=gear.merlinicHood_Magic,
-		ring2="Evanscence ring",
-		legs="Jhakri Slops +1",
-		feet=gear.merlinicCrackows_Macc
+		ring2="Evanscence ring"
 	})
 	
 	

@@ -12,7 +12,9 @@ end
 
 -- Setup vars that are user-independent.  state.Buff vars initialized here will automatically be tracked.
 function job_setup()
+
 include('Alaza-Include.lua')
+
 
 	send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
 	send_command('alias warp input /equip ring2 "warp ring"; wait 10; input /item "Warp Ring" <me>; ')
@@ -68,9 +70,6 @@ function user_setup()
 	send_command('bind ^0 input /ma "Refresh" <t>')
 	send_command('bind ^- input /ma "Devotion" <t>')
 	send_command('bind ^= input /ja "Divine Seal" <me>')
-
-	send_command('bind ^F11 input //gs c cycle IdleMode')
-	send_command('bind ^F12 input //gs c cycle OffenseMode')
 	
 	send_command('bind @F1 input /ma "poisona" <t>')
 	send_command('bind @F2 input /ma "blindna" <t>')
@@ -182,58 +181,21 @@ function init_gear_sets()
     
     -- Idle sets
     sets.idle = {
-		main="Midnights",
-		range="Animator P",
-		ammo="Automat. Oil +3",
-        head="Rao Kabuto",
-		neck="Empath necklace",
-		ear1="Domes. Earring",
-		ear2="Enmerkar earring",
-        body="Rao togi",
-		hands="Rao kote",
-		ring1="Varar ring",
-		ring2="Varar ring",
-        back="Visucius's Mantle",
-		waist="Isa Belt",
-		legs="Rao haidate",
-		feet="Rao sune-ate"
-		}
+        head="Rao kabuto",neck="Empath necklace",ear1="Odnowa earring +1",ear2="Odnowa earring",
+        body="Rao togi",hands="Rao Kote",ring1="Sheltered ring",ring2="Defending Ring",
+        back="Umbra Cape",waist="Klouskap Sash",legs="Rao haidate",feet="Hermes' sandals"}
 
     sets.idle.PetMelee = {
 		main="Ohtas",
-		range="Animator P",
-		ammo="Automat. Oil +3",
-        head=gear.herculeanHelm_Pet,
-		neck="Shulmanu Collar",
-		ear1="Domes. Earring",
-		ear2="Enmerkar Earring",
-        body="Pitre tobe +1",
-		hands=gear.herculeanGloves_Pet,
-		ring1="Varar ring",
-		ring2="Varar ring",
-        back="Visucius's Mantle",
-		waist="Klouskap Sash",
-		legs=gear.herculeanTrousers_Pet,
-		feet=gear.herculeanBoots_Pet
-		} 
+        head=gear.herculeanHelm_Pet,neck="Shulmanu Collar",ear1="Domesticator's earring",ear2="Enmerkar Earring",
+        body="Pitre tobe +1",hands=gear.herculeanGloves_Pet,ring1="Varar ring",ring2="Varar ring",
+        back="Visucius's mantle",waist="Klouskap Sash",legs=gear.herculeanTrousers_Pet,feet=gear.herculeanBoots_Pet} 
 
 	sets.idle.PetPDT = {
 		main="Midnights",
-		range="Animator P",
-		ammo="Automat. Oil +3",
-        head="Rao Kabuto",
-		neck="Empath necklace",
-		ear1="Domes. Earring",
-		ear2="Enmerkar earring",
-        body="Rao togi",
-		hands="Rao kote",
-		ring1="Varar ring",
-		ring2="Varar ring",
-        back="Visucius's Mantle",
-		waist="Isa Belt",
-		legs="Rao haidate",
-		feet="Rao sune-ate"
-		}
+        head="Rao Kabuto",neck="Empath necklace",ear1="Rimeice earring",ear2="Enmerkar earring",
+        body="Rao togi",hands="Rao kote",ring1="Varar ring",ring2="Varar ring",
+        back="Visucius's mantle",waist="Isa Belt",legs="Rao haidate",feet="Rao sune-ate"}
 
 	sets.idle.BothPDT = {
 		main="Midnights",

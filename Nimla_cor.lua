@@ -14,113 +14,7 @@ end
 function job_setup()
     include('Nimla-Include.lua')
 	
-	send_command('alias trust input /ma "AAEV" <me>; wait 7; input /ma "Apururu (UC)" <me>; wait 7; input /ma "Joachim" <me>; wait 7; input /ma "Arciela" <me>; wait 7; input /ma "Selh\'teus" <me>;' )
-	send_command('alias warp input /equip ring2 "warp ring"; wait 11; input /item "Warp Ring" <me>; ')
-	send_command('alias holla input /equip ring2 "Dimensional ring (holla)"; wait 11; input /item "Dimensional ring (holla)" <me>; ')
-	send_command('alias dem input /equip ring2 "Dimensional ring (dem)"; wait 11; input /item "Dimensional ring (dem)" <me>; ')
-	send_command('alias mea input /equip ring2 "Dimensional ring (mea)"; wait 11; input /item "Dimensional ring (mea)" <me>; ')
-	send_command('alias capa input /equip ring2 "capacity ring"; wait 10; input /item "capacity ring" <me>; ')
-	
-	send_command('alias cha input /console gs c cycle LullabyChat')
-	send_command('alias song1 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
-	send_command('alias song2 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
-	send_command('alias song3 input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>; wait 6; input /ma "mage\'s ballad" <me>; wait 6; input /ma "victory march" <me>;')
-	send_command('alias song4 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song5 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song6 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "hunter\'s prelude" <me>;')
-	send_command('alias song7 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "hunter\'s prelude" <me>;')
-	send_command('alias song8 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song9 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')	
-	send_command('alias song10 input /ma "victory march" <me>; wait 6; input /ma "advancing march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>;')
-	send_command('alias song11 input /ma "victory march" <me>; wait 6; input /ma "advancing march" <me>; wait 6; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "mage\'s ballad II" <me>;')	
-	send_command('alias song12 input /ma "blade madrigal" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "earth carol" <me>; wait 6; input /ma "earth carol II" <me>;')
-	send_command('alias song13 input /ma "blade madrigal" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "earth carol" <me>; wait 6; input /ma "earth carol II" <me>;')	
-	send_command('alias song14 input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Dextrous Etude" <me>; wait 6; input /ma "Uncanny Etude" <me>;')
-	send_command('alias song15 input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>; wait 6; input /ma "Dextrous Etude" <me>; wait 6; input /ma "Uncanny Etude" <me>;')	
-	send_command('alias song16 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "mage\'s ballad III" <me>;')
-	send_command('alias song17 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "mage\'s ballad III" <me>;')	
-	send_command('alias song18 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
-	send_command('alias song19 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
-	send_command('alias song20 input /ma "fire carol II" <me>; wait 6; input /ma "earth carol II" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song21 input /ma "fire carol II" <me>; wait 6; input /ma "earth carol II" <me>; wait 6; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song22 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
-	send_command('alias song23 input /ma "Honor March" <me>; wait 6; input /ma "archer\'s prelude" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "valor minuet IV" <me>;')
-	send_command('alias song24 input /ma "Honor March" <me>; wait 6; input /ma "blade madrigal" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song25 input /ma "Honor March" <me>; wait 6; input /ma "blade madrigal" <me>; wait 6; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song26 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song27 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song28 input /ma "Honor March" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song29 input /ma "Honor March" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "lightning carol" <me>; wait 6; input /ma "lightning carol II" <me>;')
-	send_command('alias song30 input /ma "victory march" <me>; wait 6; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "Sage Etude" <me>; wait 6; input /ma "Learned Etude" <me>;')
-	send_command('alias song31 input /ma "victory march" <me>; wait 6; input /ma "mage\'s ballad III" <me>; wait 6; input /ma "Sage Etude" <me>; wait 6; input /ma "Learned Etude" <me>;')
-	send_command('alias song32 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song33 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "sword madrigal" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song34 input /ma "fire carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song35 input /ma "fire carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "ice carol II" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song36 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "valor minuet V" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>;')
-	send_command('alias song37 input /ma "Honor March" <me>; wait 6; input /ma "victory march" <me>; wait 6; input /ma "valor minuet V" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>;')
-	send_command('alias song38 input /ma "wind carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "Army\'s paeon" <me>; wait 5; input /ma "Army\'s paeon II" <me>; wait 5; input /ma "wind carol" <me>; wait 6; input /ma "blade madrigal" <me>;')
-	send_command('alias song39 input /ma "wind carol II" <me>; wait 6; input /ma "Sentinel\'s Scherzo" <me>; wait 6; input /ma "wind carol" <me>; wait 6; input /ma "blade madrigal" <me>;')
-
-	
-	send_command('alias int1 input /ma "Learned Etude" <me>; ')
-	send_command('alias int2 input /ma "Sage Etude" <me>; ')
-	send_command('alias agi1 input /ma "Quick Etude" <me>; ')
-	send_command('alias agi2 input /ma "Swift Etude" <me>; ')
-	send_command('alias dex1 input /ma "Dextrous Etude" <me>; ')
-	send_command('alias dex2 input /ma "Uncanny Etude" <me>; ')
-	
-	send_command('alias god input /ma "Goddess\'s Hymnus" <t>; ')
-	
-	send_command('alias wing1 input /item "lucid wings I" <me>; ')
-	send_command('alias wing2 input /item "lucid wings II" <me>; ')
-	
-	send_command('alias ra1 input /ma "archer\'s prelude" <t>; ')
-	send_command('alias ra2 input /ma "hunter\'s prelude" <t>; ')
-	
-	send_command('alias fc1 input /ma "fire carol" <me>; ')
-	send_command('alias fc2 input /ma "fire carol II" <me>; ')
-	send_command('alias ic1 input /ma "ice carol" <me>; ')
-	send_command('alias ic2 input /ma "ice carol II" <me>; ')
-	send_command('alias wc1 input /ma "wind carol" <me>; ')
-	send_command('alias wc2 input /ma "wind carol II" <me>; ')
-	send_command('alias ec1 input /ma "earth carol" <me>; ')
-	send_command('alias ec2 input /ma "earth carol II" <me>; ')
-	send_command('alias lc1 input /ma "lightning carol" <me>; ')
-	send_command('alias lc2 input /ma "lightning carol II" <me>; ')
-	send_command('alias llc1 input /ma "light carol" <me>; ')
-	send_command('alias llc2 input /ma "light carol II" <me>; ')
-	send_command('alias dc1 input /ma "dark carol" <me>; ')
-	send_command('alias dc2 input /ma "dark carol II" <me>; ')
-	send_command('alias sche input /ma "Sentinel\'s Scherzo" <t>; ')
-	send_command('alias hm input /ma "Honor March" <t>; ')
-	
-	send_command('alias pae1 input /ma "Army\'s paeon" <t>; ')
-	send_command('alias pae2 input /ma "Army\'s paeon II" <t>; ')
-	send_command('alias pae3 input /ma "Army\'s paeon III" <t>; ')
-	send_command('alias pae4 input /ma "Army\'s paeon IV" <t>; ')
-	send_command('alias pae5 input /ma "Army\'s paeon V" <t>; ')
-	send_command('alias pae6 input /ma "Army\'s paeon VI" <t>; ')
-	send_command('alias pae7 input /ma "Army\'s paeon VII" <t>; ')
-	
-	send_command('alias min5 input /ma valor minuet V" <t>; ')
-	send_command('alias min4 input /ma "valor minuet IV" <t>; ')
-	send_command('alias min3 input /ma "valor minuet III" <t>; ')
-	send_command('alias min2 input /ma "valor minuet II" <t>; ')
-	send_command('alias min1 input /ma "valor minuet" <t>; ')
-	
-	send_command('alias minn5 input /ma "Knight\'s Minne V" <t>; ')
-	send_command('alias minn4 input /ma "Knight\'s Minne IV" <t>; ')
-	send_command('alias minn3 input /ma "Knight\'s Minne III" <t>; ')
-	send_command('alias minn2 input /ma "Knight\'s Minne II" <t>; ')
-	send_command('alias minn1 input /ma "Knight\'s Minne" <t>; ')
-	
-	send_command('alias seal input /ja "Elemental Seal" <me>; ')
-	send_command('alias fis input /equip range "halcyon rod";input /equip ammo "Robber Rig";input /equip head "Midras\'s helm +1"; ')
-	send_command('alias ech input /item "Echo Drops" <me>')
-	send_command('alias holy input /item "Holy Water" <me>')
-	send_command('alias rem input /item "Remedy" <me>')
-	send_command('alias revit input /item "Super Revitalizer" <me>')
+	send_command('alias craftgear input //gs equip sets.crafting')
 	
 	state.Buff.Barrage = buffactive.Barrage or false
 --state.Buff.Camouflage = buffactive.Camouflage or false
@@ -134,94 +28,13 @@ end
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
 
-	state.OffenseMode:options('Ranged','Melee')
+	state.OffenseMode:options('Ranged','Melee','Acc')
 	state.RangedMode:options('Normal', 'Acc')
     --state.CastingMode:options('Normal', 'Resistant')
-	state.IdleMode:options('Idle')
+	state.IdleMode:options('Idle', 'DT', 'Refresh')
 	--state.EngagedMode:options('Haste', 'Acc', 'PDT')
 	state.WeaponskillMode:options('Normal','Acc')
 
-	send_command('bind @F1 input /ma "Fire Threnody II" <t>')
-	send_command('bind @F2 input /ma ""Ice Threnody II" <t>')
-	send_command('bind @F3 input /ma "Wind Threnody II" <t>')
-	send_command('bind @F4 input /ma "Earth Threnody II" <t>')
-	send_command('bind @F5 input /ma "Lightning Threnody II" <t>')
-	send_command('bind @F6 input /ma "Water Threnody II" <t>')
-	send_command('bind @F7 input /ma "Light Threnody II" <t>')
-	send_command('bind @F8 input /ma "Dark Threnody II" <t>')
-	send_command('bind @F9 input /ma "pining Nocturne" <t>')
-	send_command('bind @F10 input /ma "Sentinel\'s Scherzo" <t>')
-	send_command('bind @F11 input /ma "hunter\'s prelude" <t>')
-	send_command('bind @F12 input /ma "archer\'s prelude" <t>')
-	
--- 	Buffs ALT
-	send_command('bind !F1 input /ma "slow" <t>')
-	send_command('bind !F2 input /ma "paralyze" <t>')
-	send_command('bind !F3 input /ma "silence" <t>')
-	send_command('bind !F4 input /ma "foe requiem VII" <t>')
-	send_command('bind !F5 input /ma "Stoneskin" <me>')
-	send_command('bind !F6 input /ma "sentinel\'s scherzo" <t>')
-	send_command('bind !F7 input /ma "valor minuet II" <t>')
-	send_command('bind !F8 input /ma "valor minuet V" <t>')
-	send_command('bind !F9 input /ma "dextrous etude" <t>')
-	send_command('bind !F10 input /ma "blink" <me>')
-	send_command('bind !F11 input /ja "pianissimo" <me>')
-	send_command('bind !F12 input /ja "troubadour" <me>')
-	
--- 	Buffs CTRL
-	send_command('bind ^F1 input /ma "poisona" <t>')
-	send_command('bind ^F2 input /ma "blindna" <t>')
-	send_command('bind ^F3 input /ma "silena" <t>')
-	send_command('bind ^F4 input /ma "stona" <t>')
-	send_command('bind ^F5 input /ma "viruna" <t>')
-	send_command('bind ^F6 input /ma "cursna" <t>')
-	send_command('bind ^F7 input /ma "valor minuet III" <t>')
-	send_command('bind ^F8 input /ma "valor minuet IV" <t>')
-	send_command('bind ^F9 input /ma "sinewy etude" <t>')
-	send_command('bind ^F10 input /ma "stoneskin" <me>')
-	send_command('bind ^F11 input /ma "haste" <t>')
-	send_command('bind ^F12 input /ja "nightingale" <me>')
-
-	send_command('bind @1 input /ma "cure III" <t>')
-	send_command('bind @2 input /ma "cure IV" <t>')
-	send_command('bind @3 input /ma "mage\'s ballad" <t>')
-	send_command('bind @4 input /ma "fire carol II" <t>')
-	send_command('bind @5 input /ma "ice carol II" <t>')
-	send_command('bind @6 input /ma "wind carol II" <t>')
-	send_command('bind @7 input /ma "earth carol II" <t>')
-	send_command('bind @8 input /ma "lightning carol II" <me>')
-	send_command('bind @9 input /ma "water carol II" <t>')
-	send_command('bind @0 input /ma "light carol II" <t>')
-	send_command('bind @- input /ma "dark carol II" <t>')
-	send_command('bind @= input /ma "Curaga II" <t>')
-	
--- Debuffs ALT	
-	send_command('bind !1 input /ja "Crooked Cards" <me>')
-	send_command('bind !2 input /ja "Double-Up" <me>')
-	send_command('bind !3 input /ja "Snake Eye" <me> ')
-	send_command('bind !4 input /ma "mage\'s ballad III" <t>')
-	send_command('bind !5 input /ma "Curaga II" <t>')
-	send_command('bind !6 input /ma "victory march" <t>')
-	send_command('bind !7 input /ma "blade madrigal" <t>')
-	send_command('bind !8 input /ma "foe lullaby II" <t>')
-	send_command('bind !9 input /ma "invisible" <t>')
-	send_command('bind !0 input /ja "divine seal" <t>')
-	send_command('bind !- input /ja "marcato" <me>')
-	send_command('bind != input /ja "tenuto" <t>')
-
--- Misc CTRL	
-	send_command('bind ^1 input /ra <t>')
-	send_command('bind ^2 input /ja "Samurai Roll" <me>')
-	send_command('bind ^3 input /ja "Chaos Roll" <me>')
-	send_command('bind ^4 input /ma "mage\'s ballad II" <t>')
-	send_command('bind ^5 input /ma "Chocobo mazurka" <t>')
-	send_command('bind ^6 input /ma "advancing march" <t>')
-	send_command('bind ^7 input /ma "sword madrigal" <t>')
-	send_command('bind ^8 input /ma "horde lullaby II" <t>')
-	send_command('bind ^9 input /ma "sneak" <t>')
-	send_command('bind ^0 input /ma "carnage elegy" <t>')
-	send_command('bind ^- input /ja "soul voice" <me>')
-	send_command('bind ^= input /ja "clarion call" <me>')
     
     select_default_macro_book()
 end
@@ -237,106 +50,164 @@ function init_gear_sets()
     --------------------------------------
 
     -- Precast Sets
-	sets.precast.FC = {head="Carmine mask", neck="Baetyl pendant",body="Samnuha coat",hands="Leyline gloves", ring1="Prolix ring", ring2="Kishar ring",
+	sets.precast.FC = {head="Carmine mask", neck="Baetyl Pendant",body="Samnuha coat",hands="Leyline gloves", ring1="Prolix ring", ring2="Kishar ring",
 	ear1="Etiolation Earring",ear2="Enchanter earring +1", legs="Rawhide trousers"}
 	
-	-- Ranged sets (snapshot)
-	
-	sets.precast.CorsairRoll = {head="Lanun Tricorne", body="Lanun frac",hands="Chasseur's Gants +1",neck="Regal Necklace",
+	sets.precast.CorsairRoll = {head="Lanun Tricorne", body="Lanun frac",hands="Chasseur's Gants + 1",neck="Regal Necklace",
     left_ring="Luzaf's ring", legs="Desultor tassets", back="Camulus's Mantle"
 	}
 	
+	-- Ranged sets (snapshot)
+	
 	sets.precast.RA = {
-		head="Amini gapette",
-		body="Skopos jerkin",hands="Alruna's gloves +1", 
-		back="Camulus's mantle",waist="Impulse Belt",legs="Adhemar kecks",feet="Meghanada jambeaux +2"}
+		head="Taeon chapeau",
+		body="Taeon tabard",hands="Carmine finger gauntlets +1", 
+		back=gear.CamulusMantle_Snap,waist="Impulse Belt",legs="Adhemar kecks",feet="Meghanada jambeaux +2"}
+			
+	sets.precast.JA['Dark Shot'] = {head="Carmine mask",neck="Sanctity necklace",ear1="Enchanter earring +1",ear2="Dignitary's earring",
+        body="Mummu jacket +2",hands="Mummu wrists +2",ring1="Regal ring",ring2="Dingir Ring",
+        back=gear.CamulusMantle_RangeSTP,waist="Eschan stone",legs="Mummu kecks +2",feet=gear.herculeanBoots_MAB}
+		
+	sets.precast.JA['Light Shot'] = sets.precast.JA['Dark Shot']
 	
-	sets.precast.JA['Random Deal'] = {body="Lanun frac"}
+	sets.precast.JA['Fire Shot'] = {head=gear.herculeanHelm_MAB,neck="Baetyl pendant",ear1="Friomisi earring",ear2="Novio earring",
+        body="Samnuha coat",hands="Carmine finger gauntlets +1",ring1="Regal ring",ring2="Dingir Ring",
+        back=gear.CamulusMantle_RangeSTP,waist="Eschan stone",legs=gear.herculeanTrousers_MAB,feet=gear.herculeanBoots_MAB}
+		
+	sets.precast.JA['Ice Shot'] = sets.precast.JA['Fire Shot']
 	
-	    
-	sets.precast.WS['Last Stand'] = {head="Meghanada visor +1",neck="Fotia gorget",ear1="Moonshade earring",ear2="Enervating earring",
-        body="Meghanada cuirie +2",hands="Meghanada gloves +2",ring1="Mummu ring",ring2="Ilabrat ring",
-        back="Camulus's mantle",waist="Fotia Belt",legs="Meghanada chausses +2",feet="Meghanada jambeaux +2"}
+	sets.precast.JA['Wind Shot'] = sets.precast.JA['Fire Shot']
+	
+	sets.precast.JA['Earth Shot'] = sets.precast.JA['Fire Shot']
+	
+	sets.precast.JA['Thunder Shot'] = sets.precast.JA['Fire Shot']
+	
+	sets.precast.JA['Water Shot'] = sets.precast.JA['Fire Shot']
 
-	sets.precast.WS['Wildfire'] = {head={ name="Herculean Helm", augments={'Mag. Acc.+17','Weapon skill damage +5%','DEX+9','"Mag.Atk.Bns."+7',}},
-    body={ name="Samnuha Coat", augments={'Mag. Acc.+13','"Mag.Atk.Bns."+14','"Fast Cast"+3','"Dual Wield"+4',}},
-    hands="Meg. Gloves +2",
-    legs={ name="Herculean Trousers", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Crit. hit damage +3%','"Mag.Atk.Bns."+10',}},
-    feet={ name="Herculean Boots", augments={'Mag. Acc.+16','Crit.hit rate+2','"Treasure Hunter"+1','Accuracy+8 Attack+8','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    neck="Sanctity Necklace",
-    waist="Eschan Stone",
-    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +25',}},
-    right_ear="Hecate's Earring",
-    left_ring="Apate Ring",
-    right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'Rng.Acc.+20 Rng.Atk.+20','"Snapshot"+10',}},}
+	sets.precast.JA['Barrage'] = {hands=""}
+	sets.precast.JA['Shadowbind'] = {hands=""}
+	
+	sets.precast.WS['Detonator'] = {head="Meghanada visor +2",neck="Fotia gorget",ear1="Moonshade earring",ear2="Ishvara earring",
+        body="Laksamana's frac +3",hands="Meghanada gloves +2",ring1="Regal ring",ring2="Dingir ring",
+        back=gear.CamulusMantle_RAWSD,waist="Fotia Belt",legs=gear.herculeanTrousers_RAWSD,feet=gear.herculeanBoots_RAWSD}
 		
-	sets.precast.WS['Leaden Salute'] = {head={ name="Herculean Helm", augments={'Mag. Acc.+17','Weapon skill damage +5%','DEX+9','"Mag.Atk.Bns."+7',}},
-    body={ name="Samnuha Coat", augments={'Mag. Acc.+13','"Mag.Atk.Bns."+14','"Fast Cast"+3','"Dual Wield"+4',}},
-    hands="Meg. Gloves +2",
-    legs={ name="Herculean Trousers", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Crit. hit damage +3%','"Mag.Atk.Bns."+10',}},
-    feet={ name="Herculean Boots", augments={'Mag. Acc.+16','Crit.hit rate+2','"Treasure Hunter"+1','Accuracy+8 Attack+8','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    neck="Sanctity Necklace",
-    waist="Eschan Stone",
-    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +25',}},
-    right_ear="Hecate's Earring",
-    left_ring="Apate Ring",
-    right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'Rng.Acc.+20 Rng.Atk.+20','"Snapshot"+10',}},}
-		
-	sets.precast.WS['Savage Blade'] = {range={ name="Compensator", augments={'DMG:+15','Rng.Acc.+15','Rng.Atk.+15',}},
-    head={ name="Herculean Helm", augments={'Mag. Acc.+17','Weapon skill damage +5%','DEX+9','"Mag.Atk.Bns."+7',}},
-    body="Laksa. Frac +3",
-    hands="Meg. Gloves +2",
-    legs={ name="Samnuha Tights", augments={'STR+10','DEX+10','"Dbl.Atk."+3','"Triple Atk."+3',}},
-    feet={ name="Herculean Boots", augments={'Weapon skill damage +3%','AGI+5','Rng.Acc.+4','Rng.Atk.+4',}},
-    neck="Ire Torque +1",
-    waist="Metalsinger Belt",
-    left_ear="Ishvara Earring",
-    right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +25',}},
-    left_ring="Regal Ring",
-    right_ring="Rufescent Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','Weapon skill damage +10%',}},}
-		
-	----Weaponskill Sets with Acc----
-																							
+	sets.precast.WS['Heavy Shot'] = {head="Meghanada visor +2",neck="Fotia gorget",ear1="Moonshade earring",ear2="Ishvara earring",
+        body="Laksamana's frac +3",hands="Meghanada gloves +2",ring1="Regal ring",ring2="Dingir ring",
+        back=gear.CamulusMantle_RAWSD,waist="Fotia Belt",legs=gear.herculeanTrousers_RAWSD,feet=gear.herculeanBoots_RAWSD}
 
-	sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {ear1="Enervating earring",ear2="Telos earring",
+	sets.precast.WS['Last Stand'] = {head="Meghanada visor +2",neck="Fotia gorget",ear1="Moonshade earring",ear2="Ishvara earring",
+        body="Laksamana's frac +3",hands="Meghanada gloves +2",ring1="Regal ring",ring2="Dingir ring",
+        back=gear.CamulusMantle_RAWSD,waist="Fotia Belt",legs=gear.herculeanTrousers_RAWSD,feet=gear.herculeanBoots_RAWSD}
+		
+	sets.precast.WS['Savage Blade'] = {head=gear.herculeanHelm_WSD,neck="Fotia gorget",ear1="Moonshade earring",ear2="Ishvara earring",
+        body=gear.herculeanVest_WSD,hands="Meghanada gloves +2",ring1="Regal ring",ring2="Rufescent ring",
+        back=gear.CamulusMantle_RAWSD,waist="Metalsinger Belt",legs=gear.herculeanTrousers_WSD,feet=gear.herculeanBoots_WSD}
+		
+
+	sets.precast.WS['Slug Shot'] = {head="Meghanada visor +2",neck="Fotia gorget",ear1="Moonshade earring",ear2="Sherida earring",
+        body="Laksamana's frac +3",hands="Meghanada gloves +2",ring1="Regal ring",ring2="Dingir Ring",
+        back=gear.CamulusMantle_RAWSD,waist="Fotia Belt",legs=gear.herculeanTrousers_RAWSD,feet="Meghanada jambeaux +2"}
+
+	sets.precast.WS['Wildfire'] = {head=gear.herculeanHelm_MAB,neck="Baetyl pendant",ear1="Friomisi earring",ear2="Novio earring",
+        body=gear.herculeanVest_MAB,hands="Carmine finger gauntlets +1",ring1="Regal ring",ring2="Dingir Ring",
+        back=gear.CamulusMantle_RAWSD,waist="Eschan stone",legs=gear.herculeanTrousers_MAB,feet=gear.herculeanBoots_MAB}
+		
+	sets.precast.WS['Leaden Salute'] = {head="Pixie hairpin +1",neck="Baetyl pendant",ear1="Friomisi earring",ear2="Moonshade earring",
+        body=gear.herculeanVest_MAB,hands="Carmine finger gauntlets +1",ring1="Archon ring",ring2="Dingir Ring",
+        back=gear.CamulusMantle_RAWSD,waist="Hachirin-no-obi",legs=gear.herculeanTrousers_MAB,feet=gear.herculeanBoots_MAB}
+		
+		
+	----Weaponskill Sets with Acc----								
+
+	sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {ear1="Telos earring",ear2="Enervating earring",
+        ring1="Hajduk ring +1",feet="Meghanada jambeaux +2"})
+
+	sets.precast.WS['Slug Shot'].Acc = set_combine(sets.precast.WS['Slug Shot'], {ear1="Telos earring",ear2="Enervating earring",
         ring1="Hajduk ring +1",feet="Meghanada jambeaux +2"})
 
 
 	--Midcast Sets--
 	sets.midcast.RA = {
-		head="Meghanada visor +1",neck="Iskur gorget",ear1="Neritic earring",ear2="Enervating earring",
-		body="Meghanada cuirie +2",hands="Meghanada gloves +2",ring1="Mummu ring",ring2="Ilabrat ring",
-		back="Camulus's mantle",waist="Eschan stone",legs="Adhemar kecks",feet="Meghanada jambeaux +2"}
+		head="Meghanada visor +2",neck="Iskur gorget",ear1="Telos earring",ear2="Enervating earring",
+		body="Mummu jacket +2",hands="Adhemar wristbands +1",ring1="Regal ring",ring2="Ilabrat ring",
+		back=gear.CamulusMantle_RangeSTP,waist="Yemaya belt",legs="Adhemar kecks",feet="Meghanada jambeaux +2"}
 	
 	sets.midcast.RA.Acc = set_combine(sets.midcast.RA,
-		{head="Orion beret +3",neck="Combatant's torque",ring1="Regal ring", ring2="Hajduk ring +1",
-		hands="Meghanada gloves +2",back=gear.belenusCape_STP})
+		{head="Meghanada visor +2",neck="Combatant's torque",ring1="Regal ring", ring2="Hajduk ring +1",
+		body="Laksamana's frac +3",hands="Meghanada gloves +2",back=gear.CamulusMantle_RangeSTP})
 
 
 	--Barrage Set--
-	sets.buff.Barrage = set_combine(sets.midcast.RA, {hands="Orion Bracers +3"})   
-      
-    -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-    sets.idle = {head="Meghanada visor +1",neck="Twilight torque",ear1="Etiolation Earring",ear2="Odnowa earring +1",
-        body="Meghanada cuirie +2",hands="Meghanada gloves +2",ring1="Vocane Ring",ring2="Defending ring",
-        back="Solemnity cape",waist="Flume belt",legs="Carmine cuisses +1",feet="Meghanada jambeaux +2"}
+	sets.buff.Barrage = set_combine(sets.midcast.RA, {hands=""})
 
+
+
+
+    
+    -- Sets to return to when not performing an action.
+    
+    -- Resting sets
+    --sets.resting = {main=gear.Staff.HMP, 
+      --  body="Gendewitha Bliaut",hands="Serpentes Cuffs",
+        --waist="Austerity Belt",legs="Nares Trews",feet="Chelona Boots +1"}
+    
+
+    -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
+    sets.idle = {head="Meghanada visor +2",neck="Loricate torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
+        body="Meghanada cuirie +2",hands=gear.herculeanGloves_DT,ring1="Vocane Ring",ring2="Defending ring",
+        back="Solemnity cape",waist="Flume belt",legs="Carmine cuisses +1",feet="Ahosi leggings"}
+
+
+	sets.idle.DT = {head="Meghanada visor +2",neck="Loricate torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
+        body="Meghanada cuirie +2",hands=gear.herculeanGloves_DT,ring1="Vocane Ring",ring2="Defending ring",
+        back="Solemnity cape",waist="Flume belt",legs="Mummu kecks +2",feet="Ahosi leggings"}
+
+	sets.idle.Refresh = {head="Rawhide mask",neck="Loricate torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
+        body="Meghanada cuirie +2",hands=gear.herculeanGloves_Refresh,ring1="Vocane Ring",ring2="Defending ring",
+        back="Solemnity cape",waist="Flume belt",legs="Rawhide trousers",feet=gear.herculeanBoots_Refresh}
+    -- Defense sets
+
+    --sets.defense.PDT = {main=gear.Staff.PDT,sub="Achaq Grip",
+     --   head="Gendewitha Caubeen",neck="Loricate torque +1",
+      --  body="Gendewitha Bliaut",hands="Gendewitha Gages",ring1="Defending Ring",ring2=gear.DarkRing.physical,
+      --  back="Umbra Cape",legs="Gendewitha Spats",feet="Gendewitha Galoshes"}
+
+    --sets.defense.MDT = {main=gear.Staff.PDT,sub="Achaq Grip",
+     --   head="Nahtirah Hat",neck="Loricate torque +1",
+     --   body="Vanir Cotehardie",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Shadow Ring",
+     --   back="Tuilha Cape",legs="Bokwus Slops",feet="Gendewitha Galoshes"}
 
     sets.Kiting = {feet="Jute boots +1"}
 
+   -- sets.latent_refresh = {waist="Fucho-no-obi"}
 
-	sets.engaged.Ranged = {head="Meghanada visor +1",neck="Loricate torque +1",ear1="Etiolation Earring",ear2="Odnowa earring +1",
-        body="Meghanada cuirie +2",hands="Meghanada gloves +2",ring1="Vocane Ring",ring2="Defending ring",
-        back="Solemnity cape",waist="Flume belt",legs="Carmine cuisses +1",feet="Meghanada jambeaux +2"}
+    -- Engaged sets
 
-    sets.engaged.Melee = {head="Mummu bonnet +1",neck="Lissome necklace",ear1="Steelflash earring",ear2="Bladeborn earring",	
-        body="Mummu jacket +2",hands="Mummu wrists +1",ring1="Regal ring",ring2="Epona's ring",
-        back="Letalis mantle",waist="Windbuffet belt +1",legs="Samnuha tights",feet=gear.herculeanBoots_TA}
+    -- Variations for TP weapon and (optional) offense/defense modes.  Code will fall back on previous
+    -- sets if more refined versions aren't defined.
+    -- If you create a set with both offense and defense modes, the offense mode should be first.
+    -- EG: sets.engaged.Dagger.Accuracy.Evasion
+    
+    -- Basic set for if no TP weapon is defined.
+	
+	--MAKE THIS BUILD INTO PDT BECAUSE OF MIDCAST.RA
+	sets.engaged.Ranged = {main="Demersal degen +1",sub="Odium",head="Meghanada visor +2",neck="Lissome necklace",ear1="Cessance Earring",ear2="Brutal earring",
+        body="Meghanada cuirie +2",hands="Meghanada gloves +2",ring1="Regal Ring",ring2="Cacoethic ring +1",
+        back="Solemnity cape",waist="Windbuffet belt +1",legs="Samnuha tights",feet="Meghanada jambeaux +2"}
+
+    sets.engaged.Melee = {head="Adhemar bonnet +1",neck="Combatant's torque",ear1="Telos earring",ear2="Brutal earring",	
+        body="Adhemar jacket +1",hands="Adhemar wristbands +1",ring1="Petrov ring",ring2="Epona's ring",
+        back=gear.CamulusMantle_MeleeSTP,waist="Windbuffet belt +1",legs="Samnuha tights",feet=gear.herculeanBoots_TA}
+	
+	sets.engaged.Acc = {head="Mummu bonnet +2",neck="Combatant's torque",ear1="Telos earring",ear2="Dignitary's earring",
+        body="Mummu jacket +2",hands="Mummu wrists +2",ring1="Regal ring",ring2="Cacoethic ring +1",
+        back=gear.CamulusMantle_MeleeSTP,waist="Reiki yotai",legs="Mummu kecks +2",feet="Meghanada jambeaux +2"}
 
 
+
+
+    -- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
+    --sets.buff['Divine Caress'] = {hands="Orison Mitts +2",back="Mending Cape"}
 end
 
 -------------------------------------------------------------------------------------------------------------------
@@ -453,5 +324,5 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
     -- Default macro set/book
-    set_macro_page(1, 3)
+    set_macro_page(1, 15)
 end

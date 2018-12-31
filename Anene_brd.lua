@@ -370,7 +370,7 @@ function init_gear_sets()
 		ring2="Petrov Ring",
         back="Intarabus\'s cape",
 		waist="aoidos' belt",
-		legs="Inyanga Shalwar +2",
+		legs="Inyanga Shalwar +1",
 		feet="Brioso Slippers +1"
 		}
 

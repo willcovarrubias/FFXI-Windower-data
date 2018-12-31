@@ -6,13 +6,13 @@ function init_include()
 	gear.merlinicHood_Ref = { name="Merlinic Hood", augments={'Weapon skill damage +1%','AGI+3','"Refresh"+2','Mag. Acc.+7 "Mag.Atk.Bns."+7',}}
 	
 	gear.merlinicJubbah_FC = { name="Merlinic Jubbah", augments={'"Fast Cast"+7','MND+1','"Mag.Atk.Bns."+7',}}
-	gear.merlinicJubbah_Magic = { name="Merlinic Jubbah", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+9%','CHR+1','Mag. Acc.+10','"Mag.Atk.Bns."+12',}}
+	gear.merlinicJubbah_Magic = { name="Merlinic Jubbah", augments={'Mag. Acc.+21 "Mag.Atk.Bns."+21','Magic burst dmg.+7%','CHR+4','"Mag.Atk.Bns."+15',}}
 	
 	gear.merlinicDastanas_FC = { name="Merlinic Dastanas", augments={'"Fast Cast"+7','CHR+6','Mag. Acc.+5','"Mag.Atk.Bns."+6',}}
 	gear.merlinicDastanas_Pet = { name="Merlinic Dastanas", augments={'Pet: Accuracy+28 Pet: Rng. Acc.+28','Blood Pact Dmg.+9','Pet: INT+2','Pet: "Mag.Atk.Bns."+6',}}
 	gear.merlinicDastanas_Ref = { name="Merlinic Dastanas", augments={'INT+8','STR+10','"Refresh"+1','Accuracy+19 Attack+19',}}
 	
-	gear.merlinicCrackows_Magic = { name="Merlinic Crackows", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Magic burst dmg.+8%','INT+7','Mag. Acc.+11','"Mag.Atk.Bns."+9',}}
+	gear.merlinicCrackows_Magic = { name="Merlinic Crackows", augments={'Mag. Acc.+25 "Mag.Atk.Bns."+25','Magic burst dmg.+9%','Mag. Acc.+8','"Mag.Atk.Bns."+12',}}
 	gear.merlinicCrackows_FC = { name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+21','"Fast Cast"+7','MND+10',}}
 	gear.merlinicCrackows_Pet = { name="Merlinic Crackows", augments={'Pet: Accuracy+29 Pet: Rng. Acc.+29','Blood Pact Dmg.+8','Pet: STR+3',}}
 	gear.merlinicCrackows_Ref = {name="Merlinic Crackows", augments={'Accuracy+11','Accuracy+14 Attack+14','"Refresh"+1','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
